@@ -12,7 +12,7 @@
 */[Aa]ssets/[Pp]lugins
 
 #Ignore most of Fungus' files
-*/[Aa]ssets/[Ff]ungus/**
+#*/[Aa]ssets/[Ff]ungus/**
 
 #EXCEPT the resources folder, which has the prefabs Fungus uses
 ![Aa]ssets/[Ff]ungus/Resources/**
