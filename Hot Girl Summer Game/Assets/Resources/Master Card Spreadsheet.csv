@@ -1,0 +1,13 @@
+cardName,type,value,isPlayable,text,normalArt,hoverArt,buyCost
+Bubbly,Vibes.Bubbly,3,FALSE,Unplayable. Worth 3 Bubbly Victory Points.,cards_b_bubbly,cardscheck_b_bubbly,"(0,0,0,0)"
+Chat,Vibes.Calm,1,TRUE,Draw 2 cards.,cards_c_chat,cardscheck_c_chat,"(0,0,0,0)"
+Private Talk,Vibes.Calm,1,TRUE,"Play your next action twice. Add one ""CHILL"" to your discard.",cards_c_privatetalk,cardscheck_c_privatetalk,"(0,0,0,0)"
+Chill,Vibes.Calm,1,TRUE,Add 1 Calm Victory card to your discard next turn.,cards_c_chill,cardscheck_c_chill,"(0,0,0,0)"
+Calm,Vibes.Calm,3,FALSE,Unplayable.Worth 3 Bubbly Victory Points.,cards_c_calm,cardscheck_c_calm,"(0,0,0,0)"
+Compliment,Vibes.Bubbly,1,TRUE,Duplicate an action in your hand.,cards_b_compliment,cardscheck_b_compliment,"(0,0,0,0)"
+Joke,Vibes.Bubbly,1,TRUE,Draw 1 card and take 1 more action this turn.,cards_b_joke,cardscheck_b_joke,"(0,0,0,0)"
+Dance,Vibes.Bubbly,1,TRUE,Immediately add 1 Bubbly Victory card to your discard.,cards_b_dance,cardscheck_b_dance,"(0,0,0,0)"
+Encourage,Vibes.Hype,1,TRUE,The other character takes action twice in a row.,cards_h_encourage,cardscheck_h_encourage,"(0,0,0,0)"
+Get Pumped,Vibes.Hype,1,TRUE,Gain 2 more actions this turn and discard a card from your hand.,cards_h_getpumped,cardscheck_h_getpumped,"(0,0,0,0)"
+Gutsy,Vibes.Hype,1,TRUE,Add 2 Hype Victory cards to your discard immediately. Lose 2 Hype Victory Cards next turn.,cards_h_gutsy,cardscheck_h_gutsy,"(0,0,0,0)"
+Hype,Vibes.Hype,3,FALSE,Unplayable. Worth 3 Hype Victory Points.,cards_h_hype,cardscheck_h_hype,"(0,0,0,0)"
