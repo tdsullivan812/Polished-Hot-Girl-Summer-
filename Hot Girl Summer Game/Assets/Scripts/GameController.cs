@@ -65,6 +65,7 @@ public class GameController : MonoBehaviour
         _gameFSM = new FiniteStateMachine<GameController>(this);
 
 
+
         
         //PURELY FOR TESTING THE CARD ENCOUNTER SCENE. In the real game, we don't want to start playing
         // cards right away. Feel free to uncomment if you want to test the card game, but be mindful.
@@ -100,6 +101,12 @@ public class GameController : MonoBehaviour
         _gameFSM.Update();
 
         
+    }
+
+    public Vector3Int ConvertToPartyState()
+    {
+        Vector3Int partyState = new Vector3Int(partyDeck.victoryPoints.calmPoints, partyDeck.victoryPoints.bubblyPoints, partyDeck.victoryPoints.hypePoints);
+        return partyState;
     }
 }
 // This is where the States for the Game Controller Finite State Machine are.
