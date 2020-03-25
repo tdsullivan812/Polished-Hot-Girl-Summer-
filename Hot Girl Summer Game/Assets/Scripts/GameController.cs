@@ -103,9 +103,9 @@ public class GameController : MonoBehaviour
         
     }
 
-    public Vector3Int ConvertToPartyState()
+    public Vector3 ConvertToPartyState()
     {
-        Vector3Int partyState = new Vector3Int(partyDeck.victoryPoints.calmPoints, partyDeck.victoryPoints.bubblyPoints, partyDeck.victoryPoints.hypePoints);
+        Vector3 partyState = new Vector3(partyDeck.victoryPoints.calmPoints, partyDeck.victoryPoints.bubblyPoints, partyDeck.victoryPoints.hypePoints);
         return partyState;
     }
 }
