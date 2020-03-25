@@ -10,6 +10,7 @@ public class CardGUIEvents : EventTrigger
     private Transform startingPosition;
     public static RectTransform playableCardZone;
     public static Card cardSelectedByPlayer;
+    private static float sizeWhenHovering;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,15 +22,18 @@ public class CardGUIEvents : EventTrigger
     {
         
     }
-
+    #region
     public override void OnPointerEnter(PointerEventData pointerEvent)
     {
         Debug.Log("Hovering over card");
+        HoverEffect();
     }
+
 
     public override void OnPointerExit(PointerEventData pointerEvent)
     {
         Debug.Log("No longer hovering");
+        StopHoverEffect();
     }
 
     public override void OnBeginDrag(PointerEventData eventData)
@@ -81,6 +85,40 @@ public class CardGUIEvents : EventTrigger
             {
                 gameObject.transform.SetPositionAndRotation(startingPosition.position, Quaternion.identity);
             }
+        }
+    }
+
+    #endregion
+
+    private void HoverEffect()
+    {
+        float parameter = 0;
+        //Color currentImageAlpha = thisCard.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color;
+        //Color newImageAlpha = thisCard.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color;
+        while (parameter < 1)
+        {
+            gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color = Color.Lerp(Color.white, Color.clear, parameter);
+            gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color = Color.Lerp(Color.clear, Color.white, parameter);
+            gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(Color.clear, Color.white, parameter);
+            gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(1, sizeWhenHovering, parameter), 1);
+
+            parameter += 0.001f;
+        }
+    }
+
+    private void StopHoverEffect()
+    {
+        float parameter = 0;
+        //Color currentImageAlpha = thisCard.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color;
+        //Color newImageAlpha = thisCard.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color;
+        while (parameter < 1)
+        {
+            gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color = Color.Lerp(Color.clear, Color.white, parameter);
+            gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color = Color.Lerp(Color.white, Color.clear, parameter);
+            gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(Color.white, Color.clear, parameter);
+            gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(sizeWhenHovering, 1, parameter), 1);
+
+            parameter += 0.01f;
         }
     }
 }
