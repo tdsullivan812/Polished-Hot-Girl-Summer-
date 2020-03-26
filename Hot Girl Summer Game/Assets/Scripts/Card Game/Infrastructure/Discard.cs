@@ -15,6 +15,13 @@ public class Discard
 
     public Card RemoveFromDiscard(Card cardToRemove)
     {
+        foreach (Card cardInDiscard in cardsInDiscard)
+        {
+            cardInDiscard.cardGameObject.SetActive(false);
+            cardInDiscard.cardGameObject.transform.SetParent(null);
+            cardInDiscard.cardGameObject.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+            cardInDiscard.cardGameObject.GetComponent<CardGUIEvents>();
+        }
         cardsInDiscard.Remove(cardToRemove);
         return cardToRemove;
     }
@@ -35,6 +42,11 @@ public class Discard
 
 
 
+        }
+        else
+        {
+            cardToAdd.cardGameObject.SetActive(true);
+            cardToAdd.cardGameObject.transform.SetPositionAndRotation(Encounter.discardPileTransform.position, Quaternion.identity);
         }
         cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
         return cardToAdd;
