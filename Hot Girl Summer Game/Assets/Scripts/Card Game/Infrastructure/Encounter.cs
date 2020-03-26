@@ -7,6 +7,7 @@ public class Encounter
     //Static elements in an encounter
     public static  Deck playerDeck;
     public static  Discard playerDiscard;
+    public static Transform discardPileTransform;
     public static  Hand playerHand;
     public static bool _isItPlayerTurn;
     public static NPC npc;
@@ -40,6 +41,7 @@ public class Encounter
         //Finds GameObjects in scene
         cardGUI = GameObject.FindGameObjectWithTag("HandZone");
         endTurnButton = GameObject.Find("EndPlayerTurn");
+        discardPileTransform = GameObject.Find("Discard Pile").transform;
         //endTurnButton.SetActive(false);
 
         //initializes FSM
