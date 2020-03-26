@@ -26,14 +26,16 @@ public class CardGUIEvents : EventTrigger
     public override void OnPointerEnter(PointerEventData pointerEvent)
     {
         Debug.Log("Hovering over card");
-        HoverEffect();
+        StopCoroutine("StopHoverEffect");
+        StartCoroutine("HoverEffect");
     }
 
 
     public override void OnPointerExit(PointerEventData pointerEvent)
     {
         Debug.Log("No longer hovering");
-        StopHoverEffect();
+        StopCoroutine("HoverEffect");
+        StartCoroutine("StopHoverEffect");
     }
 
     public override void OnBeginDrag(PointerEventData eventData)
@@ -90,7 +92,7 @@ public class CardGUIEvents : EventTrigger
 
     #endregion
 
-    private void HoverEffect()
+    private IEnumerator HoverEffect()
     {
         float parameter = 0;
         //Color currentImageAlpha = thisCard.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color;
@@ -102,11 +104,13 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(Color.clear, Color.white, parameter);
             gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(1, sizeWhenHovering, parameter), 1);
 
-            parameter += 0.001f;
+            parameter += 0.01f;
+            yield return null;
         }
+        yield return null;
     }
 
-    private void StopHoverEffect()
+    private IEnumerator StopHoverEffect()
     {
         float parameter = 0;
         //Color currentImageAlpha = thisCard.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color;
@@ -119,6 +123,33 @@ public class CardGUIEvents : EventTrigger
             gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(sizeWhenHovering, 1, parameter), 1);
 
             parameter += 0.01f;
+            yield return null;
         }
+        yield return null;
+    }
+
+    public IEnumerator SendToDiscard()
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            Transform initialPosition = gameObject.transform;
+            var parameter = 0.0f;
+            while (parameter < 1)
+            {
+                gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.discardPileTransform.position, parameter), Quaternion.identity);
+                parameter += 0.001f;
+                yield return null;
+            }
+            yield return null;
+
+
+        }
+        
+        yield return null;
+    }
+
+    public void RemoveFromDiscard()
+    {
+
     }
 }

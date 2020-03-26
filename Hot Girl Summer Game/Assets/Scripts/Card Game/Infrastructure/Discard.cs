@@ -18,13 +18,14 @@ public class Discard
         foreach (Card cardInDiscard in cardsInDiscard)
         {
             cardInDiscard.cardGameObject.SetActive(false);
+            cardInDiscard.cardGameObject.GetComponent<CardGUIEvents>().enabled = true;
             cardInDiscard.cardGameObject.transform.SetParent(null);
             cardInDiscard.cardGameObject.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
-            cardInDiscard.cardGameObject.GetComponent<CardGUIEvents>();
         }
         cardsInDiscard.Remove(cardToRemove);
         return cardToRemove;
     }
+
 
     public Card AddToDiscard(Card cardToAdd)
     {
@@ -32,21 +33,15 @@ public class Discard
 
         if (cardToAdd.cardGameObject.activeInHierarchy)
         {
-            Transform initialPosition = cardToAdd.cardGameObject.transform;
-            var parameter = 0.0f;
-            while (parameter < 1)
-            {
-                cardToAdd.cardGameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.discardPileTransform.position, parameter), Quaternion.identity);
-                parameter += 0.001f;
-            }
-
-
-
+            cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("SendToDiscard");
         }
         else
         {
+
             cardToAdd.cardGameObject.SetActive(true);
             cardToAdd.cardGameObject.transform.SetPositionAndRotation(Encounter.discardPileTransform.position, Quaternion.identity);
+            
+            
         }
         cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
         return cardToAdd;
