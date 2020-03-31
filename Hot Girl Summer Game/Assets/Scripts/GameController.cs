@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Fungus;
 
 public class GameController : MonoBehaviour
 {
@@ -32,11 +33,15 @@ public class GameController : MonoBehaviour
     //This is the spreadsheet of all of the cards and their identifying info
     public TextAsset cardSpreadsheet;
 
+    //The GameObject with the Fungus Flowchart;
+    private GameObject fungusFlowchart;
+
     // This is called even before the Start function. I just wanted to perform the DontDestroyOnLoad
     // as early as possible.
     private void Awake()
     {
         Object.DontDestroyOnLoad(this);
+        fungusFlowchart = GameObject.Find("Flowchart");
     }
 
     
@@ -63,6 +68,7 @@ public class GameController : MonoBehaviour
         //The gameController state machine is private, because this should be pretty much 
         //the only script changing the game state at such a high level.
         _gameFSM = new FiniteStateMachine<GameController>(this);
+
 
 
         
@@ -101,6 +107,18 @@ public class GameController : MonoBehaviour
 
         
     }
+
+    public string EvaluatePartyState()
+    {
+        string partyState = "";
+        return partyState;
+    }
+
+    public void ExecuteFungusBlock()
+    {
+        fungusFlowchart.SendMessage(EvaluatePartyState());
+    }
+    
 }
 // This is where the States for the Game Controller Finite State Machine are.
 #region

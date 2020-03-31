@@ -23,8 +23,8 @@ public class Hand
 
             //handTransforms.RemoveAt(0);
             //Services.encounter.UpdateHandSize();
-            cardToPlay.cardGameObject.transform.SetParent(null);
-            cardToPlay.cardGameObject.SetActive(false);
+            cardToPlay.cardGameObject.transform.SetParent(Encounter.discardPileTransform);
+            //cardToPlay.cardGameObject.SetActive(false);
             //Services.encounter.UpdateCardGameObjects();
             Services.encounter.Play(cardToPlay);
 

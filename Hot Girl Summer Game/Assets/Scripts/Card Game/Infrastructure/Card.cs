@@ -54,11 +54,14 @@ public abstract class Card
     {
         cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));
         //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
-        //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[1].text = displayedInfo.text;
+        cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].text = displayedInfo.text;
 
-        UnityEngine.UI.Image cardBackgroundImage = cardGameObject.GetComponent<UnityEngine.UI.Image>();
+        var cardImages = cardGameObject.GetComponentsInChildren<UnityEngine.UI.Image>();
+        //UnityEngine.UI.Image cardBackgroundImage = cardGameObject.GetComponent<UnityEngine.UI.Image>();
+        //UnityEngine.UI.Image hoverImage = cardGameObject.GetComponentInChildren<UnityEngine.UI.Image>();
         cardGameObject.name = displayedInfo.cardName;
-        cardBackgroundImage.sprite = displayedInfo.normalArt;
+        cardImages[0].sprite = displayedInfo.normalArt;
+        cardImages[1].sprite = displayedInfo.hoverArt;
 
         /*
         switch (displayedInfo.type)
