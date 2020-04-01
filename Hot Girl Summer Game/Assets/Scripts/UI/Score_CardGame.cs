@@ -20,7 +20,7 @@ public class Score_CardGame : MonoBehaviour //not tested! :D
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         sbVictoryPoints = GameController.partyDeck.victoryPoints; //make scoreboard vp = deck vp
 
         //assign scoreboard values

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Encounter
 {
@@ -38,17 +39,24 @@ public class Encounter
         //Sets NPC for the encounter
         Encounter.npc = npc;
 
-        //Finds GameObjects in scene
-        cardGUI = GameObject.FindGameObjectWithTag("HandZone");
-        endTurnButton = GameObject.Find("EndPlayerTurn");
-        discardPileTransform = GameObject.Find("Discard Pile").transform;
         //endTurnButton.SetActive(false);
 
         //initializes FSM
         cardGameFSM = new FiniteStateMachine<Encounter>(this);
-        cardGameFSM.TransitionTo<BeginningOfTurn>();
+        //cardGameFSM.TransitionTo<BeginningOfTurn>();
         Debug.Log("Transitioned to playerturn");
 
+    }
+
+    public void FindGameObjects()
+    {
+        if ((SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CardEncounter")) && cardGUI == null)
+        {
+            //Finds GameObjects in scene
+            cardGUI = GameObject.FindGameObjectWithTag("HandZone");
+            endTurnButton = GameObject.Find("EndPlayerTurn");
+            discardPileTransform = GameObject.Find("Discard Pile").transform;
+        }
     }
 
     public void Play(Card cardToPlay)
@@ -207,6 +215,7 @@ public class Encounter
 
         public override void Update()
         {
+            npc.turnsExpired++;
             Services.encounter.ChangeTurn();
         }
     }

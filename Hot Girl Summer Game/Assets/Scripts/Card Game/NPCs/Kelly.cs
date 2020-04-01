@@ -6,14 +6,29 @@ public class Kelly : NPC
 {
     private GameObject _selectACardMenu;
     private GameObject parentGameObject;
+
+
     public Kelly()
     {
         npcName = "Kelly";
         npcSprite = null;
+        victoryCondition = RequiredPoints;
+        successMessage = "Kelly Solved";
+        failureMessage = "Kelly Unsolved";
+        turnsExpired = 0;
 
        // _selectACardMenu = GameObject.Find("GridOfCards");
         //parentGameObject = GameObject.Find("SelectACard");
         //parentGameObject.SetActive(false);
+    }
+
+    public bool RequiredPoints()
+    {
+        if (GameController.partyDeck.victoryPoints.totalPoints >= 16)
+        {
+            return true;
+        }
+        else return false;
     }
 
 
