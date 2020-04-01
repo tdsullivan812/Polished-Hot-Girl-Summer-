@@ -6849,6 +6849,12 @@ GameObject:
   - component: {fileID: 1354138889}
   - component: {fileID: 1354138888}
   - component: {fileID: 1354138881}
+  - component: {fileID: 1354138895}
+  - component: {fileID: 1354138894}
+  - component: {fileID: 1354138891}
+  - component: {fileID: 1354138892}
+  - component: {fileID: 1354138893}
+  - component: {fileID: 1354138716}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6869,7 +6875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1599.8232, y: 1923.4476}
+  scrollPos: {x: 1973, y: 701.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -6882,7 +6888,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1354138717}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1354138716}
   variables:
   - {fileID: 1354138725}
   - {fileID: 1354138777}
@@ -6901,6 +6908,35 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &1354138716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 236
+  indentLevel: 0
+  storyText: But most importantly, try to have a good time! This summer is all about
+    being yourself, spending time with your friends, and throwing the best ding dang
+    party of 1999, baby!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1354138717
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6928,6 +6964,12 @@ MonoBehaviour:
   commandList:
   - {fileID: 1354138719}
   - {fileID: 1354138744}
+  - {fileID: 1354138895}
+  - {fileID: 1354138894}
+  - {fileID: 1354138893}
+  - {fileID: 1354138892}
+  - {fileID: 1354138891}
+  - {fileID: 1354138716}
 --- !u!4 &1354138718
 Transform:
   m_ObjectHideFlags: 0
@@ -7089,7 +7131,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2888.1775
     y: -143.44763
-    width: 165.2
+    width: 171.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7159,7 +7201,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3044.1775
     y: -39.44763
-    width: 168.4
+    width: 173.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7215,7 +7257,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2744.1775
     y: -35.44763
-    width: 139.6
+    width: 142.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7494,7 +7536,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3152.1775
     y: 204.55237
-    width: 152.4
+    width: 154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7550,7 +7592,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2696.1775
     y: 204.55237
-    width: 142.8
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7851,7 +7893,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 562.504
     y: 648.2611
-    width: 123.6
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8151,7 +8193,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1271.5394
     y: 353.94464
-    width: 126.8
+    width: 128.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8207,7 +8249,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1169.8658
     y: 265.64972
-    width: 120.4
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8344,7 +8386,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 990.601
     y: -74.15208
-    width: 133.2
+    width: 131.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8371,7 +8413,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 795.28156
     y: -71.7507
-    width: 120.4
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8480,7 +8522,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 867.523
     y: -141.0422
-    width: 126.8
+    width: 125.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10058,7 +10100,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1707.8446
     y: -68.99902
-    width: 120.4
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12112,7 +12154,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1677.6383
     y: 709.0853
-    width: 126.8
+    width: 128.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12145,7 +12187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1580.9512
     y: 616.73694
-    width: 120.4
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12470,6 +12512,145 @@ MonoBehaviour:
   storyText: 'Nice - gotta get pumped for party time, I feel you. '
   description: 
   character: {fileID: 313895990}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 233
+  indentLevel: 0
+  storyText: "Sometimes, if you talk to other guests, they\u2019ll be able to give
+    you stuff that might help you solve problems later."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 234
+  indentLevel: 0
+  storyText: People will have different reactions to your party based on its vibe,
+    so be careful when deciding what kind of party you want to have.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 235
+  indentLevel: 0
+  storyText: Every time you encounter a guest with a problem, you have an opportunity
+    to influence the vibe of the party!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 232
+  indentLevel: 0
+  storyText: "This is the first party you\u2019ve ever thrown, so try to make sure
+    it goes smoothly."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 231
+  indentLevel: 0
+  storyText: "Today\u2019s the day of your big party!"
+  description: 
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
