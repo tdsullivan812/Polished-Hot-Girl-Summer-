@@ -46,8 +46,8 @@ public abstract class Card
     public Card()
     {
         Debug.Log("card name is" + this.ToString());
-        displayedInfo = Services.allCardInformation.cardInfoDictionary[this.ToString()];
-        InitializeCardGameObject();
+        displayedInfo = Services.gameController.cardInfo.cardInfoDictionary[this.ToString()];
+        //InitializeCardGameObject();
     }
 
     public void InitializeCardGameObject()

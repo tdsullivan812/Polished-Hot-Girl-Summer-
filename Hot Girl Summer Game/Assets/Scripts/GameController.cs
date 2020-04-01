@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
+using UnityEditor;
 
 public class GameController : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class GameController : MonoBehaviour
     // switch between when playing cards and talking to characters, respectively. 
     private static FiniteStateMachine<GameController> _gameFSM;
 
+    public AllCardInformation cardInfo;
+
     
     //This is the Party Deck, which is a list of all the cards the player owns. This is different from
     // the Deck object in an Encounter, because the Party Deck includes the discard pile.
@@ -30,18 +33,76 @@ public class GameController : MonoBehaviour
     // but in the future, when the player finishes one Encounter, the next NPC will be queued up.
     public static NPC nextNPC;
 
+    //This is the next Fungus block that will execute when the game returns to party mode
+
+    public string nextBlock;
     //This is the spreadsheet of all of the cards and their identifying info
     public TextAsset cardSpreadsheet;
 
     //The GameObject with the Fungus Flowchart;
-    private GameObject fungusFlowchart;
+    public GameObject flowchartGameObject;
+
+    public Fungus.Flowchart flowchart; 
 
     // This is called even before the Start function. I just wanted to perform the DontDestroyOnLoad
     // as early as possible.
     private void Awake()
     {
-        Object.DontDestroyOnLoad(this);
-        fungusFlowchart = GameObject.Find("Flowchart");
+
+
+        //The Services class is just a static class that acts as a list of all the major systems in the game.
+        //Right now, Services has three attributes: the gameController (this), the eventManager, and the
+        // encounter. 
+        if (Services.gameController == null)
+        {
+            Object.DontDestroyOnLoad(this);
+            flowchartGameObject = GameObject.Find("Flowchart");
+            Object.DontDestroyOnLoad(flowchartGameObject);
+            flowchart = flowchartGameObject.GetComponent<Fungus.Flowchart>();
+            cardInfo.ReadFromSpreadsheet();
+
+
+            Services.gameController = this;
+            Services.eventManager = new EventManager();
+
+            //Services.allCardInformation = AllCardInformation(cardSpreadsheet);
+
+
+
+            //These lines initialize the public attributes in the GameController
+            partyDeck = new DeckList();
+            nextNPC = new Kelly();
+
+            //The gameController state machine is private, because this should be pretty much 
+            //the only script changing the game state at such a high level.
+            _gameFSM = new FiniteStateMachine<GameController>(this);
+
+            //PURELY FOR TESTING THE CARD ENCOUNTER SCENE. In the real game, we don't want to start playing
+            // cards right away. Feel free to uncomment if you want to test the card game, but be mindful.
+
+            #region
+
+            partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
+            partyDeck.AddCard(new Dance());
+            partyDeck.AddCard(new Gutsy());
+            partyDeck.AddCard(new PrivateTalk());
+            partyDeck.AddCard(new Chat());
+            partyDeck.AddCard(new Encourage());
+
+
+            Debug.Log("Added cards");
+
+
+            //_gameFSM = new FiniteStateMachine<GameController>(this); //This line creates a state machine for 
+            //_gameFSM.TransitionTo<CardGame>();
+            Debug.Log("transitioned to card game");
+
+            #endregion
+
+
+        }
+
+        else GameObject.Destroy(this);
     }
 
     
@@ -52,46 +113,10 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        //The Services class is just a static class that acts as a list of all the major systems in the game.
-        //Right now, Services has three attributes: the gameController (this), the eventManager, and the
-        // encounter. 
-        Services.GC = this;
-        Services.eventManager = new EventManager();
-        Services.allCardInformation = new AllCardInformation(cardSpreadsheet);
-
-        
-        
-        //These lines initialize the public attributes in the GameController
-        partyDeck = new DeckList();
-        nextNPC = new Kelly();
-
-        //The gameController state machine is private, because this should be pretty much 
-        //the only script changing the game state at such a high level.
-        _gameFSM = new FiniteStateMachine<GameController>(this);
+       
 
 
-
-        
-        //PURELY FOR TESTING THE CARD ENCOUNTER SCENE. In the real game, we don't want to start playing
-        // cards right away. Feel free to uncomment if you want to test the card game, but be mindful.
-        #region
-        
-        partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
-        partyDeck.AddCard(new Dance());
-        partyDeck.AddCard(new Gutsy());
-        partyDeck.AddCard(new PrivateTalk());
-        partyDeck.AddCard(new Chat());
-        partyDeck.AddCard(new Encourage());
-
-
-        Debug.Log("Added cards");
-
-
-        _gameFSM = new FiniteStateMachine<GameController>(this); //This line creates a state machine for 
-        _gameFSM.TransitionTo<CardGame>();
-        Debug.Log("transitioned to card game");
-        
-        #endregion
+        _gameFSM.TransitionTo<Story>();
 
     }
 
@@ -108,18 +133,50 @@ public class GameController : MonoBehaviour
         
     }
 
+    public void LoadCardGame()
+    {
+        SceneManager.LoadScene("CardEncounter");
+        _gameFSM.TransitionTo<CardGame>();
+    }
+
     public string EvaluatePartyState()
     {
-        string partyState = "";
-        return partyState;
+        if (Encounter.npc != null)
+        {
+            string partyState;
+            if (Encounter.npc.victoryCondition())
+            {
+                partyState = Encounter.npc.successMessage;
+            }
+            else partyState = Encounter.npc.failureMessage;
+            return partyState;
+        }
+
+        else return null;
     }
 
     public void ExecuteFungusBlock()
     {
-        fungusFlowchart.SendMessage(EvaluatePartyState());
+        flowchartGameObject.GetComponent<Fungus.Flowchart>().FindBlock(EvaluatePartyState());
     }
     
 }
+
+//GameControllerInspector
+#region
+    [CustomEditor(typeof(GameController))]
+    public class GCInspector : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        var myTarget = (GameController)target;
+        DrawDefaultInspector();
+        myTarget.cardInfo = (AllCardInformation)EditorGUILayout.ObjectField((Object)myTarget.cardInfo, typeof(AllCardInformation), false);
+
+    }
+}
+
+#endregion
 // This is where the States for the Game Controller Finite State Machine are.
 #region
 //The state of the game during a Card Game. You shouldn't have to edit any of this.
@@ -128,27 +185,36 @@ public class CardGame : FiniteStateMachine<GameController>.State
 {
     public override void OnEnter()
     {
+        
         Services.encounter = new Encounter(GameController.nextNPC);
+        Services.encounter.FindGameObjects();
+        foreach(Card cardInDeck in GameController.partyDeck.allCards)
+        {
+            cardInDeck.InitializeCardGameObject();
+        }
+        Encounter.cardGameFSM.TransitionTo<Encounter.BeginningOfTurn>();
     }
 
     public override void OnExit()
     {
-        Services.encounter = null;
+        
         
     }
 
     public override void Update()
     {
+        
         //Make sure the party deck is up to date
         GameController.partyDeck.UpdateContents();
         GameController.partyDeck.CalculateVictoryPoints();
 
         //Now, check if Victory Point conditions are met
-        if (GameController.partyDeck.victoryPoints.totalPoints >= 16)
+        if (GameController.partyDeck.victoryPoints.totalPoints >= 16 || Encounter.npc.turnsExpired >= 10)
         {
-            //If you have enough VP, the encounter ends
-            TransitionTo<Story>();
-            SceneManager.LoadScene("SampleScene");
+            Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
+            //If you have enough VP or time limit expires, the encounter ends
+            TransitionTo<LoadingPartyScene>();
+            
         }
 
         //If not, then the card Game Updates
@@ -157,12 +223,49 @@ public class CardGame : FiniteStateMachine<GameController>.State
     }
 }
 
+public class LoadingPartyScene : FiniteStateMachine<GameController>.State
+{
+    public override void OnEnter()
+    {
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("SampleScene"))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+    }
+
+    public override void Update()
+    {
+        TransitionTo<Story>();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+}
 //The state of the game when you are just talking to party guests. You also shouldn't have to edit this.
 public class Story : FiniteStateMachine<GameController>.State
 {
     public override void OnEnter()
     {
-        base.OnEnter();
+        if (Services.gameController.flowchartGameObject == null)
+        {
+            Services.gameController.flowchartGameObject = GameObject.Find("Flowchart");
+        }
+
+        Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
+        if (Services.gameController.nextBlock != null)
+        {
+            Fungus.BlockReference blockToExecute;
+            blockToExecute.block = Services.gameController.flowchart.FindBlock(Services.gameController.nextBlock);
+            //Debug.Log(blockToExecute.block.BlockName);
+            //blockToExecute.block.Execute();
+            Services.gameController.flowchart.ExecuteBlock(blockToExecute.block);
+            Services.encounter = null;
+        }
+
+
     }
 
     public override void OnExit()

@@ -1574,7 +1574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1928968312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +1588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardSpreadsheet: {fileID: 4900000, guid: 5e275878f61eb5a43b923397a0f870ae, type: 3}
+  fungusFlowchart: {fileID: 0}
 --- !u!4 &1928968313
 Transform:
   m_ObjectHideFlags: 0
