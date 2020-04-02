@@ -23,6 +23,14 @@ public class CardGUIEvents : EventTrigger
         
     }
     #region
+
+    public override void OnPointerClick(PointerEventData eventData)
+    {
+        if(Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.WaitForInput))
+        {
+            cardSelectedByPlayer = GetComponent<CardIdentifier>().whichCardIsThis;
+        }
+    }
     public override void OnPointerEnter(PointerEventData pointerEvent)
     {
         Debug.Log("Hovering over card");
@@ -77,17 +85,17 @@ public class CardGUIEvents : EventTrigger
         }
         
         //What to do if the game is waiting for players to pick a card
-        else if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.WaitForInput))
-        {
-            if (playableCardZone.rect.Contains(playableCardZone.InverseTransformPoint(pointerEvent.position)))
-            {
-                cardSelectedByPlayer = GetComponent<CardIdentifier>().whichCardIsThis;
-            }
-            else
-            {
-                gameObject.transform.SetPositionAndRotation(startingPosition.position, Quaternion.identity);
-            }
-        }
+        //else if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.WaitForInput))
+        //{
+        //    if (playableCardZone.rect.Contains(playableCardZone.InverseTransformPoint(pointerEvent.position)))
+        //    {
+        //        cardSelectedByPlayer = GetComponent<CardIdentifier>().whichCardIsThis;
+        //    }
+        //    else
+        //    {
+        //        gameObject.transform.SetPositionAndRotation(startingPosition.position, Quaternion.identity);
+        //    }
+        //}
     }
 
     #endregion

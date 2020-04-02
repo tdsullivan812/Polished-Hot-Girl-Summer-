@@ -59,5 +59,6 @@ public class QuizCards : MonoBehaviour
 
     public void AddCompliment()
     {
+        GameController.partyDeck.AddCard(new Compliment());
     }
 }
