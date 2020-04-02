@@ -1976,7 +1976,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: PERSONALITY QUIZ PROTOTYPE
+  storyText: A brand new personality quiz from my favorite teen magazine? Sign me
+    up! I wonder what my results will be...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2046,7 +2047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 2.4528809, y: 369.1374}
+  scrollPos: {x: 518.4529, y: 369.1374}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2058,9 +2059,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1149632904}
+  - {fileID: 1149632900}
   selectedCommands:
-  - {fileID: 1149632941}
+  - {fileID: 1149632898}
   variables: []
   description: 
   stepPause: 0
@@ -3066,7 +3067,7 @@ MonoBehaviour:
   - {fileID: 1149632946}
 --- !u!114 &1149632939
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3083,7 +3084,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 44b7b0b53ccf3464abce7f4106c18a68, type: 3}
 --- !u!114 &1149632940
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3100,7 +3101,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: b49e6626e9802204ab3c4f10358c14a0, type: 3}
 --- !u!114 &1149632941
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3117,7 +3118,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 1d321baf3e9721343bedd7be42afaf82, type: 3}
 --- !u!114 &1149632942
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3134,7 +3135,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 394b2f7d3b0e1c342b0a6e28c9bac728, type: 3}
 --- !u!114 &1149632943
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3151,7 +3152,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 1b26686c97db9b047817265f3ac5bb0a, type: 3}
 --- !u!114 &1149632944
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
