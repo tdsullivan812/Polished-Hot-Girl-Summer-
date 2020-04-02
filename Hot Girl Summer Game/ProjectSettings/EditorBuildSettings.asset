@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 505de692286c87c489b7a855a0509e3d
   - enabled: 1
+    path: Assets/Scenes/PersonalityQuiz.unity
+    guid: 6ceb0b1a46e77439ca773d56aed4ca5b
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

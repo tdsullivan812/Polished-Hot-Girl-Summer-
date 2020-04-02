@@ -13,7 +13,8 @@ public class StartGame : MonoBehaviour
 
     public void clickToPlay()
     {
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
+        Services.gameController.LoadQuiz();
 
     }
 }

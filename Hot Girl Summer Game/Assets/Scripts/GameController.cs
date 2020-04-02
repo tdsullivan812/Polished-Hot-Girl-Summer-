@@ -56,9 +56,11 @@ public class GameController : MonoBehaviour
         if (Services.gameController == null)
         {
             Object.DontDestroyOnLoad(this);
+            /*
             flowchartGameObject = GameObject.Find("Flowchart");
             Object.DontDestroyOnLoad(flowchartGameObject);
             flowchart = flowchartGameObject.GetComponent<Fungus.Flowchart>();
+            */
             cardInfo.ReadFromSpreadsheet();
 
 
@@ -82,27 +84,30 @@ public class GameController : MonoBehaviour
 
             #region
 
+            /*
             partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
             partyDeck.AddCard(new Dance());
             partyDeck.AddCard(new Gutsy());
             partyDeck.AddCard(new PrivateTalk());
             partyDeck.AddCard(new Chat());
             partyDeck.AddCard(new Encourage());
+            */
+            partyDeck.AddCard(new Dance());
+            partyDeck.AddCard(new Chill());
+            partyDeck.AddCard(new Gutsy());
 
-
-            Debug.Log("Added cards");
+            _gameFSM.TransitionTo<StartMenu>();
 
 
             //_gameFSM = new FiniteStateMachine<GameController>(this); //This line creates a state machine for 
             //_gameFSM.TransitionTo<CardGame>();
-            Debug.Log("transitioned to card game");
 
             #endregion
 
 
         }
 
-        else GameObject.Destroy(this);
+        else this.enabled = false;
     }
 
     
@@ -116,7 +121,7 @@ public class GameController : MonoBehaviour
        
 
 
-        _gameFSM.TransitionTo<Story>();
+        //_gameFSM.TransitionTo<Story>();
 
     }
 
@@ -133,9 +138,21 @@ public class GameController : MonoBehaviour
         
     }
 
+    public void LoadQuiz()
+    {
+        SceneManager.LoadScene(1);
+        _gameFSM.TransitionTo<PersonalityQuiz>();
+    }
+
+    public void LoadParty()
+    {
+        SceneManager.LoadScene(2);
+        _gameFSM.TransitionTo<Story>();
+    }
+
     public void LoadCardGame()
     {
-        SceneManager.LoadScene("CardEncounter");
+        SceneManager.LoadScene(3);
         _gameFSM.TransitionTo<CardGame>();
     }
 
@@ -160,6 +177,12 @@ public class GameController : MonoBehaviour
         flowchartGameObject.GetComponent<Fungus.Flowchart>().FindBlock(EvaluatePartyState());
     }
     
+    public void GetPartyFlowchart()
+    {
+        flowchartGameObject = GameObject.Find("Party Flowchart");
+        Object.DontDestroyOnLoad(flowchartGameObject);
+        flowchart = flowchartGameObject.GetComponent<Fungus.Flowchart>();
+    }
 }
 
 //GameControllerInspector
@@ -179,6 +202,42 @@ public class GameController : MonoBehaviour
 #endregion
 // This is where the States for the Game Controller Finite State Machine are.
 #region
+
+public class StartMenu : FiniteStateMachine<GameController>.State
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+}
+
+public class PersonalityQuiz : FiniteStateMachine<GameController>.State
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        if (GameController.partyDeck.allCards.Count == 7) Services.gameController.LoadParty();
+    }
+}
 //The state of the game during a Card Game. You shouldn't have to edit any of this.
 //The important thing is that an Encounter is created when you enter this state.
 public class CardGame : FiniteStateMachine<GameController>.State
@@ -249,10 +308,7 @@ public class Story : FiniteStateMachine<GameController>.State
 {
     public override void OnEnter()
     {
-        if (Services.gameController.flowchartGameObject == null)
-        {
-            Services.gameController.flowchartGameObject = GameObject.Find("Flowchart");
-        }
+       
 
         Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
         if (Services.gameController.nextBlock != null)
@@ -275,7 +331,10 @@ public class Story : FiniteStateMachine<GameController>.State
 
     public override void Update()
     {
-        base.Update();
+        if (Services.gameController.flowchartGameObject == null)
+        {
+            Services.gameController.GetPartyFlowchart();
+        }
     }
 }
 
