@@ -17,6 +17,7 @@ TagManager:
   - FF_Element
   - HandZone
   - Canvas
+  - Warren
   layers:
   - Default
   - TransparentFX

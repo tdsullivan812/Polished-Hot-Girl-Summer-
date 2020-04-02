@@ -15,10 +15,10 @@ public class DialogueTrigger : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        if (collision.gameObject.tag == "Meg")
+        if (collision.gameObject.tag == "Warren")
         {
-            Debug.Log("hit meg");
-            myFlowchart.ExecuteBlock("Meg Convo 1");
+            Debug.Log("hit warren");
+            myFlowchart.ExecuteBlock("Warren Buy Encounter");
         }
 
         if (collision.gameObject.tag == "Kelly")
