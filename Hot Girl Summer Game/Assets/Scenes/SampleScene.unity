@@ -1847,7 +1847,8 @@ MonoBehaviour:
   nameText: Warren
   nameColor: {r: 0.38039216, g: 0.16470589, b: 0.6627451, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: chill
@@ -6969,7 +6970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -2115, y: 485.5}
+  scrollPos: {x: -479, y: 349.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -6981,7 +6982,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1354138723}
+  - {fileID: 1354138774}
   selectedCommands: []
   variables:
   - {fileID: 1354138725}
@@ -7352,7 +7353,7 @@ MonoBehaviour:
   storyText: Enjoy your drink, bud!
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7395,7 +7396,7 @@ MonoBehaviour:
   storyText: Goin' for a chill night? I can relate.
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7424,7 +7425,7 @@ MonoBehaviour:
     got tequila and a shot glass. Whatcha feelin\u2019?"
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7452,7 +7453,7 @@ MonoBehaviour:
     with different drinks. You want anything?"
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7508,7 +7509,7 @@ MonoBehaviour:
     couple cans of Surge; I can whip up a Shirley Temple if you\u2019re feeling zesty, "
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8264,7 +8265,7 @@ MonoBehaviour:
   storyText: I guess we'll just have to discuss amphibians somewhere else.
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8291,7 +8292,7 @@ MonoBehaviour:
   storyText: Whatever...
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8318,7 +8319,7 @@ MonoBehaviour:
   storyText: Maybe I can tell you about my pet frog Flyswatter later.
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8345,7 +8346,7 @@ MonoBehaviour:
   storyText: Thanks for calming things down...
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8427,7 +8428,7 @@ MonoBehaviour:
   storyText: Can you keep it down?
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8454,7 +8455,7 @@ MonoBehaviour:
   storyText: I'm trying to have a conversation about frogs over here.
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8481,7 +8482,7 @@ MonoBehaviour:
   storyText: Why's this party so loud?
   description: 
   character: {fileID: 1834525790}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12236,7 +12237,7 @@ MonoBehaviour:
     later!
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12356,7 +12357,7 @@ MonoBehaviour:
     a little more...y\u2019know, mellow. Anything soundin\u2019 good?"
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12383,7 +12384,7 @@ MonoBehaviour:
   storyText: Enjoy your drink, bud!
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12427,7 +12428,7 @@ MonoBehaviour:
     muscles.
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12454,7 +12455,7 @@ MonoBehaviour:
   storyText: Enjoy your drink, bud!
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12497,7 +12498,7 @@ MonoBehaviour:
   storyText: 'Nice - gotta get pumped for party time, I feel you. '
   description: 
   character: {fileID: 313895990}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -15496,7 +15497,8 @@ MonoBehaviour:
   nameText: Kelly
   nameColor: {r: 0.15379138, g: 0.9056604, b: 0.6663969, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: chill
