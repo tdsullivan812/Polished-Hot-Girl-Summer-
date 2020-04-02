@@ -15,6 +15,11 @@ public class SelectCardFromMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+    }
+
+    public void UpdateCardsShown()
+    {
         for (int i = 0; i < numberOfCardsShown; i++)
         {
             cardsCurrentlyShown[i].transform.SetParent(gameObject.transform);

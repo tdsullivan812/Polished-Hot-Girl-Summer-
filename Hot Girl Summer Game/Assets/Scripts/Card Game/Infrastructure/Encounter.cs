@@ -17,6 +17,7 @@ public class Encounter
     public static GameObject endTurnButton;
     public static GameObject _selectACardMenu;
     public static GameObject    menuGrid;
+    public static GameObject cardDropZone;
 
     //Constants for managing Hand GUI
     /*
@@ -60,6 +61,7 @@ public class Encounter
             discardPileTransform = GameObject.Find("Discard Pile").transform;
             _selectACardMenu = GameObject.Find("Select A Card Menu");
             menuGrid = GameObject.Find("Card Zone");
+            cardDropZone = GameObject.Find("PlayableCardZone");
             _selectACardMenu.SetActive(false);
 
         }

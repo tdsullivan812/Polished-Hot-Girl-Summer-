@@ -38,6 +38,7 @@ public class Hand
         cardsInHand.Remove(cardToDiscard);
 
         cardToDiscard.cardGameObject.transform.SetParent(null);
+        cardToDiscard.cardGameObject.GetComponent<CardGUIEvents>().SendToDiscard();
         cardToDiscard.cardGameObject.SetActive(false);
 
         Encounter.playerDiscard.AddToDiscard(cardToDiscard);

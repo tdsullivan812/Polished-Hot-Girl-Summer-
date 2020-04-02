@@ -36,11 +36,12 @@ public class Kelly : NPC
     {
         
         Debug.Log("Kelly Effect");
-        Encounter.WaitForInput.whatAmIWaitingFor = SelectCardToRemove;
-        Encounter.cardGameFSM.TransitionTo<Encounter.WaitForInput>();
-        Encounter._selectACardMenu.SetActive(true);
+        //Encounter.WaitForInput.whatAmIWaitingFor = SelectCardToRemove;
+        //Encounter.cardGameFSM.TransitionTo<Encounter.WaitForInput>();
+        //Encounter._selectACardMenu.SetActive(true);
+        //Encounter.cardDropZone.SetActive(false);
         cardsInTheMenu = new List<Card>();
-        index = 0;
+        //index = 0;
         foreach (Card partyDeckCard in GameController.partyDeck.allCards)
         {
             if ((partyDeckCard.displayedInfo.type == Card.Vibes.Bubbly) || (partyDeckCard.displayedInfo.type == Card.Vibes.Hype))
@@ -50,6 +51,20 @@ public class Kelly : NPC
             }
 
         }
+
+        //Randomly Remove a card
+        Card randomSelection = cardsInTheMenu[Mathf.FloorToInt(Random.Range(0, cardsInTheMenu.Count))];
+        if (Encounter.playerDeck.cardsInDeck.Contains(randomSelection)) Encounter.playerDeck.RemoveFromDeck(randomSelection);
+        else if (Encounter.playerDiscard.cardsInDiscard.Contains(randomSelection)) Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
+        else
+        {
+            Encounter.playerHand.Discard(randomSelection);
+            Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
+            Object.Destroy(randomSelection.cardGameObject);
+
+        }
+        Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
+
     }
 
     public void SelectCardToRemove()
@@ -62,15 +77,16 @@ public class Kelly : NPC
             {
                 Encounter.playerHand.Discard(CardGUIEvents.cardSelectedByPlayer);
                 Encounter.playerDiscard.RemoveFromDiscard(CardGUIEvents.cardSelectedByPlayer);
+                Object.Destroy(CardGUIEvents.cardSelectedByPlayer.cardGameObject);
+
             }
             Encounter.menuGrid.transform.DetachChildren();
             CardGUIEvents.cardSelectedByPlayer = null;
             Encounter._selectACardMenu.SetActive(false);
+            Encounter.cardDropZone.SetActive(true);
             Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
             return;
         }
-
-        Debug.Log("Should be looping");
        
         
         foreach (Card cardInMenu in cardsInTheMenu)
@@ -85,7 +101,7 @@ public class Kelly : NPC
             Encounter.menuGrid.GetComponent<SelectCardFromMenu>().cardsCurrentlyShown[i] = cardsInTheMenu[index + i].cardGameObject;
             cardsInTheMenu[index + i].cardGameObject.SetActive(true);
         }
-
+        Encounter.menuGrid.GetComponent<SelectCardFromMenu>().UpdateCardsShown();
 
     }
 

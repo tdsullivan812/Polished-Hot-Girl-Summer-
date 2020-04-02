@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class CardGUIEvents : EventTrigger
 {
 
-    private Transform startingPosition;
+    private Vector3 startingPosition;
     public static RectTransform playableCardZone;
     public static Card cardSelectedByPlayer;
-    private static float sizeWhenHovering;
+    private static float sizeWhenHovering = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +49,7 @@ public class CardGUIEvents : EventTrigger
     public override void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Begin drag");
-        startingPosition = gameObject.transform;
+        startingPosition = gameObject.transform.localPosition;
     }
     public override void OnDrag(PointerEventData pointerEvent)
     {
@@ -80,7 +80,7 @@ public class CardGUIEvents : EventTrigger
             }
             else
             {
-                gameObject.transform.SetPositionAndRotation(startingPosition.position, Quaternion.identity);
+                gameObject.transform.SetPositionAndRotation(startingPosition, Quaternion.identity);
             }
         }
         
@@ -114,7 +114,7 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color = Color.Lerp(transparent, Color.white, parameter);
             //gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(transparent, Color.white, parameter);
             gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(currentTextColor, targetTextColor, parameter);
-            gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(1, sizeWhenHovering, parameter), 1);
+            //gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(1, sizeWhenHovering, parameter), 1);
 
             parameter += 0.01f;
             yield return null;
@@ -136,7 +136,7 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color = Color.Lerp(Color.white, transparent, parameter);
             //gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(Color.white, transparent, parameter);
             gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(currentTextColor, targetTextColor, parameter);
-            gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(sizeWhenHovering, 1, parameter), 1);
+            //gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(sizeWhenHovering, 1, parameter), 1);
 
             parameter += 0.01f;
             yield return null;
