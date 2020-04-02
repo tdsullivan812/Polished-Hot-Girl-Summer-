@@ -4795,6 +4795,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845754711}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &861736741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 188902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Name
+      value: SayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
 --- !u!1 &864588499
 GameObject:
   m_ObjectHideFlags: 0
@@ -6996,6 +7093,10 @@ GameObject:
   - component: {fileID: 1354138744}
   - component: {fileID: 1354138736}
   - component: {fileID: 1354138719}
+  - component: {fileID: 1354138896}
+  - component: {fileID: 1354138897}
+  - component: {fileID: 1354138898}
+  - component: {fileID: 1354138899}
   m_Layer: 0
   m_Name: Party Flowchart
   m_TagString: Untagged
@@ -7016,7 +7117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -479, y: 349.5}
+  scrollPos: {x: -1487, y: 337.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -7027,8 +7128,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1354138728}
+  selectedCommands:
+  - {fileID: 1354138732}
   variables:
   - {fileID: 1354138725}
   - {fileID: 1354138777}
@@ -7123,7 +7226,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1354138719
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7258,7 +7361,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2888.1775
     y: -143.44763
-    width: 165.2
+    width: 190
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7328,7 +7431,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3044.1775
     y: -39.44763
-    width: 168.4
+    width: 194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7383,8 +7486,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 2744.1775
-    y: -35.44763
-    width: 139.6
+    y: -31.447632
+    width: 156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7394,6 +7497,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1354138732}
+  - {fileID: 1354138899}
   - {fileID: 1354138746}
   - {fileID: 1354138745}
   - {fileID: 1354138743}
@@ -7483,8 +7587,7 @@ MonoBehaviour:
   itemId: 201
   indentLevel: 0
   storyText: "I gotcha! If you wanna take it easy, Beer is always a classic; I can
-    make you a Mai Tai if you wanna get funky, or, if you\u2019re tryna rage, I\u2019ve
-    got tequila and a shot glass. Whatcha feelin\u2019?"
+    make you a Mai Tai if you wanna get funky, or, if you\u2019re tryna rage,"
   description: 
   character: {fileID: 313895990}
   portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
@@ -7583,7 +7686,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1354138736
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7665,7 +7768,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3152.1775
     y: 204.55237
-    width: 152.4
+    width: 166
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7677,6 +7780,7 @@ MonoBehaviour:
   - {fileID: 1354138890}
   - {fileID: 1354138719}
   - {fileID: 1354138889}
+  - {fileID: 1354138898}
   - {fileID: 1354138888}
 --- !u!114 &1354138740
 MonoBehaviour:
@@ -7694,7 +7798,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2904.1775
     y: 212.55237
-    width: 181.2
+    width: 200
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7706,6 +7810,7 @@ MonoBehaviour:
   - {fileID: 1354138887}
   - {fileID: 1354138744}
   - {fileID: 1354138886}
+  - {fileID: 1354138897}
   - {fileID: 1354138885}
 --- !u!114 &1354138741
 MonoBehaviour:
@@ -7723,7 +7828,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2696.1775
     y: 204.55237
-    width: 142.8
+    width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7735,6 +7840,7 @@ MonoBehaviour:
   - {fileID: 1354138731}
   - {fileID: 1354138736}
   - {fileID: 1354138730}
+  - {fileID: 1354138896}
   - {fileID: 1354138729}
 --- !u!114 &1354138742
 MonoBehaviour:
@@ -7896,7 +8002,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 664.1775
     y: 533.2102
-    width: 130
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7978,7 +8084,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 562.504
     y: 648.2611
-    width: 123.6
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8007,7 +8113,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 779.2282
     y: 642.9098
-    width: 136.4
+    width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8278,7 +8384,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1271.5394
     y: 353.94464
-    width: 126.8
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8305,7 +8411,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1081.5723
     y: 359.29605
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8334,7 +8440,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1169.8658
     y: 265.64972
-    width: 120.4
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8471,7 +8577,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 990.601
     y: -74.15208
-    width: 133.2
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8498,7 +8604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 795.28156
     y: -71.7507
-    width: 120.4
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8607,7 +8713,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 867.523
     y: -141.0422
-    width: 126.8
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9409,7 +9515,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1935.8446
     y: 167.00098
-    width: 123.6
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9771,7 +9877,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1923.8446
     y: -70.99902
-    width: 133.2
+    width: 148
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10185,7 +10291,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1707.8446
     y: -68.99902
-    width: 120.4
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10564,7 +10670,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1823.8446
     y: -160.99902
-    width: 126.8
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10980,7 +11086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2031.8447
     y: 281.00098
-    width: 130
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11193,7 +11299,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1830.0447
     y: 277.00098
-    width: 120
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12205,7 +12311,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1497.5208
     y: 708.452
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12239,7 +12345,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1677.6383
     y: 709.0853
-    width: 126.8
+    width: 140
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12272,7 +12378,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1580.9512
     y: 616.73694
-    width: 120.4
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12737,6 +12843,114 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 240
+  indentLevel: 0
+  storyText: Warren gave you the 'Private Talk' Card!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 241
+  indentLevel: 0
+  storyText: Warren gave you the 'Joke' card!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 242
+  indentLevel: 0
+  storyText: Warren gave you the 'Get Pumped' card!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354138899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 243
+  indentLevel: 0
+  storyText: "I\u2019ve got tequila and a shot glass. Whatcha feelin\u2019?"
+  description: 
+  character: {fileID: 313895990}
+  portrait: {fileID: 21300000, guid: 446e9918683b955479660ed22159764d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
