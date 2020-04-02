@@ -15,6 +15,8 @@ public class Encounter
     public static GameObject cardGUI;
     public static FiniteStateMachine<Encounter> cardGameFSM;
     public static GameObject endTurnButton;
+    public static GameObject _selectACardMenu;
+    public static GameObject    menuGrid;
 
     //Constants for managing Hand GUI
     /*
@@ -56,6 +58,10 @@ public class Encounter
             cardGUI = GameObject.FindGameObjectWithTag("HandZone");
             endTurnButton = GameObject.Find("EndPlayerTurn");
             discardPileTransform = GameObject.Find("Discard Pile").transform;
+            _selectACardMenu = GameObject.Find("Select A Card Menu");
+            menuGrid = GameObject.Find("Card Zone");
+            _selectACardMenu.SetActive(false);
+
         }
     }
 
@@ -75,7 +81,7 @@ public class Encounter
         if (_isItPlayerTurn)
         {
             _isItPlayerTurn = false;
-            cardGameFSM.TransitionTo<NPCTurn>();
+            cardGameFSM.TransitionTo<NPCTurnBegin>();
         }
         else
         {
@@ -200,12 +206,31 @@ public class Encounter
         
     }
 
-    public class NPCTurn : FiniteStateMachine<Encounter>.State
+    public class NPCTurnBegin : FiniteStateMachine<Encounter>.State
     {
         public override void OnEnter()
         {
-            Services.encounter.OpponentEffect();
             
+            
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+        }
+
+        public override void Update()
+        {
+            Services.encounter.OpponentEffect();
+            //TransitionTo<NPCTurnEnd>();
+        }
+    }
+
+    public class NPCTurnEnd : FiniteStateMachine<Encounter>.State
+    {
+        public override void OnEnter()
+        {
+            base.OnEnter();
         }
 
         public override void OnExit()
@@ -218,6 +243,7 @@ public class Encounter
             npc.turnsExpired++;
             Services.encounter.ChangeTurn();
         }
+
     }
 
     public class WaitForInput : FiniteStateMachine<Encounter>.State
@@ -226,6 +252,7 @@ public class Encounter
         public static CheckingForInput whatAmIWaitingFor;
         public override void OnEnter()
         {
+            Debug.Log("waiting for input");
             CardGUIEvents.cardSelectedByPlayer = null;
             //Services.eventManager.Register<conditionToAdvance>(Encounter.cardGameFSM.StopWaitingForInput);
         }

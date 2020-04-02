@@ -5,7 +5,9 @@ using UnityEngine;
 public class Kelly : NPC
 {
     private GameObject _selectACardMenu;
-    private GameObject parentGameObject;
+    private GameObject menuGrid;
+    public int index;
+    protected List<Card> cardsInTheMenu;
 
 
     public Kelly()
@@ -17,14 +19,12 @@ public class Kelly : NPC
         failureMessage = "Kelly Unsolved";
         turnsExpired = 0;
 
-       // _selectACardMenu = GameObject.Find("GridOfCards");
-        //parentGameObject = GameObject.Find("SelectACard");
         //parentGameObject.SetActive(false);
     }
 
     public bool RequiredPoints()
     {
-        if (GameController.partyDeck.victoryPoints.totalPoints >= 16)
+        if (GameController.partyDeck.victoryPoints.totalPoints >= 25)
         {
             return true;
         }
@@ -34,27 +34,57 @@ public class Kelly : NPC
 
     public override void Effect()
     {
-        /*
+        
         Debug.Log("Kelly Effect");
         Encounter.WaitForInput.whatAmIWaitingFor = SelectCardToRemove;
         Encounter.cardGameFSM.TransitionTo<Encounter.WaitForInput>();
-        parentGameObject.SetActive(true);
+        Encounter._selectACardMenu.SetActive(true);
+        cardsInTheMenu = new List<Card>();
+        index = 0;
         foreach (Card partyDeckCard in GameController.partyDeck.allCards)
         {
-            if ((partyDeckCard.displayedInfo.type == (int)Card.Vibes.Bubbly) || (partyDeckCard.displayedInfo.type == (int)Card.Vibes.Hype))
+            if ((partyDeckCard.displayedInfo.type == Card.Vibes.Bubbly) || (partyDeckCard.displayedInfo.type == Card.Vibes.Hype))
             {
-                partyDeckCard.cardGameObject.transform.SetParent(_selectACardMenu.transform);
-                partyDeckCard.cardGameObject.SetActive(true);
-                var temporaryButton = partyDeckCard.cardGameObject.AddComponent<UnityEngine.UI.Button>();
-                temporaryButton.onClick.AddListener(SelectThisCard);
+                cardsInTheMenu.Add(partyDeckCard);
+               
             }
-        }*/
+
+        }
     }
 
     public void SelectCardToRemove()
     {
-        Card selectedCard;
+        if (CardGUIEvents.cardSelectedByPlayer != null && CardGUIEvents.cardSelectedByPlayer.cardGameObject.transform.parent == Encounter.menuGrid.transform)
+        {
+            if (Encounter.playerDeck.cardsInDeck.Contains(CardGUIEvents.cardSelectedByPlayer)) Encounter.playerDeck.RemoveFromDeck(CardGUIEvents.cardSelectedByPlayer);
+            else if (Encounter.playerDiscard.cardsInDiscard.Contains(CardGUIEvents.cardSelectedByPlayer)) Encounter.playerDiscard.RemoveFromDiscard(CardGUIEvents.cardSelectedByPlayer);
+            else
+            {
+                Encounter.playerHand.Discard(CardGUIEvents.cardSelectedByPlayer);
+                Encounter.playerDiscard.RemoveFromDiscard(CardGUIEvents.cardSelectedByPlayer);
+            }
+            Encounter.menuGrid.transform.DetachChildren();
+            CardGUIEvents.cardSelectedByPlayer = null;
+            Encounter._selectACardMenu.SetActive(false);
+            Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
+            return;
+        }
 
+        Debug.Log("Should be looping");
+       
+        
+        foreach (Card cardInMenu in cardsInTheMenu)
+        {
+            cardInMenu.cardGameObject.SetActive(false);
+        }
+        int numberOfCardsShown = (int)Mathf.Min(5, cardsInTheMenu.Count);
+        Encounter.menuGrid.GetComponent<SelectCardFromMenu>().numberOfCardsShown = numberOfCardsShown;
+
+        for (int i = 0; i < numberOfCardsShown; i++)
+        {
+            Encounter.menuGrid.GetComponent<SelectCardFromMenu>().cardsCurrentlyShown[i] = cardsInTheMenu[index + i].cardGameObject;
+            cardsInTheMenu[index + i].cardGameObject.SetActive(true);
+        }
 
 
     }
