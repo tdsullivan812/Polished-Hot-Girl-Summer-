@@ -30,7 +30,7 @@ public class Score_CardGame : MonoBehaviour //not tested! :D
         _sbCalm = sbVictoryPoints.calmPoints;
 
 
-        thisScoreboard.SetText("VP (Total): " + _sbTotal + " | Bubbly: " + _sbBubbly +
-            " | Hype: " + _sbHype + " | Calm: " + _sbCalm); //update score
+        thisScoreboard.SetText("VP (Total): " + _sbTotal + " |\nBubbly: " + _sbBubbly +
+            " |\nHype: " + _sbHype + " |\nCalm: " + _sbCalm); //update score
     }
 }
