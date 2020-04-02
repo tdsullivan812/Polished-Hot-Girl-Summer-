@@ -24,7 +24,7 @@ public class Kelly : NPC
 
     public bool RequiredPoints()
     {
-        if (GameController.partyDeck.victoryPoints.totalPoints >= 25)
+        if (GameController.partyDeck.victoryPoints.totalPoints >= 16)
         {
             return true;
         }
@@ -53,15 +53,18 @@ public class Kelly : NPC
         }
 
         //Randomly Remove a card
-        Card randomSelection = cardsInTheMenu[Mathf.FloorToInt(Random.Range(0, cardsInTheMenu.Count))];
-        if (Encounter.playerDeck.cardsInDeck.Contains(randomSelection)) Encounter.playerDeck.RemoveFromDeck(randomSelection);
-        else if (Encounter.playerDiscard.cardsInDiscard.Contains(randomSelection)) Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
-        else
+        if (cardsInTheMenu.Count > 0)
         {
-            Encounter.playerHand.Discard(randomSelection);
-            Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
-            Object.Destroy(randomSelection.cardGameObject);
+            Card randomSelection = cardsInTheMenu[Mathf.FloorToInt(Random.Range(0, cardsInTheMenu.Count))];
+            if (Encounter.playerDeck.cardsInDeck.Contains(randomSelection)) Encounter.playerDeck.RemoveFromDeck(randomSelection);
+            else if (Encounter.playerDiscard.cardsInDiscard.Contains(randomSelection)) Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
+            else
+            {
+                Encounter.playerHand.Discard(randomSelection);
+                Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
+                Object.Destroy(randomSelection.cardGameObject);
 
+            }
         }
         Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
 

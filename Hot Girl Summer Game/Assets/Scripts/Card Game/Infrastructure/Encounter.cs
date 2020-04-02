@@ -154,6 +154,7 @@ public class Encounter
             playerDeck.Draw();
             playerDeck.Draw();
             playerDeck.Draw();
+            playerDeck.Draw();
 
             Encounter.endTurnButton.SetActive(true);
 
