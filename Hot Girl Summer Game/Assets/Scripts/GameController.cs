@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class GameController : MonoBehaviour
 {
@@ -187,7 +189,8 @@ public class GameController : MonoBehaviour
 
 //GameControllerInspector
 #region
-    [CustomEditor(typeof(GameController))]
+#if UNITY_EDITOR
+[CustomEditor(typeof(GameController))]
     public class GCInspector : Editor
 {
     public override void OnInspectorGUI()
@@ -198,6 +201,7 @@ public class GameController : MonoBehaviour
 
     }
 }
+#endif
 
 #endregion
 // This is where the States for the Game Controller Finite State Machine are.
