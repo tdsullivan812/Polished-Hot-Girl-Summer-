@@ -17,4 +17,10 @@ public class StartGame : MonoBehaviour
         Services.gameController.LoadQuiz();
 
     }
+
+    public void testPlay()
+    {
+        //SceneManager.LoadScene(2);
+        Services.gameController.LoadParty();
+    }
 }
