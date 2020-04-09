@@ -3270,7 +3270,8 @@ MonoBehaviour:
   nameText: Heather
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: dcb5f230c55f6e84c9f077f6dd33f224, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: buy
@@ -7537,6 +7538,7 @@ GameObject:
   - component: {fileID: 1354139084}
   - component: {fileID: 1354139083}
   - component: {fileID: 1354139082}
+  - component: {fileID: 1354139111}
   m_Layer: 0
   m_Name: Party Flowchart
   m_TagString: Untagged
@@ -7557,7 +7559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 431.86627, y: 420.92725}
+  scrollPos: {x: -2456.1338, y: 516.92725}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -7569,9 +7571,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1354139019}
+  - {fileID: 1354139075}
   selectedCommands:
-  - {fileID: 1354139015}
+  - {fileID: 1354139062}
   variables:
   - {fileID: 1354138725}
   - {fileID: 1354138777}
@@ -7788,7 +7790,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 892.2571
     y: 30.624756
-    width: 125.2
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7823,7 +7825,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2888.1775
     y: -143.44763
-    width: 171.6
+    width: 190
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7893,7 +7895,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3044.1775
     y: -39.44763
-    width: 173.2
+    width: 194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7949,7 +7951,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2744.1775
     y: -31.447632
-    width: 142.8
+    width: 156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8230,7 +8232,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3152.1775
     y: 204.55237
-    width: 154
+    width: 166
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8260,7 +8262,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2904.1775
     y: 212.55237
-    width: 181.2
+    width: 200
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8290,7 +8292,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2696.1775
     y: 204.55237
-    width: 146
+    width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8438,7 +8440,7 @@ MonoBehaviour:
   storyText: Can you play something that we can actually, like, dance to?
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8462,9 +8464,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 660.1775
-    y: 533.2102
-    width: 130
+    x: 656.1775
+    y: 529.2102
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8496,7 +8498,7 @@ MonoBehaviour:
   storyText: 'It''s SO last year. '
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8523,7 +8525,7 @@ MonoBehaviour:
   storyText: What's this music?
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8549,7 +8551,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 562.504
     y: 648.2611
-    width: 122
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8576,9 +8578,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 779.2282
+    x: 783.2282
     y: 642.9098
-    width: 136.4
+    width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8607,7 +8609,7 @@ MonoBehaviour:
   storyText: I'm gonna go find some beer or something... to make this bearable.
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8634,7 +8636,7 @@ MonoBehaviour:
   storyText: 'Oh, as IF. '
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8661,7 +8663,7 @@ MonoBehaviour:
   storyText: Meet me by the pool later for shots, if you want!
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8688,7 +8690,7 @@ MonoBehaviour:
   storyText: Now THIS is more like it!
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8715,7 +8717,7 @@ MonoBehaviour:
   storyText: Oh, snap!
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8742,7 +8744,7 @@ MonoBehaviour:
   storyText: Come on, work with me here.
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8769,7 +8771,7 @@ MonoBehaviour:
   storyText: Or maybe truth or dare?
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8796,7 +8798,7 @@ MonoBehaviour:
   storyText: Anyone wanna play quarters?
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8823,7 +8825,7 @@ MonoBehaviour:
   storyText: 'I''m bored. '
   description: 
   character: {fileID: 814338554}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8849,7 +8851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1271.5394
     y: 353.94464
-    width: 128.4
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8876,7 +8878,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1077.5723
     y: 359.29605
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8905,7 +8907,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1185.8658
     y: 245.64972
-    width: 122
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9045,7 +9047,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 990.601
     y: -74.15208
-    width: 131.6
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9072,7 +9074,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 795.28156
     y: -71.7507
-    width: 120
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9181,7 +9183,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 867.52295
     y: -177.0422
-    width: 125.2
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9257,7 +9259,7 @@ MonoBehaviour:
   storyText: I heard Ashley hired a DJ for HER party...
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9284,7 +9286,7 @@ MonoBehaviour:
   storyText: This music is HELLA lame.
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9311,7 +9313,7 @@ MonoBehaviour:
   storyText: Oh, dunk...
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9338,7 +9340,7 @@ MonoBehaviour:
   storyText: Catch me on the dance floor later if you want to see me tear it up!
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9365,7 +9367,7 @@ MonoBehaviour:
   storyText: This is my JAM!
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9392,7 +9394,7 @@ MonoBehaviour:
   storyText: Oh dunk!
   description: 
   character: {fileID: 1673565331}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9641,7 +9643,7 @@ MonoBehaviour:
   storyText: Can you get more people dancing?
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9668,7 +9670,7 @@ MonoBehaviour:
   storyText: But there aren't enough people on the dance floor.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9695,7 +9697,7 @@ MonoBehaviour:
   storyText: I was hoping to impress someone special with my moves...
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9722,7 +9724,7 @@ MonoBehaviour:
   storyText: Hey, I wanted to talk to you!
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9813,7 +9815,7 @@ MonoBehaviour:
   storyText: And there are so many cool people I wanna dance with!
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9840,7 +9842,7 @@ MonoBehaviour:
   storyText: Is there someplace quiet I can sit and recharge?
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9867,7 +9869,7 @@ MonoBehaviour:
   storyText: But I think I could use a break soon.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9894,7 +9896,7 @@ MonoBehaviour:
   storyText: Hey, I love these tunes!
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -9984,7 +9986,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1931.8446
     y: 167.00098
-    width: 123.6
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10027,7 +10029,7 @@ MonoBehaviour:
   storyText: If more people were dancing, maybe I could've...
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10054,7 +10056,7 @@ MonoBehaviour:
   storyText: I DON'T HAVE DOPE MOVES LIKE LEON.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10081,7 +10083,7 @@ MonoBehaviour:
   storyText: It's like Kelly is INFECTING everyone at this party with LAMENESS.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10108,7 +10110,7 @@ MonoBehaviour:
   storyText: I CAN'T DO IT.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10199,7 +10201,7 @@ MonoBehaviour:
   storyText: UGH.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10353,7 +10355,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1923.8446
     y: -70.99902
-    width: 133.2
+    width: 148
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10387,7 +10389,7 @@ MonoBehaviour:
   storyText: Wish me luck, homie!
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10414,7 +10416,7 @@ MonoBehaviour:
   storyText: I'm gonna ask Leon if he wants to dance.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10441,7 +10443,7 @@ MonoBehaviour:
   storyText: Let's find out!
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10468,7 +10470,7 @@ MonoBehaviour:
   storyText: I'm thinking 40 seconds AT LEAST.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10495,7 +10497,7 @@ MonoBehaviour:
   storyText: How long do you think I can kegstand for?
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10586,7 +10588,7 @@ MonoBehaviour:
   storyText: ALL RIGHT. YOU'VE CONVINCED ME.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10677,7 +10679,7 @@ MonoBehaviour:
   storyText: HELL YEAH.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10767,7 +10769,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1707.8446
     y: -68.99902
-    width: 120
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10803,7 +10805,7 @@ MonoBehaviour:
   storyText: I wanna join him on the dance floor, but I'm so nervous!
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10830,7 +10832,7 @@ MonoBehaviour:
   storyText: He's FINE.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10857,7 +10859,7 @@ MonoBehaviour:
   storyText: I can't believe you got Leon to come!
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10884,7 +10886,7 @@ MonoBehaviour:
   storyText: Oh man, this party is WICKED.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10975,7 +10977,7 @@ MonoBehaviour:
   storyText: I came here to get PUMPED. You got a keg around here or something?
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11002,7 +11004,7 @@ MonoBehaviour:
   storyText: So weird.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11029,7 +11031,7 @@ MonoBehaviour:
   storyText: 'And the FROG thing. '
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11056,7 +11058,7 @@ MonoBehaviour:
   storyText: GOD, WHY IS MY SISTER SUCH A BUZZKILL.
   description: 
   character: {fileID: 2073461768}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11146,7 +11148,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1819.8446
     y: -160.99902
-    width: 126.8
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11253,7 +11255,7 @@ MonoBehaviour:
   storyText: Looks like more people wanna dance now!
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11280,7 +11282,7 @@ MonoBehaviour:
   storyText: Nice moves!
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11307,7 +11309,7 @@ MonoBehaviour:
   storyText: I'll go sit on the porch for a minute to mellow out.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11334,7 +11336,7 @@ MonoBehaviour:
   storyText: I'll just wait to see if the dance floor gets lively later, I guess.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11361,7 +11363,7 @@ MonoBehaviour:
   storyText: Maybe I'll just peace out early.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11388,7 +11390,7 @@ MonoBehaviour:
   storyText: Hey, don't worry about it...
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11479,7 +11481,7 @@ MonoBehaviour:
   storyText: Uh, it's kind of too loud everywhere.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11569,7 +11571,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2031.8447
     y: 281.00098
-    width: 130
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11601,7 +11603,7 @@ MonoBehaviour:
   storyText: Oh, sweet!
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11692,7 +11694,7 @@ MonoBehaviour:
   storyText: Oh, thanks so much.
   description: 
   character: {fileID: 1757336787}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11782,7 +11784,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1830.0447
     y: 277.00098
-    width: 120
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11816,7 +11818,7 @@ MonoBehaviour:
   storyText: Go away. You're no help.
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11843,7 +11845,7 @@ MonoBehaviour:
   storyText: W T F?
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11870,7 +11872,7 @@ MonoBehaviour:
   storyText: Uhh...
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11961,7 +11963,7 @@ MonoBehaviour:
   storyText: 'Totally lame. '
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11988,7 +11990,7 @@ MonoBehaviour:
   storyText: This isn't making them more chill.
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12015,7 +12017,7 @@ MonoBehaviour:
   storyText: Um, I don't know if you noticed?
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12106,7 +12108,7 @@ MonoBehaviour:
   storyText: They'll love this party!
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12133,7 +12135,7 @@ MonoBehaviour:
   storyText: Raf never turns down a good competition.
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12160,7 +12162,7 @@ MonoBehaviour:
   storyText: Then maybe we'll get some drinks or hit the dancefloor!
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12187,7 +12189,7 @@ MonoBehaviour:
   storyText: I think I can make my way to Raf now.
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12214,7 +12216,7 @@ MonoBehaviour:
   storyText: Oh, nice!
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12305,7 +12307,7 @@ MonoBehaviour:
   storyText: 'Thanks! '
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12396,7 +12398,7 @@ MonoBehaviour:
   storyText: I want to ask them something!
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12424,7 +12426,7 @@ MonoBehaviour:
     up?
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12451,7 +12453,7 @@ MonoBehaviour:
   storyText: But they seem sort of down, or maybe just bored....
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12478,7 +12480,7 @@ MonoBehaviour:
   storyText: I like like Rafael!
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12505,7 +12507,7 @@ MonoBehaviour:
   storyText: Don't tell anyone, but.......
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12532,7 +12534,7 @@ MonoBehaviour:
   storyText: Hey, so.......
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12623,7 +12625,7 @@ MonoBehaviour:
   storyText: Could you like, get them to chill out?
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12650,7 +12652,7 @@ MonoBehaviour:
   storyText: It's a little too rowdy though -- I'm not able to push through the crowd.
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12677,7 +12679,7 @@ MonoBehaviour:
   storyText: I thought I saw them with Meg over by the pool?
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12704,7 +12706,7 @@ MonoBehaviour:
   storyText: Hey, have you seen Rafael anywhere?
   description: 
   character: {fileID: 1917765027}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12794,7 +12796,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1497.5208
     y: 708.452
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12828,7 +12830,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1677.6383
     y: 709.0853
-    width: 128.4
+    width: 140
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12861,7 +12863,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1580.9512
     y: 616.73694
-    width: 122
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14909,7 +14911,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 660.2571
     y: 758.62476
-    width: 130
+    width: 148
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15439,7 +15441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1152.2571
     y: 446.62476
-    width: 122
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15997,7 +15999,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1786.5408
     y: 800.6835
-    width: 162
+    width: 184
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16778,7 +16780,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1343.1409
     y: 802.6835
-    width: 122
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17171,7 +17173,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2118.5408
     y: 380.68347
-    width: 163.6
+    width: 190
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17689,7 +17691,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1691.1409
     y: 378.68347
-    width: 123.6
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18194,7 +18196,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2090.5408
     y: 16.683472
-    width: 166.8
+    width: 192
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18699,7 +18701,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1592.2571
     y: 14.624756
-    width: 126.8
+    width: 144
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18761,7 +18763,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3601.7305
     y: -118.901245
-    width: 120.4
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18815,7 +18817,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3821.7305
     y: -110.901245
-    width: 139.6
+    width: 154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18910,7 +18912,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3753.7305
     y: -14.901245
-    width: 141.2
+    width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18938,7 +18940,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3585.7305
     y: -14.901245
-    width: 136.4
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18966,7 +18968,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3413.7305
     y: -18.901245
-    width: 142.8
+    width: 154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19049,7 +19051,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3585.7305
     y: -318.90125
-    width: 171.6
+    width: 194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19297,7 +19299,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4642.7666
     y: -129.92993
-    width: 144.4
+    width: 156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19321,8 +19323,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 4291.337
-    y: -133.87848
-    width: 141.2
+    y: -129.87848
+    width: 154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19350,7 +19352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4461.129
     y: -129.9299
-    width: 122
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19378,7 +19380,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4121.545
     y: -129.92993
-    width: 154
+    width: 166
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19505,11 +19507,10 @@ MonoBehaviour:
   itemId: 393
   indentLevel: 0
   storyText: "Ohmigod, I\u2019m so sorry! Someone just finished off the last of the
-    Eggplant Ranch chips & dip I made. And you\u2019re hosting too\u2026 oooh, I\u2019ll
-    make it up to you! What kind of snacks do you like?"
+    Eggplant Ranch chips & dip I made. "
   description: 
   character: {fileID: 593562309}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: dcb5f230c55f6e84c9f077f6dd33f224, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -19535,7 +19536,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4284.704
     y: -374.38794
-    width: 176.4
+    width: 196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19545,6 +19546,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1354139050}
+  - {fileID: 1354139111}
   - {fileID: 1354139049}
   - {fileID: 1354139046}
   - {fileID: 1354139047}
@@ -19807,8 +19809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 421
   indentLevel: 0
-  storyText: "Yeah no one would see that coming! You wouldn\u2019t know it, but I\u2019m
-    super graceful in the air. Like a gazelle."
+  storyText: "Yeah, no one would see that coming! You wouldn\u2019t know it, but
+    I\u2019m super graceful in the air. Like a gazelle."
   description: 
   character: {fileID: 1083872781}
   portrait: {fileID: 0}
@@ -19883,7 +19885,7 @@ MonoBehaviour:
     take a napkin!"
   description: 
   character: {fileID: 593562309}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: dcb5f230c55f6e84c9f077f6dd33f224, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -19909,7 +19911,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Heather gave you the Dance card!
   description: 
-  character: {fileID: 593562309}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -19954,8 +19956,8 @@ MonoBehaviour:
   storyText: "You love dessert too? Saaame! What do you say we \u2018boogie\u2019
     together on the dance floor?"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 593562309}
+  portrait: {fileID: 21300000, guid: dcb5f230c55f6e84c9f077f6dd33f224, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -20026,7 +20028,7 @@ MonoBehaviour:
   storyText: "Ooh, classy as always! I think we still have a little salami\u2026"
   description: 
   character: {fileID: 593562309}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: dcb5f230c55f6e84c9f077f6dd33f224, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -20052,7 +20054,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4365.945
     y: 356.03345
-    width: 134.8
+    width: 146
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20077,7 +20079,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4074.1135
     y: 390.69327
-    width: 174.8
+    width: 196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20105,7 +20107,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3876.7278
     y: 359.70477
-    width: 123.6
+    width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20133,7 +20135,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3671.396
     y: 351.8075
-    width: 147.6
+    width: 160
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20260,7 +20262,7 @@ MonoBehaviour:
   itemId: 403
   indentLevel: 0
   storyText: "Jamie dared me to make a high dive, clothes on\u2026 I gotta steal
-    the show somehow! What kind of dive should I do"
+    the show somehow! What kind of dive should I do?"
   description: 
   character: {fileID: 1083872781}
   portrait: {fileID: 0}
@@ -20287,9 +20289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 3762.2153
-    y: 217.5528
-    width: 166.8
+    x: 3754.2153
+    y: 221.5528
+    width: 186
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21011,7 +21013,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 56.13379
     y: -72.92731
-    width: 146
+    width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21023,6 +21025,34 @@ MonoBehaviour:
   - {fileID: 1354139109}
   - {fileID: 1354139108}
   - {fileID: 1354139107}
+--- !u!114 &1354139111
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 469
+  indentLevel: 0
+  storyText: "And you\u2019re hosting too\u2026 oooh, I\u2019ll make it up to you!
+    What kind of snacks do you like?"
+  description: 
+  character: {fileID: 593562309}
+  portrait: {fileID: 21300000, guid: dcb5f230c55f6e84c9f077f6dd33f224, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1362125090
 GameObject:
   m_ObjectHideFlags: 0
@@ -22314,7 +22344,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1550522459
