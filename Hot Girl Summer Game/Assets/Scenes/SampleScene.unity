@@ -7446,6 +7446,28 @@ GameObject:
   - component: {fileID: 1354138959}
   - component: {fileID: 1354138958}
   - component: {fileID: 1354138956}
+  - component: {fileID: 1354139032}
+  - component: {fileID: 1354139031}
+  - component: {fileID: 1354139029}
+  - component: {fileID: 1354139028}
+  - component: {fileID: 1354139027}
+  - component: {fileID: 1354139024}
+  - component: {fileID: 1354139023}
+  - component: {fileID: 1354139022}
+  - component: {fileID: 1354139021}
+  - component: {fileID: 1354139041}
+  - component: {fileID: 1354139040}
+  - component: {fileID: 1354139039}
+  - component: {fileID: 1354139038}
+  - component: {fileID: 1354139037}
+  - component: {fileID: 1354139036}
+  - component: {fileID: 1354139026}
+  - component: {fileID: 1354139035}
+  - component: {fileID: 1354139034}
+  - component: {fileID: 1354139025}
+  - component: {fileID: 1354139033}
+  - component: {fileID: 1354139030}
+  - component: {fileID: 1354139020}
   m_Layer: 0
   m_Name: Party Flowchart
   m_TagString: Untagged
@@ -7466,7 +7488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 381.45923, y: 419.31653}
+  scrollPos: {x: -1417.7305, y: 770.90125}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -7477,8 +7499,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1354139027}
+  selectedCommands:
+  - {fileID: 1354139020}
   variables:
   - {fileID: 1354138725}
   - {fileID: 1354138777}
@@ -7695,7 +7719,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 892.2571
     y: 30.624756
-    width: 142
+    width: 126.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7730,7 +7754,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2888.1775
     y: -143.44763
-    width: 190
+    width: 165.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7800,7 +7824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3044.1775
     y: -39.44763
-    width: 194
+    width: 168.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7856,7 +7880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2744.1775
     y: -31.447632
-    width: 156
+    width: 139.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8137,7 +8161,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3152.1775
     y: 204.55237
-    width: 166
+    width: 152.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8167,7 +8191,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2904.1775
     y: 212.55237
-    width: 200
+    width: 181.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8197,7 +8221,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2696.1775
     y: 204.55237
-    width: 158
+    width: 142.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8371,7 +8395,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 664.1775
     y: 533.2102
-    width: 142
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8454,7 +8478,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 562.504
     y: 648.2611
-    width: 136
+    width: 123.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8483,7 +8507,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 779.2282
     y: 642.9098
-    width: 152
+    width: 136.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8754,7 +8778,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1271.5394
     y: 353.94464
-    width: 142
+    width: 126.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8781,7 +8805,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1081.5723
     y: 359.29605
-    width: 126
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8808,9 +8832,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1169.8658
-    y: 265.64972
-    width: 132
+    x: 1181.8658
+    y: 245.64972
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8948,7 +8972,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 990.601
     y: -74.15208
-    width: 146
+    width: 133.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8975,7 +8999,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 795.28156
     y: -71.7507
-    width: 130
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9084,7 +9108,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 867.52295
     y: -177.0422
-    width: 136
+    width: 126.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9887,7 +9911,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1935.8446
     y: 167.00098
-    width: 136
+    width: 123.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10252,7 +10276,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1923.8446
     y: -70.99902
-    width: 148
+    width: 133.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10666,7 +10690,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1707.8446
     y: -68.99902
-    width: 132
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11045,7 +11069,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1823.8446
     y: -160.99902
-    width: 138
+    width: 126.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11464,7 +11488,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2031.8447
     y: 281.00098
-    width: 146
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11677,7 +11701,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1830.0447
     y: 277.00098
-    width: 130
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12689,7 +12713,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1497.5208
     y: 708.452
-    width: 124
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12723,7 +12747,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1677.6383
     y: 709.0853
-    width: 140
+    width: 126.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12756,7 +12780,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1580.9512
     y: 616.73694
-    width: 130
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14800,7 +14824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 660.2571
     y: 758.62476
-    width: 148
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15330,7 +15354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1152.2571
     y: 446.62476
-    width: 138
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15888,7 +15912,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1786.5408
     y: 800.6835
-    width: 184
+    width: 162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16669,7 +16693,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1343.1409
     y: 802.6835
-    width: 136
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17062,7 +17086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2118.5408
     y: 380.68347
-    width: 190
+    width: 165.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17580,7 +17604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1691.1409
     y: 378.68347
-    width: 142
+    width: 123.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18085,7 +18109,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2090.5408
     y: 16.683472
-    width: 192
+    width: 168.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18589,7 +18613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1592.2571
     y: 14.624756
-    width: 144
+    width: 126.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18608,6 +18632,569 @@ MonoBehaviour:
   - {fileID: 1354139015}
   - {fileID: 1354139014}
   - {fileID: 1354139013}
+--- !u!114 &1354139020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 389
+  indentLevel: 0
+  storyText: Frankie gave you the 'Encourage' Card!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139021
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 3601.7305
+    y: -118.901245
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 375
+  blockName: Frankie Card
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1354139038}
+  - {fileID: 1354139041}
+  - {fileID: 1354139040}
+  - {fileID: 1354139039}
+--- !u!114 &1354139022
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 374
+  indentLevel: 0
+  text: "I\u2019m down!"
+  description: 
+  targetBlock: {fileID: 1354139021}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1354139023
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 3821.7305
+    y: -114.901245
+    width: 136.4
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 373
+  blockName: Frankie No Card
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &1354139024
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 372
+  indentLevel: 0
+  text: "I\u2019ll pass for now. Have fun!"
+  description: 
+  targetBlock: {fileID: 1354139023}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1354139025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 386
+  indentLevel: 0
+  targetObject: {fileID: 420017929}
+  methodName: AddEncourage
+  delay: 0
+--- !u!114 &1354139026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 383
+  indentLevel: 0
+  storyText: "Haha, nice! I was hoping I\u2019d get to show off tonight. Don\u2019t
+    worry, I\u2019ll go easy on you."
+  description: 
+  character: {fileID: 1239490644}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139027
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 3753.7305
+    y: -14.901245
+    width: 142.8
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 369
+  blockName: Hype- Volleyball
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1354139026}
+  - {fileID: 1354139025}
+  - {fileID: 1354139020}
+--- !u!114 &1354139028
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 3585.7305
+    y: -14.901245
+    width: 136.4
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 368
+  blockName: Bubbly- Frisbee
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1354139036}
+  - {fileID: 1354139034}
+  - {fileID: 1354139030}
+--- !u!114 &1354139029
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 3413.7305
+    y: -18.901245
+    width: 146
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 367
+  blockName: Calm- BeanBags
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1354139037}
+  - {fileID: 1354139035}
+  - {fileID: 1354139033}
+--- !u!114 &1354139030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 388
+  indentLevel: 0
+  storyText: Frankie gave you the 'Compliment' Card!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139031
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 365
+  indentLevel: 0
+  storyText: Killer party so far! Me and Cori were about to get that blood pumping
+    with a quick game in the yard. Do you and Meg want to jump in?
+  description: 
+  character: {fileID: 1239490644}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139032
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 3585.7305
+    y: -318.90125
+    width: 168.4
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 364
+  blockName: Frankie Buy Encounter
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1354139031}
+  - {fileID: 1354139022}
+  - {fileID: 1354139024}
+--- !u!114 &1354139033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 387
+  indentLevel: 0
+  storyText: Frankie gave you the 'Chat' Card!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 385
+  indentLevel: 0
+  targetObject: {fileID: 420017929}
+  methodName: AddCompliment
+  delay: 0
+--- !u!114 &1354139035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 384
+  indentLevel: 0
+  targetObject: {fileID: 420017929}
+  methodName: AddChat
+  delay: 0
+--- !u!114 &1354139036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 382
+  indentLevel: 0
+  storyText: "It\u2019s been a super long time since I\u2019ve tossed around one
+    of these... don\u2019t laugh when I get hit in the face!"
+  description: 
+  character: {fileID: 1239490644}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139037
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 381
+  indentLevel: 0
+  storyText: "Oh, that\u2019s cool, I guess. Well, as long as Meg\u2019s around,
+    it\u2019ll still be a blast!"
+  description: 
+  character: {fileID: 1239490644}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139038
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 380
+  indentLevel: 0
+  storyText: "Hell yeah! What are you thinking?  Looks like you\u2019ve got stuff
+    for frisbee and, of course, volleyball! Oh and, uh, bean bags too, I guess."
+  description: 
+  character: {fileID: 1239490644}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1354139039
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 379
+  indentLevel: 0
+  text: Volleyball
+  description: 
+  targetBlock: {fileID: 1354139027}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1354139040
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 378
+  indentLevel: 0
+  text: Frisbee
+  description: 
+  targetBlock: {fileID: 1354139028}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1354139041
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 377
+  indentLevel: 0
+  text: Bean Bag Toss
+  description: 
+  targetBlock: {fileID: 1354139029}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &1362125090
 GameObject:
   m_ObjectHideFlags: 0
@@ -20579,9 +21166,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1627032789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: f3d95af3c1729234d974f710d4978ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowchart: {fileID: 1354138715}
+  hype:
+    variable: {fileID: 0}
+  bubbly:
+    variable: {fileID: 0}
+  chill:
+    variable: {fileID: 0}
 --- !u!4 &1627032791
 Transform:
   m_ObjectHideFlags: 0

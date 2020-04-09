@@ -335,6 +335,7 @@ public class Story : FiniteStateMachine<GameController>.State
 
     public override void Update()
     {
+
         if (Services.gameController.flowchartGameObject == null)
         {
             Services.gameController.GetPartyFlowchart();
