@@ -7557,7 +7557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -684.1338, y: 360.9273}
+  scrollPos: {x: 515.8662, y: 232.9273}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -7568,8 +7568,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1354139052}
+  selectedCommands:
+  - {fileID: 1354139101}
   variables:
   - {fileID: 1354138725}
   - {fileID: 1354138777}
@@ -20692,7 +20694,7 @@ MonoBehaviour:
   text: Rafael (buy encounter)
   description: 
   targetBlock: {fileID: 1354139081}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20717,7 +20719,7 @@ MonoBehaviour:
   text: Heather (buy encounter)
   description: 
   targetBlock: {fileID: 1354139051}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20742,7 +20744,7 @@ MonoBehaviour:
   text: Frankie (buy encounter)
   description: 
   targetBlock: {fileID: 1354139032}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20792,7 +20794,7 @@ MonoBehaviour:
   text: Cori (card game encounter)
   description: 
   targetBlock: {fileID: 1354138877}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20817,7 +20819,7 @@ MonoBehaviour:
   text: Leon (card game encounter)
   description: 
   targetBlock: {fileID: 1354138799}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20842,7 +20844,7 @@ MonoBehaviour:
   text: Jamie (card game encounter)
   description: 
   targetBlock: {fileID: 1354138748}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20867,7 +20869,7 @@ MonoBehaviour:
   text: Cody (card game encounter)
   description: 
   targetBlock: {fileID: 1354138830}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -20892,7 +20894,7 @@ MonoBehaviour:
   text: Meg (card game encounter)
   description: 
   targetBlock: {fileID: 1354138764}
-  hideIfVisited: 1
+  hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
