@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.19607843, g: 0, b: 0.4627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -749,7 +749,7 @@ MonoBehaviour:
   punchObject: {fileID: 188900}
   writingSpeed: 60
   punctuationPause: 0.25
-  hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
+  hiddenTextColor: {r: 0.2784314, g: 0.043137256, b: 0.6, a: 0}
   writeWholeWords: 0
   forceRichText: 1
   instantComplete: 1
