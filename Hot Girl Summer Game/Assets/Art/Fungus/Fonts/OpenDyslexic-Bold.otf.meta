@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 164ce8c9a9a40b54fb8c77e5e830d7b2
+guid: e901ab6a25d335840a97d2ae07856b77
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -12,8 +12,8 @@ TrueTypeFontImporter:
   fontNames:
   - OpenDyslexic
   fallbackFontReferences:
-  - {fileID: 12800000, guid: e37190208e0b42a4aa88d4b04c6d72bb, type: 3}
-  - {fileID: 12800000, guid: 25cfa8ea2d733c046902d3366b64381e, type: 3}
+  - {fileID: 12800000, guid: c392c544be777204482a65513a65522a, type: 3}
+  - {fileID: 12800000, guid: e7f45efd76865a041a98755e7696db51, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
