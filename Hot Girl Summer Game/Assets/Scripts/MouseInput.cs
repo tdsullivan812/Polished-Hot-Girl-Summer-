@@ -9,6 +9,7 @@ public class MouseInput : MonoBehaviour
     public Vector3 cameraZMovementIncrement;
     public Camera mainCamera;
     private Vector3 screenMidpoint;
+    private int currentLayerMask;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +47,16 @@ public class MouseInput : MonoBehaviour
     void DisableForeground()
     {
         RaycastHit hit;
-        Physics.Raycast(mainCamera.ScreenPointToRay(screenMidpoint), out hit, Mathf.Infinity, 1<<9);
-        hit.collider.gameObject.SetActive(false);
+        if (Physics.Raycast(mainCamera.ScreenPointToRay(screenMidpoint), out hit, Mathf.Infinity, 1 << 9))
+        {
+            hit.collider.gameObject.SetActive(false);
+        }
+        else
+        {
+
+        }
+
+        //GameObject.findob
+       
     }
 }
