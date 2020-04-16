@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class MouseInput : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class MouseInput : MonoBehaviour
     private float currentForegroundAlpha;
     private float foregroundAlphaIncrement;
     private GameObject[] foregroundObjects;
+    public string[] arrayOfBuyEncounters;
+    public string[] arrayOfCardEncounters;
+    public Fungus.Flowchart flowchart;
+    private List<string> listOfBuyEncounters;
+    private List<string> listOfCardEncounters;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +29,8 @@ public class MouseInput : MonoBehaviour
         currentForegroundAlpha = 1.0f;
         foregroundAlphaIncrement = 0.01f;
         foregroundObjects = GameObject.FindGameObjectsWithTag("Env_Foreground");
+        listOfBuyEncounters = new List<string>(arrayOfBuyEncounters);
+        listOfCardEncounters = new List<string>(arrayOfCardEncounters);
 
     }
 
@@ -60,7 +69,16 @@ public class MouseInput : MonoBehaviour
             }
         }
 
-        //DisableForeground();
+        if (currentForegroundAlpha <= 0.05f)
+        {
+            foreach (GameObject foreground in foregroundObjects) foreground.SetActive(false);
+        }
+        else if (!foregroundObjects[0].active)
+        {
+            foreach (GameObject foreground in foregroundObjects) foreground.SetActive(true);
+        }
+
+        ClickOnNPC();
     }
 
     /*
@@ -84,4 +102,23 @@ public class MouseInput : MonoBehaviour
     {
 
     }
+
+    void ClickOnNPC()
+    { /*
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            Physics.Raycast(Input.mousePosition, Vector3.forward, out hit, Mathf.Infinity);
+            string NPCTag = hit.collider.gameObject.tag;
+            if (listOfBuyEncounters.Contains(NPCTag))
+            {
+                flowchart.ExecuteBlock(NPCTag + " Buy Encounter");
+            }
+            else if (listOfCardEncounters.Contains(NPCTag))
+            {
+                flowchart.ExecuteBlock(NPCTag + " Problem");
+            }
+        } */
+    }
+    
 }
