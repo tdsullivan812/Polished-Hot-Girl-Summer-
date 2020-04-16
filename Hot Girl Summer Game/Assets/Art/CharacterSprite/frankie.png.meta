@@ -1,55 +1,37 @@
 fileFormatVersion: 2
-guid: ed1b1ca86f69349f6bda8c4c73704b23
+guid: 5fb0e50c81c9a2047a2dfe18d878eba6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5211335845420155734
-    second: kelly_bored_0
+      213: 6202763595896480209
+    second: frankie_0
   - first:
-      213: -8369920462422895126
-    second: kelly_bored_1
+      213: -8501821608986661046
+    second: frankie_1
   - first:
-      213: 6564854251241622816
-    second: kelly_bored_2
+      213: -3083834702086844511
+    second: frankie_2
   - first:
-      213: -4717962715472949822
-    second: kelly_bored_3
+      213: -6273330007128251613
+    second: frankie_3
   - first:
-      213: -3532085593854743494
-    second: kelly_bored_4
+      213: -6475207219355565586
+    second: frankie_4
   - first:
-      213: 7051290994375842694
-    second: kelly_bored_5
+      213: -4486935441912605443
+    second: frankie_5
   - first:
-      213: 771288185220447885
-    second: kelly_bored_6
+      213: 8385162596263598277
+    second: frankie_6
   - first:
-      213: 5497023425502524457
-    second: kelly_bored_7
+      213: 7722155906117463027
+    second: frankie_7
   - first:
-      213: -2539429591624866954
-    second: kelly_bored_8
+      213: -561085685163862616
+    second: frankie_8
   - first:
-      213: 2446735617004330939
-    second: kelly_bored_9
-  - first:
-      213: 4456809931919079148
-    second: kelly_bored_10
-  - first:
-      213: 2710713065114325658
-    second: kelly_bored_11
-  - first:
-      213: -2954137360517610555
-    second: kelly_bored_12
-  - first:
-      213: 8343859617464667088
-    second: kelly_bored_13
-  - first:
-      213: -7913088306119698837
-    second: kelly_bored_14
-  - first:
-      213: 722334659282794871
-    second: kelly_bored_15
+      213: -4278727021632515313
+    second: frankie_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kelly_bored_0
+      name: frankie_0
       rect:
         serializedVersion: 2
         x: 0
@@ -160,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aacb870d8ad9da7b0800000000000000
-      internalID: -5211335845420155734
+      spriteID: 1d1622770a4a41650800000000000000
+      internalID: 6202763595896480209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_1
+      name: frankie_1
       rect:
         serializedVersion: 2
         x: 512
@@ -181,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae592076fa118db80800000000000000
-      internalID: -8369920462422895126
+      spriteID: a4f2c9c8a46730a80800000000000000
+      internalID: -8501821608986661046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_2
+      name: frankie_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -202,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d487fc82c0b1b50800000000000000
-      internalID: 6564854251241622816
+      spriteID: 1af47146da40435d0800000000000000
+      internalID: -3083834702086844511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_3
+      name: frankie_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -223,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd82b838ed668eb0800000000000000
-      internalID: -4717962715472949822
+      spriteID: 32362569897a0f8a0800000000000000
+      internalID: -6273330007128251613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_4
+      name: frankie_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -244,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3c630ebdd28bfec0800000000000000
-      internalID: -3532085593854743494
+      spriteID: ee1444357517326a0800000000000000
+      internalID: -6475207219355565586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_5
+      name: frankie_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -265,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68bdeafccc73bd160800000000000000
-      internalID: 7051290994375842694
+      spriteID: df450b60df33bb1c0800000000000000
+      internalID: -4486935441912605443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_6
+      name: frankie_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -286,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8e358b948a24ba00800000000000000
-      internalID: 771288185220447885
+      spriteID: 5c81f2e64f41e5470800000000000000
+      internalID: 8385162596263598277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_7
+      name: frankie_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -307,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92434175ea9594c40800000000000000
-      internalID: 5497023425502524457
+      spriteID: 3fbe05402eb9a2b60800000000000000
+      internalID: 7722155906117463027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_8
+      name: frankie_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -328,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673a51bad3222ccd0800000000000000
-      internalID: -2539429591624866954
+      spriteID: 8a55047ca8f9638f0800000000000000
+      internalID: -561085685163862616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_9
+      name: frankie_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -349,134 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbfd6de841d84f120800000000000000
-      internalID: 2446735617004330939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_10
-      rect:
-        serializedVersion: 2
-        x: 5120
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce638771505c9dd30800000000000000
-      internalID: 4456809931919079148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_11
-      rect:
-        serializedVersion: 2
-        x: 5632
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a925626bb236e9520800000000000000
-      internalID: 2710713065114325658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_12
-      rect:
-        serializedVersion: 2
-        x: 6144
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c343a8e8bbc007d0800000000000000
-      internalID: -2954137360517610555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_13
-      rect:
-        serializedVersion: 2
-        x: 6656
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db45ba4d185bc370800000000000000
-      internalID: 8343859617464667088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_14
-      rect:
-        serializedVersion: 2
-        x: 7168
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6610756c101f2290800000000000000
-      internalID: -7913088306119698837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_15
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 779f087ab8f360a00800000000000000
-      internalID: 722334659282794871
+      spriteID: f039ab88178ee94c0800000000000000
+      internalID: -4278727021632515313
       vertices: []
       indices: 
       edges: []

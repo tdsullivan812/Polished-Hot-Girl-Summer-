@@ -1,76 +1,82 @@
 fileFormatVersion: 2
-guid: fde6dd981967b4c09ac92c2196e24079
+guid: 8aa8d7ee8429aae47a981c5eb22b505e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5619906501049596538
-    second: kelly_happy_0
+      213: 3391277642743346536
+    second: heather_0
   - first:
-      213: 7624108882272563933
-    second: kelly_happy_1
+      213: -8283406674924589391
+    second: heather_1
   - first:
-      213: -8030118648135548230
-    second: kelly_happy_2
+      213: 6807799486108647231
+    second: heather_2
   - first:
-      213: 404999459536558358
-    second: kelly_happy_3
+      213: -2305202716869958345
+    second: heather_3
   - first:
-      213: -8705176937635954340
-    second: kelly_happy_4
+      213: -4393295989613971038
+    second: heather_4
   - first:
-      213: 1859243711321964605
-    second: kelly_happy_5
+      213: -9021604827037810947
+    second: heather_5
   - first:
-      213: 463290668370594913
-    second: kelly_happy_6
+      213: -7890338150025019389
+    second: heather_6
   - first:
-      213: 5859696197088502087
-    second: kelly_happy_7
+      213: 2450546135931571965
+    second: heather_7
   - first:
-      213: -8816665555274936437
-    second: kelly_happy_8
+      213: -6398869159871361044
+    second: heather_8
   - first:
-      213: -7654714696555501215
-    second: kelly_happy_9
+      213: -3903567588109058041
+    second: heather_9
   - first:
-      213: 5921518688696726208
-    second: kelly_happy_10
+      213: 5540589353827813174
+    second: heather_10
   - first:
-      213: 1069917808950949674
-    second: kelly_happy_11
+      213: -7008272685795594939
+    second: heather_11
   - first:
-      213: -6009178211041956809
-    second: kelly_happy_12
+      213: -1163532803393943798
+    second: heather_12
   - first:
-      213: 4566565712412406234
-    second: kelly_happy_13
+      213: -4335411410000740024
+    second: heather_13
   - first:
-      213: 1856378298748939417
-    second: kelly_happy_14
+      213: -219482370833971843
+    second: heather_14
   - first:
-      213: 6638996565119381758
-    second: kelly_happy_15
+      213: -9051895620308072823
+    second: heather_15
   - first:
-      213: 7874873001277519348
-    second: kelly_happy_16
+      213: 8565949921716671706
+    second: heather_16
   - first:
-      213: 6416958107424141312
-    second: kelly_happy_17
+      213: 6256816762916513060
+    second: heather_17
   - first:
-      213: -2041563046972572012
-    second: kelly_happy_18
+      213: -8984329895240785308
+    second: heather_18
   - first:
-      213: 8577509502678993236
-    second: kelly_happy_19
+      213: 6654276018650902939
+    second: heather_19
   - first:
-      213: -5519863780357341428
-    second: kelly_happy_20
+      213: -5479397004316898825
+    second: heather_20
   - first:
-      213: 6258037825308925641
-    second: kelly_happy_21
+      213: 3655228294667300072
+    second: heather_21
   - first:
-      213: -5265571699104118428
-    second: kelly_happy_22
+      213: 7572349070566634224
+    second: heather_22
+  - first:
+      213: -9057363610990596034
+    second: heather_23
+  - first:
+      213: -1505173173400322727
+    second: heather_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -167,7 +173,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kelly_happy_0
+      name: heather_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a38f9ef2bedfd40800000000000000
-      internalID: 5619906501049596538
+      spriteID: 865f07e5c0d301f20800000000000000
+      internalID: 3391277642743346536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_1
+      name: heather_1
       rect:
         serializedVersion: 2
         x: 512
@@ -202,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2b1c852a64ec960800000000000000
-      internalID: 7624108882272563933
+      spriteID: 1be250b348d6b0d80800000000000000
+      internalID: -8283406674924589391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_2
+      name: heather_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -223,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab204a982a94f8090800000000000000
-      internalID: -8030118648135548230
+      spriteID: f3fb79730992a7e50800000000000000
+      internalID: 6807799486108647231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_3
+      name: heather_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -244,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 619d6e7dcd8de9500800000000000000
-      internalID: 404999459536558358
+      spriteID: 73563bda7564200e0800000000000000
+      internalID: -2305202716869958345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_4
+      name: heather_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -265,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51494d72bff03780800000000000000
-      internalID: -8705176937635954340
+      spriteID: 2a939e9f290e703c0800000000000000
+      internalID: -4393295989613971038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_5
+      name: heather_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -286,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3089340e4c5dc910800000000000000
-      internalID: 1859243711321964605
+      spriteID: dfe36745532dcc280800000000000000
+      internalID: -9021604827037810947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_6
+      name: heather_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -307,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c8bf38860fd6600800000000000000
-      internalID: 463290668370594913
+      spriteID: 300cb02e143ef7290800000000000000
+      internalID: -7890338150025019389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_7
+      name: heather_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -328,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741ea2f25a2d15150800000000000000
-      internalID: 5859696197088502087
+      spriteID: dfe48e12ab6120220800000000000000
+      internalID: 2450546135931571965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_8
+      name: heather_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -349,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f4a62e369e4a580800000000000000
-      internalID: -8816665555274936437
+      spriteID: cef4aa9d666a237a0800000000000000
+      internalID: -6398869159871361044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_9
+      name: heather_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -370,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169e8d63a8df4c590800000000000000
-      internalID: -7654714696555501215
+      spriteID: 700080ae5fdb3d9c0800000000000000
+      internalID: -3903567588109058041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_10
+      name: heather_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -391,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2fa92bfd57d2250800000000000000
-      internalID: 5921518688696726208
+      spriteID: 637c73979a024ec40800000000000000
+      internalID: 5540589353827813174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_11
+      name: heather_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -412,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a27b26d149c19de00800000000000000
-      internalID: 1069917808950949674
+      spriteID: 54da41aaf1d9dbe90800000000000000
+      internalID: -7008272685795594939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_12
+      name: heather_12
       rect:
         serializedVersion: 2
         x: 6144
@@ -433,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ca3da414c1b9ca0800000000000000
-      internalID: -6009178211041956809
+      spriteID: a078039741d4adfe0800000000000000
+      internalID: -1163532803393943798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_13
+      name: heather_13
       rect:
         serializedVersion: 2
         x: 6656
@@ -454,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1f1db1253bf5f30800000000000000
-      internalID: 4566565712412406234
+      spriteID: 8410bb7ea4685d3c0800000000000000
+      internalID: -4335411410000740024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_14
+      name: heather_14
       rect:
         serializedVersion: 2
         x: 7168
@@ -475,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99caca92a3e23c910800000000000000
-      internalID: 1856378298748939417
+      spriteID: d750bf352fd34fcf0800000000000000
+      internalID: -219482370833971843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_15
+      name: heather_15
       rect:
         serializedVersion: 2
         x: 7680
@@ -496,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef0baf87334722c50800000000000000
-      internalID: 6638996565119381758
+      spriteID: 9868f9f64e4316280800000000000000
+      internalID: -9051895620308072823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_16
+      name: heather_16
       rect:
         serializedVersion: 2
         x: 8192
@@ -517,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f5f574954b294d60800000000000000
-      internalID: 7874873001277519348
+      spriteID: ad415b7c11e50e670800000000000000
+      internalID: 8565949921716671706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_17
+      name: heather_17
       rect:
         serializedVersion: 2
         x: 8704
@@ -538,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0003493766d9d0950800000000000000
-      internalID: 6416958107424141312
+      spriteID: 425295222bda4d650800000000000000
+      internalID: 6256816762916513060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_18
+      name: heather_18
       rect:
         serializedVersion: 2
         x: 9216
@@ -559,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eb2a6b939eaa3e0800000000000000
-      internalID: -2041563046972572012
+      spriteID: 4622041bf8f315380800000000000000
+      internalID: -8984329895240785308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_19
+      name: heather_19
       rect:
         serializedVersion: 2
         x: 9728
@@ -580,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45908b4727f690770800000000000000
-      internalID: 8577509502678993236
+      spriteID: b91761978ccb85c50800000000000000
+      internalID: 6654276018650902939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_20
+      name: heather_20
       rect:
         serializedVersion: 2
         x: 10240
@@ -601,14 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0f714323218563b0800000000000000
-      internalID: -5519863780357341428
+      spriteID: 7f90a56a47545f3b0800000000000000
+      internalID: -5479397004316898825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_21
+      name: heather_21
       rect:
         serializedVersion: 2
         x: 10752
@@ -622,14 +628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ce1f70ee3409d650800000000000000
-      internalID: 6258037825308925641
+      spriteID: 8ece99c84caf9b230800000000000000
+      internalID: 3655228294667300072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_22
+      name: heather_22
       rect:
         serializedVersion: 2
         x: 11264
@@ -643,8 +649,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4698c87107eece6b0800000000000000
-      internalID: -5265571699104118428
+      spriteID: 0f232621c53661960800000000000000
+      internalID: 7572349070566634224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heather_23
+      rect:
+        serializedVersion: 2
+        x: 11776
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e303b55a8c7cd4280800000000000000
+      internalID: -9057363610990596034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heather_24
+      rect:
+        serializedVersion: 2
+        x: 12288
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95db60a39fc8c1be0800000000000000
+      internalID: -1505173173400322727
       vertices: []
       indices: 
       edges: []
