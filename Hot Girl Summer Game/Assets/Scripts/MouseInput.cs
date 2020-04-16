@@ -10,12 +10,18 @@ public class MouseInput : MonoBehaviour
     public Camera mainCamera;
     private Vector3 screenMidpoint;
     private int currentLayerMask;
+    private float currentForegroundAlpha;
+    private float foregroundAlphaIncrement;
+    private GameObject[] foregroundObjects;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
         screenMidpoint = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+        currentForegroundAlpha = 1.0f;
+        foregroundAlphaIncrement = 0.01f;
+        foregroundObjects = GameObject.FindGameObjectsWithTag("Env_Foreground");
 
     }
 
@@ -32,18 +38,32 @@ public class MouseInput : MonoBehaviour
             transform.position += cameraXMovementIncrement; //scroll right
         }
 
-        if (Input.mousePosition.y <= scrollThreshold && transform.position.z >= -47)
+        if (Input.mousePosition.y <= scrollThreshold && currentForegroundAlpha < 1)         //&& transform.position.z >= -47)
         {
-            transform.position -= cameraZMovementIncrement; //scroll out
+            //transform.position -= cameraZMovementIncrement; //scroll out
+            currentForegroundAlpha += foregroundAlphaIncrement;
+            Color newForegroundAlpha = new Color(1, 1, 1, currentForegroundAlpha);
+            foreach (GameObject fadingObject in foregroundObjects)
+            {
+                fadingObject.GetComponentInChildren<SpriteRenderer>().color = newForegroundAlpha;
+            }
+
         }
-        else if (Input.mousePosition.y >= Screen.height - scrollThreshold)
+        else if (Input.mousePosition.y >= Screen.height - scrollThreshold && currentForegroundAlpha > 0)
         {
-            transform.position += cameraZMovementIncrement; // scroll in
+            //transform.position += cameraZMovementIncrement; // scroll in
+            currentForegroundAlpha -= foregroundAlphaIncrement;
+            Color newForegroundAlpha = new Color(1, 1, 1, currentForegroundAlpha);
+            foreach (GameObject fadingObject in foregroundObjects)
+            {
+                fadingObject.GetComponentInChildren<SpriteRenderer>().color = newForegroundAlpha;
+            }
         }
 
-        DisableForeground();
+        //DisableForeground();
     }
 
+    /*
     void DisableForeground()
     {
         RaycastHit hit;
@@ -55,8 +75,13 @@ public class MouseInput : MonoBehaviour
         {
 
         }
-
-        //GameObject.findob
+        
+        //GameObject.findob'
        
+    }
+    */
+    void FadeOutAnimation()
+    {
+
     }
 }
