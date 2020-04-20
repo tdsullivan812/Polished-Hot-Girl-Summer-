@@ -154,6 +154,26 @@ public class GameController : MonoBehaviour
 
     //END OF SASHA'S ADDITIONS
 
+    
+
+    public void SetNPC(string npcName)
+    {
+        if (npcName == "Kelly")
+        {
+            nextNPC = new Kelly();
+        }
+
+        else if (npcName == "Leon")
+        {
+            nextNPC = new Leon();
+        }
+
+        else if (npcName == "Meg")
+        {
+            nextNPC = new Meg();
+        }
+    }
+
     public void LoadQuiz()
     {
         SceneManager.LoadScene(1);
