@@ -1,76 +1,58 @@
 fileFormatVersion: 2
-guid: fde6dd981967b4c09ac92c2196e24079
+guid: 76f93457f7d36264caa578646ebc4225
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5619906501049596538
-    second: kelly_happy_0
+      213: 4772101185818448548
+    second: leon_bored_0
   - first:
-      213: 7624108882272563933
-    second: kelly_happy_1
+      213: -9193053614220673303
+    second: leon_bored_1
   - first:
-      213: -8030118648135548230
-    second: kelly_happy_2
+      213: -6497379253039615467
+    second: leon_bored_2
   - first:
-      213: 404999459536558358
-    second: kelly_happy_3
+      213: 2481623026819573495
+    second: leon_bored_3
   - first:
-      213: -8705176937635954340
-    second: kelly_happy_4
+      213: 3232266164852744806
+    second: leon_bored_4
   - first:
-      213: 1859243711321964605
-    second: kelly_happy_5
+      213: 5213724777300293236
+    second: leon_bored_5
   - first:
-      213: 463290668370594913
-    second: kelly_happy_6
+      213: -7010687428808777676
+    second: leon_bored_6
   - first:
-      213: 5859696197088502087
-    second: kelly_happy_7
+      213: 8576523197982676436
+    second: leon_bored_7
   - first:
-      213: -8816665555274936437
-    second: kelly_happy_8
+      213: 6919538667979444852
+    second: leon_bored_8
   - first:
-      213: -7654714696555501215
-    second: kelly_happy_9
+      213: 1789482273418798245
+    second: leon_bored_9
   - first:
-      213: 5921518688696726208
-    second: kelly_happy_10
+      213: 5716530210967283298
+    second: leon_bored_10
   - first:
-      213: 1069917808950949674
-    second: kelly_happy_11
+      213: -8787669516572157523
+    second: leon_bored_11
   - first:
-      213: -6009178211041956809
-    second: kelly_happy_12
+      213: -5341371727222352818
+    second: leon_bored_12
   - first:
-      213: 4566565712412406234
-    second: kelly_happy_13
+      213: 9221296794042123899
+    second: leon_bored_13
   - first:
-      213: 1856378298748939417
-    second: kelly_happy_14
+      213: -728365728314593492
+    second: leon_bored_14
   - first:
-      213: 6638996565119381758
-    second: kelly_happy_15
+      213: 6279082977801752388
+    second: leon_bored_15
   - first:
-      213: 7874873001277519348
-    second: kelly_happy_16
-  - first:
-      213: 6416958107424141312
-    second: kelly_happy_17
-  - first:
-      213: -2041563046972572012
-    second: kelly_happy_18
-  - first:
-      213: 8577509502678993236
-    second: kelly_happy_19
-  - first:
-      213: -5519863780357341428
-    second: kelly_happy_20
-  - first:
-      213: 6258037825308925641
-    second: kelly_happy_21
-  - first:
-      213: -5265571699104118428
-    second: kelly_happy_22
+      213: -141101415956001574
+    second: leon_bored_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -167,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kelly_happy_0
+      name: leon_bored_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a38f9ef2bedfd40800000000000000
-      internalID: 5619906501049596538
+      spriteID: 4a2ddecaeb8e93240800000000000000
+      internalID: 4772101185818448548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_1
+      name: leon_bored_1
       rect:
         serializedVersion: 2
         x: 512
@@ -202,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2b1c852a64ec960800000000000000
-      internalID: 7624108882272563933
+      spriteID: 9ee714bd176bb6080800000000000000
+      internalID: -9193053614220673303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_2
+      name: leon_bored_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -223,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab204a982a94f8090800000000000000
-      internalID: -8030118648135548230
+      spriteID: 512b4937efba4d5a0800000000000000
+      internalID: -6497379253039615467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_3
+      name: leon_bored_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -244,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 619d6e7dcd8de9500800000000000000
-      internalID: 404999459536558358
+      spriteID: 7f6a204aefe707220800000000000000
+      internalID: 2481623026819573495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_4
+      name: leon_bored_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -265,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51494d72bff03780800000000000000
-      internalID: -8705176937635954340
+      spriteID: 662ef8f93f05bdc20800000000000000
+      internalID: 3232266164852744806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_5
+      name: leon_bored_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -286,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3089340e4c5dc910800000000000000
-      internalID: 1859243711321964605
+      spriteID: 476f2abbf0fda5840800000000000000
+      internalID: 5213724777300293236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_6
+      name: leon_bored_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -307,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c8bf38860fd6600800000000000000
-      internalID: 463290668370594913
+      spriteID: 4306e8e7de805be90800000000000000
+      internalID: -7010687428808777676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_7
+      name: leon_bored_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -328,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741ea2f25a2d15150800000000000000
-      internalID: 5859696197088502087
+      spriteID: 4d597af786ee50770800000000000000
+      internalID: 8576523197982676436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_8
+      name: leon_bored_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -349,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f4a62e369e4a580800000000000000
-      internalID: -8816665555274936437
+      spriteID: 4729e7ad1c3270060800000000000000
+      internalID: 6919538667979444852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_9
+      name: leon_bored_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -370,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169e8d63a8df4c590800000000000000
-      internalID: -7654714696555501215
+      spriteID: 5a46cf685a485d810800000000000000
+      internalID: 1789482273418798245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_10
+      name: leon_bored_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -391,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2fa92bfd57d2250800000000000000
-      internalID: 5921518688696726208
+      spriteID: 2666e7c70f1355f40800000000000000
+      internalID: 5716530210967283298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_11
+      name: leon_bored_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -412,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a27b26d149c19de00800000000000000
-      internalID: 1069917808950949674
+      spriteID: da9103d322deb0680800000000000000
+      internalID: -8787669516572157523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_12
+      name: leon_bored_12
       rect:
         serializedVersion: 2
         x: 6144
@@ -433,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ca3da414c1b9ca0800000000000000
-      internalID: -6009178211041956809
+      spriteID: e44d891c6b2afd5b0800000000000000
+      internalID: -5341371727222352818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_13
+      name: leon_bored_13
       rect:
         serializedVersion: 2
         x: 6656
@@ -454,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1f1db1253bf5f30800000000000000
-      internalID: 4566565712412406234
+      spriteID: b764451e390a8ff70800000000000000
+      internalID: 9221296794042123899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_14
+      name: leon_bored_14
       rect:
         serializedVersion: 2
         x: 7168
@@ -475,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99caca92a3e23c910800000000000000
-      internalID: 1856378298748939417
+      spriteID: c2f6d39aa3354e5f0800000000000000
+      internalID: -728365728314593492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_15
+      name: leon_bored_15
       rect:
         serializedVersion: 2
         x: 7680
@@ -496,14 +478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef0baf87334722c50800000000000000
-      internalID: 6638996565119381758
+      spriteID: 44f431743b8c32750800000000000000
+      internalID: 6279082977801752388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_16
+      name: leon_bored_16
       rect:
         serializedVersion: 2
         x: 8192
@@ -517,134 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f5f574954b294d60800000000000000
-      internalID: 7874873001277519348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_17
-      rect:
-        serializedVersion: 2
-        x: 8704
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0003493766d9d0950800000000000000
-      internalID: 6416958107424141312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_18
-      rect:
-        serializedVersion: 2
-        x: 9216
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49eb2a6b939eaa3e0800000000000000
-      internalID: -2041563046972572012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_19
-      rect:
-        serializedVersion: 2
-        x: 9728
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45908b4727f690770800000000000000
-      internalID: 8577509502678993236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_20
-      rect:
-        serializedVersion: 2
-        x: 10240
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0f714323218563b0800000000000000
-      internalID: -5519863780357341428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_21
-      rect:
-        serializedVersion: 2
-        x: 10752
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ce1f70ee3409d650800000000000000
-      internalID: 6258037825308925641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_22
-      rect:
-        serializedVersion: 2
-        x: 11264
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4698c87107eece6b0800000000000000
-      internalID: -5265571699104118428
+      spriteID: adc43a08205ba0ef0800000000000000
+      internalID: -141101415956001574
       vertices: []
       indices: 
       edges: []

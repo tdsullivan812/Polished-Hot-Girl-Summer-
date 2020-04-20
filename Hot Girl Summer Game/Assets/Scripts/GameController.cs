@@ -140,6 +140,20 @@ public class GameController : MonoBehaviour
         
     }
 
+    //SASHA'S PAUSE MENU ADDITIONS
+    public void restartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void quitGame()
+    {
+        Debug.Log("quit game");
+        Application.Quit();
+    }
+
+    //END OF SASHA'S ADDITIONS
+
     public void LoadQuiz()
     {
         SceneManager.LoadScene(1);

@@ -1,55 +1,46 @@
 fileFormatVersion: 2
-guid: ed1b1ca86f69349f6bda8c4c73704b23
+guid: 1c463ac88cb589b4289951911b239c62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5211335845420155734
-    second: kelly_bored_0
+      213: 6823134149379542226
+    second: meg_bored_0
   - first:
-      213: -8369920462422895126
-    second: kelly_bored_1
+      213: 1287467105097108768
+    second: meg_bored_1
   - first:
-      213: 6564854251241622816
-    second: kelly_bored_2
+      213: -1430679022266829354
+    second: meg_bored_2
   - first:
-      213: -4717962715472949822
-    second: kelly_bored_3
+      213: -1171549382082692698
+    second: meg_bored_3
   - first:
-      213: -3532085593854743494
-    second: kelly_bored_4
+      213: 6633192207453991361
+    second: meg_bored_4
   - first:
-      213: 7051290994375842694
-    second: kelly_bored_5
+      213: -6908582676535218467
+    second: meg_bored_5
   - first:
-      213: 771288185220447885
-    second: kelly_bored_6
+      213: -7072477565594277562
+    second: meg_bored_6
   - first:
-      213: 5497023425502524457
-    second: kelly_bored_7
+      213: -3865414585863766313
+    second: meg_bored_7
   - first:
-      213: -2539429591624866954
-    second: kelly_bored_8
+      213: 1609752969806758184
+    second: meg_bored_8
   - first:
-      213: 2446735617004330939
-    second: kelly_bored_9
+      213: 4280741593067096575
+    second: meg_bored_9
   - first:
-      213: 4456809931919079148
-    second: kelly_bored_10
+      213: -732240102139707314
+    second: meg_bored_10
   - first:
-      213: 2710713065114325658
-    second: kelly_bored_11
+      213: -6473280139584140996
+    second: meg_bored_11
   - first:
-      213: -2954137360517610555
-    second: kelly_bored_12
-  - first:
-      213: 8343859617464667088
-    second: kelly_bored_13
-  - first:
-      213: -7913088306119698837
-    second: kelly_bored_14
-  - first:
-      213: 722334659282794871
-    second: kelly_bored_15
+      213: -8252984741631095360
+    second: meg_bored_12
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,7 +137,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kelly_bored_0
+      name: meg_bored_0
       rect:
         serializedVersion: 2
         x: 0
@@ -160,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aacb870d8ad9da7b0800000000000000
-      internalID: -5211335845420155734
+      spriteID: 2dcca9cbb54a0be50800000000000000
+      internalID: 6823134149379542226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_1
+      name: meg_bored_1
       rect:
         serializedVersion: 2
         x: 512
@@ -181,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae592076fa118db80800000000000000
-      internalID: -8369920462422895126
+      spriteID: 02d4053c2800ed110800000000000000
+      internalID: 1287467105097108768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_2
+      name: meg_bored_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -202,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d487fc82c0b1b50800000000000000
-      internalID: 6564854251241622816
+      spriteID: 6d5be226205352ce0800000000000000
+      internalID: -1430679022266829354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_3
+      name: meg_bored_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -223,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd82b838ed668eb0800000000000000
-      internalID: -4717962715472949822
+      spriteID: 6a9f12c4b02ddbfe0800000000000000
+      internalID: -1171549382082692698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_4
+      name: meg_bored_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -244,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3c630ebdd28bfec0800000000000000
-      internalID: -3532085593854743494
+      spriteID: 1c13f242b25dd0c50800000000000000
+      internalID: 6633192207453991361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_5
+      name: meg_bored_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -265,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68bdeafccc73bd160800000000000000
-      internalID: 7051290994375842694
+      spriteID: dde63bfa8a8cf10a0800000000000000
+      internalID: -6908582676535218467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_6
+      name: meg_bored_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -286,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8e358b948a24ba00800000000000000
-      internalID: 771288185220447885
+      spriteID: 64965dc202389dd90800000000000000
+      internalID: -7072477565594277562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_7
+      name: meg_bored_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -307,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92434175ea9594c40800000000000000
-      internalID: 5497023425502524457
+      spriteID: 7def9fbf9e94b5ac0800000000000000
+      internalID: -3865414585863766313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_8
+      name: meg_bored_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -328,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673a51bad3222ccd0800000000000000
-      internalID: -2539429591624866954
+      spriteID: 82146751ccdf65610800000000000000
+      internalID: 1609752969806758184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_9
+      name: meg_bored_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -349,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbfd6de841d84f120800000000000000
-      internalID: 2446735617004330939
+      spriteID: ff9010e6ccf386b30800000000000000
+      internalID: 4280741593067096575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_10
+      name: meg_bored_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -370,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce638771505c9dd30800000000000000
-      internalID: 4456809931919079148
+      spriteID: e40caa5b18f86d5f0800000000000000
+      internalID: -732240102139707314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_11
+      name: meg_bored_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -391,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a925626bb236e9520800000000000000
-      internalID: 2710713065114325658
+      spriteID: c390f7c820a4a26a0800000000000000
+      internalID: -6473280139584140996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_bored_12
+      name: meg_bored_12
       rect:
         serializedVersion: 2
         x: 6144
@@ -412,71 +403,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c343a8e8bbc007d0800000000000000
-      internalID: -2954137360517610555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_13
-      rect:
-        serializedVersion: 2
-        x: 6656
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db45ba4d185bc370800000000000000
-      internalID: 8343859617464667088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_14
-      rect:
-        serializedVersion: 2
-        x: 7168
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6610756c101f2290800000000000000
-      internalID: -7913088306119698837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_bored_15
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 779f087ab8f360a00800000000000000
-      internalID: 722334659282794871
+      spriteID: 0cd0c5a8a12877d80800000000000000
+      internalID: -8252984741631095360
       vertices: []
       indices: 
       edges: []

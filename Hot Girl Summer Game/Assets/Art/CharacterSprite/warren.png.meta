@@ -1,76 +1,52 @@
 fileFormatVersion: 2
-guid: fde6dd981967b4c09ac92c2196e24079
+guid: 0ea4aae84e2bc87439278937323bd122
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5619906501049596538
-    second: kelly_happy_0
+      213: -4725056784239458352
+    second: warren_0
   - first:
-      213: 7624108882272563933
-    second: kelly_happy_1
+      213: 6133006677085556554
+    second: warren_1
   - first:
-      213: -8030118648135548230
-    second: kelly_happy_2
+      213: -6428571380502452981
+    second: warren_2
   - first:
-      213: 404999459536558358
-    second: kelly_happy_3
+      213: 7193430886119517234
+    second: warren_3
   - first:
-      213: -8705176937635954340
-    second: kelly_happy_4
+      213: 926108089150247144
+    second: warren_4
   - first:
-      213: 1859243711321964605
-    second: kelly_happy_5
+      213: 2960418204263102841
+    second: warren_5
   - first:
-      213: 463290668370594913
-    second: kelly_happy_6
+      213: -1086911006301820313
+    second: warren_6
   - first:
-      213: 5859696197088502087
-    second: kelly_happy_7
+      213: 3888089846117267006
+    second: warren_7
   - first:
-      213: -8816665555274936437
-    second: kelly_happy_8
+      213: 1150029032569136692
+    second: warren_8
   - first:
-      213: -7654714696555501215
-    second: kelly_happy_9
+      213: 4904145885521820568
+    second: warren_9
   - first:
-      213: 5921518688696726208
-    second: kelly_happy_10
+      213: -3612577774985833270
+    second: warren_10
   - first:
-      213: 1069917808950949674
-    second: kelly_happy_11
+      213: 8711876468379427117
+    second: warren_11
   - first:
-      213: -6009178211041956809
-    second: kelly_happy_12
+      213: -5654613016936122273
+    second: warren_12
   - first:
-      213: 4566565712412406234
-    second: kelly_happy_13
+      213: -4463314653538593294
+    second: warren_13
   - first:
-      213: 1856378298748939417
-    second: kelly_happy_14
-  - first:
-      213: 6638996565119381758
-    second: kelly_happy_15
-  - first:
-      213: 7874873001277519348
-    second: kelly_happy_16
-  - first:
-      213: 6416958107424141312
-    second: kelly_happy_17
-  - first:
-      213: -2041563046972572012
-    second: kelly_happy_18
-  - first:
-      213: 8577509502678993236
-    second: kelly_happy_19
-  - first:
-      213: -5519863780357341428
-    second: kelly_happy_20
-  - first:
-      213: 6258037825308925641
-    second: kelly_happy_21
-  - first:
-      213: -5265571699104118428
-    second: kelly_happy_22
+      213: 3997573457920592063
+    second: warren_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -167,7 +143,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kelly_happy_0
+      name: warren_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a38f9ef2bedfd40800000000000000
-      internalID: 5619906501049596538
+      spriteID: 0d78bdf93e93d6eb0800000000000000
+      internalID: -4725056784239458352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_1
+      name: warren_1
       rect:
         serializedVersion: 2
         x: 512
@@ -202,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2b1c852a64ec960800000000000000
-      internalID: 7624108882272563933
+      spriteID: a4f88c82411dc1550800000000000000
+      internalID: 6133006677085556554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_2
+      name: warren_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -223,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab204a982a94f8090800000000000000
-      internalID: -8030118648135548230
+      spriteID: b05a8e3b36029c6a0800000000000000
+      internalID: -6428571380502452981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_3
+      name: warren_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -244,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 619d6e7dcd8de9500800000000000000
-      internalID: 404999459536558358
+      spriteID: 23c2a7b474334d360800000000000000
+      internalID: 7193430886119517234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_4
+      name: warren_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -265,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51494d72bff03780800000000000000
-      internalID: -8705176937635954340
+      spriteID: 8e09a6d76623adc00800000000000000
+      internalID: 926108089150247144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_5
+      name: warren_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -286,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3089340e4c5dc910800000000000000
-      internalID: 1859243711321964605
+      spriteID: 979b3bbfba4851920800000000000000
+      internalID: 2960418204263102841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_6
+      name: warren_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -307,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c8bf38860fd6600800000000000000
-      internalID: 463290668370594913
+      spriteID: 76aeaeec2348ae0f0800000000000000
+      internalID: -1086911006301820313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_7
+      name: warren_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -328,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741ea2f25a2d15150800000000000000
-      internalID: 5859696197088502087
+      spriteID: e367f947d1545f530800000000000000
+      internalID: 3888089846117267006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_8
+      name: warren_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -349,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f4a62e369e4a580800000000000000
-      internalID: -8816665555274936437
+      spriteID: 4366bafdf49b5ff00800000000000000
+      internalID: 1150029032569136692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_9
+      name: warren_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -370,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169e8d63a8df4c590800000000000000
-      internalID: -7654714696555501215
+      spriteID: 89bb83913b60f0440800000000000000
+      internalID: 4904145885521820568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_10
+      name: warren_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -391,14 +367,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2fa92bfd57d2250800000000000000
-      internalID: 5921518688696726208
+      spriteID: ac49f7667ab8dddc0800000000000000
+      internalID: -3612577774985833270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_11
+      name: warren_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -412,14 +388,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a27b26d149c19de00800000000000000
-      internalID: 1069917808950949674
+      spriteID: d2127d09d7dc6e870800000000000000
+      internalID: 8711876468379427117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_12
+      name: warren_12
       rect:
         serializedVersion: 2
         x: 6144
@@ -433,14 +409,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ca3da414c1b9ca0800000000000000
-      internalID: -6009178211041956809
+      spriteID: f58f837ab67c681b0800000000000000
+      internalID: -5654613016936122273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_13
+      name: warren_13
       rect:
         serializedVersion: 2
         x: 6656
@@ -454,14 +430,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1f1db1253bf5f30800000000000000
-      internalID: 4566565712412406234
+      spriteID: 2f5590368fe1f02c0800000000000000
+      internalID: -4463314653538593294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kelly_happy_14
+      name: warren_14
       rect:
         serializedVersion: 2
         x: 7168
@@ -475,176 +451,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99caca92a3e23c910800000000000000
-      internalID: 1856378298748939417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_15
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef0baf87334722c50800000000000000
-      internalID: 6638996565119381758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_16
-      rect:
-        serializedVersion: 2
-        x: 8192
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f5f574954b294d60800000000000000
-      internalID: 7874873001277519348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_17
-      rect:
-        serializedVersion: 2
-        x: 8704
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0003493766d9d0950800000000000000
-      internalID: 6416958107424141312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_18
-      rect:
-        serializedVersion: 2
-        x: 9216
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49eb2a6b939eaa3e0800000000000000
-      internalID: -2041563046972572012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_19
-      rect:
-        serializedVersion: 2
-        x: 9728
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45908b4727f690770800000000000000
-      internalID: 8577509502678993236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_20
-      rect:
-        serializedVersion: 2
-        x: 10240
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0f714323218563b0800000000000000
-      internalID: -5519863780357341428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_21
-      rect:
-        serializedVersion: 2
-        x: 10752
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ce1f70ee3409d650800000000000000
-      internalID: 6258037825308925641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kelly_happy_22
-      rect:
-        serializedVersion: 2
-        x: 11264
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4698c87107eece6b0800000000000000
-      internalID: -5265571699104118428
+      spriteID: fb803e241eb3a7730800000000000000
+      internalID: 3997573457920592063
       vertices: []
       indices: 
       edges: []
