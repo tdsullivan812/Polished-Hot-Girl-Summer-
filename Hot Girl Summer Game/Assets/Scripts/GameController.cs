@@ -81,22 +81,57 @@ public class GameController : MonoBehaviour
             //the only script changing the game state at such a high level.
             _gameFSM = new FiniteStateMachine<GameController>(this);
 
+            partyDeck.AddCard(new Dance());
+            partyDeck.AddCard(new Chill());
+            partyDeck.AddCard(new Gutsy());
+
+            switch (SceneManager.GetActiveScene().buildIndex)
+            {
+                case 0:
+                    _gameFSM.TransitionTo<StartMenu>();
+                    break;
+
+                case 1:
+                    _gameFSM.TransitionTo<PersonalityQuiz>();
+                    break;
+
+                case 2:
+                    _gameFSM.TransitionTo<Story>();
+                    partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
+                    partyDeck.AddCard(new Dance());
+                    partyDeck.AddCard(new Gutsy());
+                    partyDeck.AddCard(new PrivateTalk());
+                    partyDeck.AddCard(new Chat());
+                    partyDeck.AddCard(new Encourage());
+                    break;
+
+                case 3:
+                    _gameFSM.TransitionTo<CardGame>();
+                    partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
+                    partyDeck.AddCard(new Dance());
+                    partyDeck.AddCard(new Gutsy());
+                    partyDeck.AddCard(new PrivateTalk());
+                    partyDeck.AddCard(new Chat());
+                    partyDeck.AddCard(new Encourage());
+                    break;
+
+                default:
+                    break;
+
+            }
+
+
+
+           
             //PURELY FOR TESTING THE CARD ENCOUNTER SCENE. In the real game, we don't want to start playing
             // cards right away. Feel free to uncomment if you want to test the card game, but be mindful.
 
             #region
 
-            /*
-            partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
-            partyDeck.AddCard(new Dance());
-            partyDeck.AddCard(new Gutsy());
-            partyDeck.AddCard(new PrivateTalk());
-            partyDeck.AddCard(new Chat());
-            partyDeck.AddCard(new Encourage());
-            */
-            partyDeck.AddCard(new Dance());
-            partyDeck.AddCard(new Chill());
-            partyDeck.AddCard(new Gutsy());
+            
+            
+            
+
 
             _gameFSM.TransitionTo<StartMenu>();
 
