@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
     public static EventSystem cardGameEventSystem;
     public static List<RaycastResult> results;
     public static List<GameObject> cardGameObjects;
+    public static GameObject currentlySelected;
 
 
 
@@ -21,6 +22,7 @@ public class InputManager : MonoBehaviour
         layerMask = 1 << 8;
         results = new List<RaycastResult>();
         cardGameObjects = new List<GameObject>();
+        currentlySelected = null;
 
     }
 
@@ -38,25 +40,43 @@ public class InputManager : MonoBehaviour
             pointerEvent.position = Input.mousePosition;
 
 
-            raycaster.Raycast(pointerEvent, results);
-            Debug.Log("Raycast sent");
-            Debug.Assert(results != null, "assertion failed: no hits on raycast");
-            //Debug.Log(results[0].gameObject.name);
-            if (results.Count > 0)
+            if (currentlySelected == null)
             {
-                if (cardGameObjects.Contains(results[0].gameObject))
-                {
+                raycaster.Raycast(pointerEvent, results);
+                Debug.Log("Raycast sent");
 
-                    Debug.Log("Begin drag");
-                    results[0].gameObject.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
+                if (results.Count > 0)
+                {
+                    //Debug.Log(results[0].gameObject.name);
+                    foreach(RaycastResult hit in results)
+                    {
+                        if (hit.gameObject.layer == 8)
+                        {
+                            currentlySelected = hit.gameObject;
+                            Debug.Log(currentlySelected.name);
+                            break;
+                        }
+                    }
+                    
+
                 }
             }
-            
 
+
+            if (cardGameObjects.Contains(currentlySelected))
+            {
+                Debug.Log("Begin drag");
+               currentlySelected.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
+            }
 
         }
+        else
+        {
+            currentlySelected = null;
+            results.Clear();
+        }
 
-        results.Clear();
+
     }
 
 
