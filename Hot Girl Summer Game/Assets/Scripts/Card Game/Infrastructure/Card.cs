@@ -53,6 +53,7 @@ public abstract class Card
     public void InitializeCardGameObject()
     {
         cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));
+        
         //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
         TextMeshProUGUI textMesh = cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1];
         textMesh.text = displayedInfo.text;
@@ -85,6 +86,7 @@ public abstract class Card
         }
         */
         cardGameObject.AddComponent<CardIdentifier>().whichCardIsThis = this;
+        InputManager.cardGameObjects.Add(cardGameObject);
     }
 
     public static Vibes Parse(string vibeString)

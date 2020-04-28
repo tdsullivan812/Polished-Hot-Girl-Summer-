@@ -68,7 +68,7 @@ public class GameController : MonoBehaviour
 
             Services.gameController = this;
             Services.eventManager = new EventManager();
-
+            InputManager.Initialize();
             //Services.allCardInformation = AllCardInformation(cardSpreadsheet);
 
 

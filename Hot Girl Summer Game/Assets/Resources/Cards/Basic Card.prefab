@@ -84,7 +84,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4071570114602090953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db4055907f6b4bc4ab0f24b5e4138c34, type: 3}
   m_Name: 
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 8134720732221277559}
   - component: {fileID: 6954301915130047504}
   - component: {fileID: 1193922065316800083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HoverImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 4268531003209537748}
   - component: {fileID: 8185868028598745671}
   - component: {fileID: 6930675939721680556}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Card Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 1929788397200301719}
   - component: {fileID: 6510763208251219587}
   - component: {fileID: 8759067581674062722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Card Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -53,7 +53,7 @@ public class Encounter
 
     public void FindGameObjects()
     {
-        if ((SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CardEncounter")) && cardGUI == null)
+        if ((SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(3)))
         {
             //Finds GameObjects in scene
             cardGUI = GameObject.FindGameObjectWithTag("HandZone");
@@ -65,6 +65,8 @@ public class Encounter
             _selectACardMenu.SetActive(false);
 
         }
+
+        InputManager.FindGameObjects();
     }
 
     public void Play(Card cardToPlay)
