@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
     public static List<RaycastResult> results;
     public static List<GameObject> cardGameObjects;
     public static GameObject currentlySelected;
+    public static RectTransform playableCardZone;
 
 
 
@@ -30,6 +31,7 @@ public class InputManager : MonoBehaviour
     {
         raycaster = GameObject.Find("Canvas").GetComponent<GraphicRaycaster>();
         cardGameEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
+        playableCardZone = GameObject.Find("PlayableCardZone").GetComponent<RectTransform>();
     }
     // Update is called once per frame
     void Update()
@@ -70,8 +72,15 @@ public class InputManager : MonoBehaviour
             }
 
         }
-        else
+
+
+        else if (currentlySelected != null)
         {
+            if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.PlayerTurn) && Encounter.playerActions > 0)
+            {
+                PlayCard();
+            }
+
             currentlySelected = null;
             results.Clear();
         }
@@ -79,5 +88,17 @@ public class InputManager : MonoBehaviour
 
     }
 
+    private void PlayCard()
+    {
+        if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.PlayerTurn))
+        {
 
+            if (playableCardZone.rect.Contains(playableCardZone.InverseTransformPoint(currentlySelected.transform.position)) && currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.isPlayable)
+            {
+                Debug.Log("I'm gonna play a card");
+                Encounter.playerHand.PlayFromHand(currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis);
+            }
+
+        }
+    }
 }
