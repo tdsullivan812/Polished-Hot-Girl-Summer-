@@ -51,7 +51,6 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
 
-
         //The Services class is just a static class that acts as a list of all the major systems in the game.
         //Right now, Services has three attributes: the gameController (this), the eventManager, and the
         // encounter. 
@@ -207,6 +206,21 @@ public class GameController : MonoBehaviour
         {
             nextNPC = new Meg();
         }
+
+        else if (npcName == "Cori")
+        {
+            nextNPC = new Cori();
+        }
+
+        else if (npcName == "Cody")
+        {
+            nextNPC = new Cody();
+        }
+
+        else if (npcName == "Jamie")
+        {
+            nextNPC = new Jamie();
+        }
     }
 
     public void LoadQuiz()
@@ -341,7 +355,7 @@ public class CardGame : FiniteStateMachine<GameController>.State
         GameController.partyDeck.CalculateVictoryPoints();
 
         //Now, check if Victory Point conditions are met
-        if (GameController.partyDeck.victoryPoints.totalPoints >= 16 || Encounter.npc.turnsExpired >= 10)
+        if (GameController.nextNPC.victoryCondition() || Encounter.npc.turnsExpired >= 10)
         {
             Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
             //If you have enough VP or time limit expires, the encounter ends

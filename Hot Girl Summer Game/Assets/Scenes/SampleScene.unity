@@ -5502,10 +5502,6 @@ GameObject:
   - component: {fileID: 1354139056}
   - component: {fileID: 1354139055}
   - component: {fileID: 1354139054}
-  - component: {fileID: 1354139095}
-  - component: {fileID: 1354139094}
-  - component: {fileID: 1354139093}
-  - component: {fileID: 1354139092}
   - component: {fileID: 1354139105}
   - component: {fileID: 1354139104}
   - component: {fileID: 1354139103}
@@ -5518,14 +5514,6 @@ GameObject:
   - component: {fileID: 1354139109}
   - component: {fileID: 1354139108}
   - component: {fileID: 1354139107}
-  - component: {fileID: 1354139091}
-  - component: {fileID: 1354139090}
-  - component: {fileID: 1354139089}
-  - component: {fileID: 1354139088}
-  - component: {fileID: 1354139087}
-  - component: {fileID: 1354139086}
-  - component: {fileID: 1354139085}
-  - component: {fileID: 1354139084}
   - component: {fileID: 1354139111}
   - component: {fileID: 1354139112}
   - component: {fileID: 1354139113}
@@ -5541,6 +5529,16 @@ GameObject:
   - component: {fileID: 1354139096}
   - component: {fileID: 1354139083}
   - component: {fileID: 1354139082}
+  - component: {fileID: 1354139093}
+  - component: {fileID: 1354139092}
+  - component: {fileID: 1354139091}
+  - component: {fileID: 1354139090}
+  - component: {fileID: 1354139089}
+  - component: {fileID: 1354139088}
+  - component: {fileID: 1354139087}
+  - component: {fileID: 1354139086}
+  - component: {fileID: 1354139085}
+  - component: {fileID: 1354139084}
   m_Layer: 0
   m_Name: Party Flowchart
   m_TagString: Untagged
@@ -5561,7 +5559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 330.2168, y: 507.85223}
+  scrollPos: {x: -497.7832, y: 795.85223}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -5572,8 +5570,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1354138799}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1354138725}
@@ -6477,11 +6474,11 @@ MonoBehaviour:
   eventHandler: {fileID: 1354139106}
   commandList:
   - {fileID: 1354138918}
+  - {fileID: 1354139086}
   - {fileID: 1354138750}
   - {fileID: 1354138749}
   - {fileID: 1354138747}
-  - {fileID: 1354139091}
-  - {fileID: 1354139090}
+  - {fileID: 1354139087}
 --- !u!114 &1354138749
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7194,6 +7191,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1354139113}
   commandList:
   - {fileID: 1354138923}
+  - {fileID: 1354139084}
   - {fileID: 1354138773}
   - {fileID: 1354138772}
   - {fileID: 1354138771}
@@ -8004,8 +8002,7 @@ MonoBehaviour:
   - {fileID: 1354138794}
   - {fileID: 1354138796}
   - {fileID: 1354138795}
-  - {fileID: 1354139085}
-  - {fileID: 1354139084}
+  - {fileID: 1354139092}
   - {fileID: 1354138793}
   - {fileID: 1354138914}
   - {fileID: 1354138792}
@@ -9159,22 +9156,21 @@ MonoBehaviour:
   eventHandler: {fileID: 1354139120}
   commandList:
   - {fileID: 1354138922}
+  - {fileID: 1354139093}
   - {fileID: 1354138829}
   - {fileID: 1354138917}
   - {fileID: 1354138828}
   - {fileID: 1354138827}
   - {fileID: 1354138826}
   - {fileID: 1354138825}
-  - {fileID: 1354139095}
-  - {fileID: 1354139094}
+  - {fileID: 1354139091}
   - {fileID: 1354138824}
   - {fileID: 1354138916}
   - {fileID: 1354138823}
   - {fileID: 1354138822}
   - {fileID: 1354138821}
   - {fileID: 1354138820}
-  - {fileID: 1354139093}
-  - {fileID: 1354139092}
+  - {fileID: 1354139090}
 --- !u!114 &1354138831
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10874,6 +10870,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1354139118}
   commandList:
   - {fileID: 1354138919}
+  - {fileID: 1354139085}
   - {fileID: 1354138874}
   - {fileID: 1354138913}
   - {fileID: 1354138873}
@@ -10882,7 +10879,6 @@ MonoBehaviour:
   - {fileID: 1354138871}
   - {fileID: 1354138870}
   - {fileID: 1354139089}
-  - {fileID: 1354139088}
   - {fileID: 1354138869}
   - {fileID: 1354138912}
   - {fileID: 1354138868}
@@ -10890,8 +10886,7 @@ MonoBehaviour:
   - {fileID: 1354138866}
   - {fileID: 1354138865}
   - {fileID: 1354138864}
-  - {fileID: 1354139087}
-  - {fileID: 1354139086}
+  - {fileID: 1354139088}
 --- !u!114 &1354138878
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18370,304 +18365,286 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1354139084
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 466
-  indentLevel: 1
-  text: Failed
+  itemId: 483
+  indentLevel: 0
   description: 
-  targetBlock: {fileID: 1354138841}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  targetComponentAssemblyName: GameController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameController
+  targetMethod: SetNPC
+  targetMethodText: 'SetNPC (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Kelly
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1354139085
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 465
-  indentLevel: 1
-  text: Solved
+  itemId: 482
+  indentLevel: 0
   description: 
-  targetBlock: {fileID: 1354138846}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  targetComponentAssemblyName: GameController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameController
+  targetMethod: SetNPC
+  targetMethodText: 'SetNPC (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Cori
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1354139086
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 464
-  indentLevel: 1
-  text: Failed
+  itemId: 481
+  indentLevel: 0
   description: 
-  targetBlock: {fileID: 1354138876}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  targetComponentAssemblyName: GameController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameController
+  targetMethod: SetNPC
+  targetMethodText: 'SetNPC (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Jamie
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1354139087
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 463
-  indentLevel: 1
-  text: Solved
-  description: 
-  targetBlock: {fileID: 1354138875}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  itemId: 480
+  indentLevel: 0
+  targetObject: {fileID: 740273589}
+  methodName: LoadCardGame
+  delay: 0
 --- !u!114 &1354139088
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 462
+  itemId: 479
   indentLevel: 1
-  text: Failed
-  description: 
-  targetBlock: {fileID: 1354138876}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  methodName: LoadCardGame
+  delay: 0
 --- !u!114 &1354139089
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 461
+  itemId: 478
   indentLevel: 1
-  text: Solved
-  description: 
-  targetBlock: {fileID: 1354138875}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  methodName: LoadCardGame
+  delay: 0
 --- !u!114 &1354139090
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 460
-  indentLevel: 0
-  text: Failed
-  description: 
-  targetBlock: {fileID: 1354138752}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  itemId: 477
+  indentLevel: 1
+  targetObject: {fileID: 740273589}
+  methodName: LoadCardGame
+  delay: 0
 --- !u!114 &1354139091
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 459
-  indentLevel: 0
-  text: Solved
-  description: 
-  targetBlock: {fileID: 1354138751}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  itemId: 476
+  indentLevel: 1
+  targetObject: {fileID: 740273589}
+  methodName: LoadCardGame
+  delay: 0
 --- !u!114 &1354139092
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 439
+  itemId: 475
   indentLevel: 1
-  text: Failed
-  description: 
-  targetBlock: {fileID: 1354138808}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  methodName: LoadCardGame
+  delay: 0
 --- !u!114 &1354139093
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354138714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 438
-  indentLevel: 1
-  text: Solved
+  itemId: 474
+  indentLevel: 0
   description: 
-  targetBlock: {fileID: 1354138819}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1354139094
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354138714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 437
-  indentLevel: 1
-  text: Failed
-  description: 
-  targetBlock: {fileID: 1354138808}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1354139095
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354138714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 436
-  indentLevel: 1
-  text: Solved
-  description: 
-  targetBlock: {fileID: 1354138819}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  targetObject: {fileID: 740273589}
+  targetComponentAssemblyName: GameController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameController
+  targetMethod: SetNPC
+  targetMethodText: 'SetNPC (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Cody
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1354139096
 MonoBehaviour:
   m_ObjectHideFlags: 2

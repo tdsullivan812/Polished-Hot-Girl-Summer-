@@ -24,7 +24,9 @@ public class Meg : NPC
             hypeCardsPlayed[hypeCardsPlayed.Count - 1].Effect();
             hypeCardsPlayed.Clear();
         }
-        
+
+        Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
+
     }
 
     public bool RequiredHypePoints()

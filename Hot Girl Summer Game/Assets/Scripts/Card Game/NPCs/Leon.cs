@@ -39,6 +39,8 @@ public class Leon : NPC
     {
         Card leonEffectCard = new Bubbly();
         Encounter.playerDeck.AddToDeck(leonEffectCard, 0);
+
+        Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
     }
 
 

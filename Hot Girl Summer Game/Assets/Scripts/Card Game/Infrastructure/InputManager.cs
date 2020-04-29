@@ -13,6 +13,7 @@ public class InputManager : MonoBehaviour
     public static List<GameObject> cardGameObjects;
     public static GameObject currentlySelected;
     public static RectTransform playableCardZone;
+    public static int topPriorityLayer;
 
 
 
@@ -36,6 +37,28 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        CheckDragAndDrop();
+
+
+    }
+
+    private void PlayCard()
+    {
+        if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.PlayerTurn))
+        {
+
+            if (playableCardZone.rect.Contains(playableCardZone.InverseTransformPoint(currentlySelected.transform.position)) && currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.isPlayable)
+            {
+                Debug.Log("I'm gonna play a card");
+                Encounter.playerHand.PlayFromHand(currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis);
+            }
+
+        }
+    }
+
+    private void CheckDragAndDrop()
+    {
         if (Input.GetKey(KeyCode.Mouse0))
         {
             PointerEventData pointerEvent = new PointerEventData(cardGameEventSystem);
@@ -50,7 +73,7 @@ public class InputManager : MonoBehaviour
                 if (results.Count > 0)
                 {
                     //Debug.Log(results[0].gameObject.name);
-                    foreach(RaycastResult hit in results)
+                    foreach (RaycastResult hit in results)
                     {
                         if (hit.gameObject.layer == 8)
                         {
@@ -59,7 +82,7 @@ public class InputManager : MonoBehaviour
                             break;
                         }
                     }
-                    
+
 
                 }
             }
@@ -68,7 +91,7 @@ public class InputManager : MonoBehaviour
             if (cardGameObjects.Contains(currentlySelected))
             {
                 Debug.Log("Begin drag");
-               currentlySelected.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
+                currentlySelected.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
             }
 
         }
@@ -86,19 +109,5 @@ public class InputManager : MonoBehaviour
         }
 
 
-    }
-
-    private void PlayCard()
-    {
-        if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.PlayerTurn))
-        {
-
-            if (playableCardZone.rect.Contains(playableCardZone.InverseTransformPoint(currentlySelected.transform.position)) && currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.isPlayable)
-            {
-                Debug.Log("I'm gonna play a card");
-                Encounter.playerHand.PlayFromHand(currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis);
-            }
-
-        }
     }
 }
