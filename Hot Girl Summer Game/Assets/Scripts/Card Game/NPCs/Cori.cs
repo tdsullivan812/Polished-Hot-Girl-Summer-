@@ -8,7 +8,7 @@ public class Cori : NPC
     public Cori()
     {
         npcName = "Cori";
-        npcSprite = null;
+        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredRatio;
         successMessage = "Cori Solved";
         failureMessage = "Cori Unsolved";

@@ -9,11 +9,12 @@ public class Meg : NPC
     public Meg()
     {
         npcName = "Meg";
-        npcSprite = null;
+        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredHypePoints;
         successMessage = "Meg Solved";
         failureMessage = "Meg Unsolved";
         turnsExpired = 0;
+        description = "Get 16 or more Hype points to pump up Meg! Every turn, she will play your last Hype card a second time.";
         hypeCardsPlayed = new List<Card>();
         Services.eventManager.Register<ActionCardPlayed>(CheckWhatCardWasPlayed);
     }

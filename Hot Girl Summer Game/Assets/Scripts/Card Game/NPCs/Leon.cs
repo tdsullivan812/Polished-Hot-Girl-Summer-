@@ -8,7 +8,7 @@ public class Leon : NPC
     public Leon()
     {
         npcName = "Leon";
-        npcSprite = null;
+        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredCards;
         successMessage = "Leon Solved";
         failureMessage = "Leon Unsolved";

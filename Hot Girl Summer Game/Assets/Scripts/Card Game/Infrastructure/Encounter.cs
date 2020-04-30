@@ -18,6 +18,8 @@ public class Encounter
     public static GameObject _selectACardMenu;
     public static GameObject    menuGrid;
     public static GameObject cardDropZone;
+    public static GameObject NPCDescription;
+    public static GameObject NPCPortrait;
 
     //Constants for managing Hand GUI
     /*
@@ -63,6 +65,7 @@ public class Encounter
             menuGrid = GameObject.Find("Card Zone");
             cardDropZone = GameObject.Find("PlayableCardZone");
             _selectACardMenu.SetActive(false);
+            NPCDescription = GameObject.Find("Objective");
 
         }
 

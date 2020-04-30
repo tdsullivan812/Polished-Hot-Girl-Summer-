@@ -13,7 +13,7 @@ public class Kelly : NPC
     public Kelly()
     {
         npcName = "Kelly";
-        npcSprite = null;
+        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredPoints;
         successMessage = "Kelly Solved";
         failureMessage = "Kelly Unsolved";

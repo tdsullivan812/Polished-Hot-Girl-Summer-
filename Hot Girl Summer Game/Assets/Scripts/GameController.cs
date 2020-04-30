@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
+using TMPro;
+using UnityEngine.UI;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -24,7 +26,7 @@ public class GameController : MonoBehaviour
     private static FiniteStateMachine<GameController> _gameFSM;
 
     public AllCardInformation cardInfo;
-
+    public NPCSprites listOfSprites;
     
     //This is the Party Deck, which is a list of all the cards the player owns. This is different from
     // the Deck object in an Encounter, because the Party Deck includes the discard pile.
@@ -347,6 +349,8 @@ public class CardGame : FiniteStateMachine<GameController>.State
         {
             cardInDeck.InitializeCardGameObject();
         }
+        Encounter.NPCDescription.GetComponent<TextMeshProUGUI>().text = Encounter.npc.description;
+        Encounter.NPCPortrait.GetComponent<Image>().sprite = Encounter.npc.npcSprite;
         Encounter.cardGameFSM.TransitionTo<Encounter.BeginningOfTurn>();
     }
 

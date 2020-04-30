@@ -7,7 +7,7 @@ public class Jamie : NPC
     public Jamie()
     {
         npcName = "Jamie";
-        npcSprite = null;
+        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredRatio;
         successMessage = "Jamie Solved";
         failureMessage = "Jamie Unsolved";

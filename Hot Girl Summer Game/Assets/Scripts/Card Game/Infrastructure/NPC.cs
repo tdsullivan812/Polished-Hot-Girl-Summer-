@@ -10,6 +10,7 @@ public abstract class NPC
     public string successMessage;
     public string failureMessage;
     public int turnsExpired;
+    public string description;
 
     public delegate bool Conditions();
     public Conditions victoryCondition;

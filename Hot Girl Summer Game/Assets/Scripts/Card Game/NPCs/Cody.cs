@@ -9,7 +9,7 @@ public class Cody : NPC
     public Cody()
     {
         npcName = "Cody";
-        npcSprite = null;
+        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredPoints;
         successMessage = "Cody Solved";
         failureMessage = "Cody Unsolved";
