@@ -8,11 +8,12 @@ public class Cori : NPC
     public Cori()
     {
         npcName = "Cori";
-        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
+        npcSprite = Services.gameController.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredRatio;
         successMessage = "Cori Solved";
         failureMessage = "Cori Unsolved";
         turnsExpired = 0;
+        description = "Make your Hype and Calm vibes equal to get Cori's ideal balance. Every turn, she'll duplicate a random card in your discard.";
     }
 
     public bool RequiredRatio()

@@ -9,21 +9,24 @@ public class Cody : NPC
     public Cody()
     {
         npcName = "Cody";
-        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
+        npcSprite = Services.gameController.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredPoints;
         successMessage = "Cody Solved";
         failureMessage = "Cody Unsolved";
         turnsExpired = 0;
+        
 
         if (GameController.partyDeck.victoryPoints.calmPoints < GameController.partyDeck.victoryPoints.hypePoints)
         {
             targetPoints = GameController.partyDeck.victoryPoints.calmPoints + 10;
             targetVibe = Card.Vibes.Calm;
+            description = "Add 10 more Calm points to your starting total to calm Cody's nerves. Every turn, he'll remove an unplayable Victory card from your discard.";
         }
         else
         {
             targetPoints = GameController.partyDeck.victoryPoints.hypePoints + 10;
             targetVibe = Card.Vibes.Hype;
+            description = "Add 10 more Hype points to your starting total to help Cody impress Leon. Every turn, he'll remove an unplayable Victory card from your discard.";
         }
     }
 

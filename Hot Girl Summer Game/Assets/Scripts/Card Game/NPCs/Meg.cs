@@ -9,7 +9,7 @@ public class Meg : NPC
     public Meg()
     {
         npcName = "Meg";
-        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
+        npcSprite = Services.gameController.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredHypePoints;
         successMessage = "Meg Solved";
         failureMessage = "Meg Unsolved";

@@ -7,11 +7,12 @@ public class Jamie : NPC
     public Jamie()
     {
         npcName = "Jamie";
-        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
+        npcSprite = Services.gameController.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredRatio;
         successMessage = "Jamie Solved";
         failureMessage = "Jamie Unsolved";
         turnsExpired = 0;
+        description = "Have twice as much Bubbly Vibes as either Hype or Calm to make Jamie's night! If you have Hype or Calm cards on the top 2 cards of your deck, they will discard them each turn.";
     }
 
     public bool RequiredRatio()

@@ -13,11 +13,12 @@ public class Kelly : NPC
     public Kelly()
     {
         npcName = "Kelly";
-        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
+        npcSprite = Services.gameController.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredPoints;
         successMessage = "Kelly Solved";
         failureMessage = "Kelly Unsolved";
         turnsExpired = 0;
+        description = "Have 16 or more points of any Vibe to help Kelly feel calm. Every turn, she'll permanently remove a Hype or Bubbly card from your discard!";
 
         //parentGameObject.SetActive(false);
     }

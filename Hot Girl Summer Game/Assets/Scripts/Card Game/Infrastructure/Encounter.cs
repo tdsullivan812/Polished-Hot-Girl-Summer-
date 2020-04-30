@@ -66,6 +66,7 @@ public class Encounter
             cardDropZone = GameObject.Find("PlayableCardZone");
             _selectACardMenu.SetActive(false);
             NPCDescription = GameObject.Find("Objective");
+            NPCPortrait = GameObject.Find("CharacterPortrait");
 
         }
 

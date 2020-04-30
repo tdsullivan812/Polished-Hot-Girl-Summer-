@@ -8,11 +8,13 @@ public class Leon : NPC
     public Leon()
     {
         npcName = "Leon";
-        npcSprite = NPCSprites.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
+        npcSprite = Services.gameController.arrayOfSprites[(int)NPCSprites.Parse(npcName)];
         victoryCondition = RequiredCards;
         successMessage = "Leon Solved";
         failureMessage = "Leon Unsolved";
         turnsExpired = 0;
+        description = "Dance with Leon 3 times! Every turn, he will add an unplayable Bubbly Victory card to the top of your deck.";
+
         danceCardsPlayed = 0;
         Services.eventManager.Register<ActionCardPlayed>(CheckWhatCardWasPlayed);
     }

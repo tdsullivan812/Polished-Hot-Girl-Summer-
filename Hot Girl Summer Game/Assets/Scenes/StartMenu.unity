@@ -876,8 +876,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardInfo: {fileID: 11400000, guid: 39e96efbc8deec549abb1a519df763ca, type: 2}
+  arrayOfSprites:
+  - {fileID: 21300000, guid: da991212685beeb44803e309f296d8ec, type: 3}
+  - {fileID: 21300000, guid: c269047d505474547a4bb4b93f0d7609, type: 3}
+  - {fileID: 21300000, guid: cbadf5dc9d0903f4d90c05e5e9f6209c, type: 3}
+  - {fileID: 21300000, guid: 5a84530bc64d41a45ad8b73d48e3421a, type: 3}
+  - {fileID: 21300000, guid: c37a9e237b506ba4a91351a294b5ed86, type: 3}
+  - {fileID: 21300000, guid: 063bae5a45f52c242be26a4313ee7191, type: 3}
   nextBlock: 
-  cardSpreadsheet: {fileID: 0}
+  cardSpreadsheet: {fileID: 4900000, guid: 5e275878f61eb5a43b923397a0f870ae, type: 3}
   flowchartGameObject: {fileID: 0}
   flowchart: {fileID: 0}
 --- !u!4 &1036714765

@@ -26,7 +26,8 @@ public class GameController : MonoBehaviour
     private static FiniteStateMachine<GameController> _gameFSM;
 
     public AllCardInformation cardInfo;
-    public NPCSprites listOfSprites;
+    //public static NPCSprites listOfSprites;
+    public Sprite[] arrayOfSprites;
     
     //This is the Party Deck, which is a list of all the cards the player owns. This is different from
     // the Deck object in an Encounter, because the Party Deck includes the discard pile.

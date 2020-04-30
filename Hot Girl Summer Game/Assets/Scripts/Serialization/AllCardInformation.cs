@@ -28,6 +28,7 @@ public class CardInformationEditor : Editor
     {
         var myTarget = (AllCardInformation)target;
         myTarget.cardSpreadsheet = (TextAsset) EditorGUILayout.ObjectField((Object)myTarget.cardSpreadsheet, typeof(TextAsset), false);
+        EditorUtility.SetDirty(target);
     }
 }
 #endif

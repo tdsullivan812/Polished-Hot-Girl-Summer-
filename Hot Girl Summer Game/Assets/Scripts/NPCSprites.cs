@@ -34,20 +34,25 @@ public class NPCSprites : ScriptableObject
     public static Sprite[] arrayOfSprites = new Sprite[6];
 
 #if UNITY_EDITOR
+    [CanEditMultipleObjects]
     [CustomEditor(typeof(NPCSprites))]
     public class CardInformationEditor : Editor
     {
-        CanEditMultipleObjects = true;
+        //CanEditMultipleObjects = true;
         public override void OnInspectorGUI()
         {
+
             NPCSprites.arrayOfSprites[0] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[0], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[1] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[1], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[2] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[2], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[3] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[3], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[4] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[4], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[5] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[5], typeof(Sprite), false);
+            EditorUtility.SetDirty(target);
 
         }
+
+
     }
 #endif
 }
