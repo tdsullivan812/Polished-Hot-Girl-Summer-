@@ -45,7 +45,7 @@ public class CardGUIEvents : EventTrigger
         StopCoroutine("HoverEffect");
         StartCoroutine("StopHoverEffect");
     }
-
+    /*
     public override void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Begin drag");
@@ -97,7 +97,7 @@ public class CardGUIEvents : EventTrigger
         //    }
         //}
     }
-
+    */
     #endregion
 
     private IEnumerator HoverEffect()
