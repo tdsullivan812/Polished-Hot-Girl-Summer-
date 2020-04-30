@@ -18,6 +18,7 @@ TagManager:
   - HandZone
   - Canvas
   - Warren
+  - Flowchart
   layers:
   - Default
   - TransparentFX

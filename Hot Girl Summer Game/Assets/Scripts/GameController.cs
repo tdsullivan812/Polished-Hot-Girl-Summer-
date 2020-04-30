@@ -132,7 +132,6 @@ public class GameController : MonoBehaviour
             
 
 
-            _gameFSM.TransitionTo<StartMenu>();
 
 
             //_gameFSM = new FiniteStateMachine<GameController>(this); //This line creates a state machine for 
@@ -264,9 +263,19 @@ public class GameController : MonoBehaviour
     
     public void GetPartyFlowchart()
     {
-        flowchartGameObject = GameObject.Find("Party Flowchart");
-        Object.DontDestroyOnLoad(flowchartGameObject);
-        flowchart = flowchartGameObject.GetComponent<Fungus.Flowchart>();
+        flowchartGameObject = GameObject.FindGameObjectWithTag("Flowchart");
+
+        if (flowchart == null)
+        {
+            flowchart = flowchartGameObject.GetComponent<Fungus.Flowchart>();
+            FungusVariableManager.Initialize();
+            FungusVariableManager.StoreStructToFlowchart();
+        }
+        else
+        {
+            GameObject.Destroy(flowchartGameObject);
+        }
+        
     }
 }
 
@@ -395,7 +404,8 @@ public class Story : FiniteStateMachine<GameController>.State
 {
     public override void OnEnter()
     {
-       
+
+        Services.gameController.GetPartyFlowchart();
 
         Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
         if (Services.gameController.nextBlock != null)
@@ -419,10 +429,8 @@ public class Story : FiniteStateMachine<GameController>.State
     public override void Update()
     {
 
-        if (Services.gameController.flowchartGameObject == null)
-        {
-            Services.gameController.GetPartyFlowchart();
-        }
+
+        FungusVariableManager.Update();
     }
 }
 

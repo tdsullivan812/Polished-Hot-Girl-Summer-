@@ -10,7 +10,7 @@ public class Cody : NPC
     {
         npcName = "Cody";
         npcSprite = null;
-        //victoryCondition = ;
+        victoryCondition = RequiredPoints;
         successMessage = "Cody Solved";
         failureMessage = "Cody Unsolved";
         turnsExpired = 0;

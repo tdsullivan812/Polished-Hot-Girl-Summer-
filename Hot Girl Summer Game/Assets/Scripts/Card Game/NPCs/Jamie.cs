@@ -38,8 +38,8 @@ public class Jamie : NPC
                 Encounter.playerDiscard.AddToDiscard(Encounter.playerDeck.RemoveFromDeck(firstFromTop));
             }
         }
-       
 
-        
+        Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
+
     }
 }
