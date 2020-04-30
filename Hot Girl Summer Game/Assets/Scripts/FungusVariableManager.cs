@@ -22,6 +22,10 @@ public static class FungusVariableManager
     private static Fungus.VariableReference _metCody;
     private static Fungus.VariableReference _codySolved;
 
+    private static Fungus.VariableReference _coriProblem;
+    private static Fungus.VariableReference _leonProblem;
+    private static Fungus.VariableReference _codyProblem;
+
     public struct GlobalPartyVariables
     {
         public bool MetKelly;
@@ -46,6 +50,10 @@ public static class FungusVariableManager
         public float Hype;
         public float Bubbly;
 
+        public int CoriProblem;
+        public int LeonProblem;
+        public int CodyProblem;
+
     }
 
     private static GlobalPartyVariables currentPartyState;
@@ -69,6 +77,9 @@ public static class FungusVariableManager
         _codySolved.variable = flowchart.GetVariable("CodySolved");
         _metJamie.variable = flowchart.GetVariable("MetJamie");
         _jamieSolved.variable = flowchart.GetVariable("JamieSolved");
+        _coriProblem.variable = flowchart.GetVariable("CoriProblem");
+        _leonProblem.variable = flowchart.GetVariable("LeonProblem");
+        _codyProblem.variable = flowchart.GetVariable("CodyProblem");
 
     }
 
@@ -98,6 +109,9 @@ public static class FungusVariableManager
         //currentPartyState.Hype = (float)GameController.partyDeck.victoryPoints.hypePoints;
         //currentPartyState.Chill = (float)GameController.partyDeck.victoryPoints.calmPoints;
         //currentPartyState.Bubbly = (float)GameController.partyDeck.victoryPoints.bubblyPoints;
+        currentPartyState.CoriProblem = _coriProblem.Get<int>();
+        currentPartyState.LeonProblem = _leonProblem.Get<int>();
+        currentPartyState.CodyProblem = _codyProblem.Get<int>();
     }
 
     public static void StoreStructToFlowchart()
@@ -118,5 +132,8 @@ public static class FungusVariableManager
         _jamieSolved.Set<bool>(currentPartyState.JamieSolved);
         _metCody.Set<bool>(currentPartyState.MetCody);
         _codySolved.Set<bool>(currentPartyState.CodySolved);
+        _coriProblem.Set<int>(currentPartyState.CoriProblem);
+        _leonProblem.Set<int>(currentPartyState.LeonProblem);
+        _codyProblem.Set<int>(currentPartyState.CodyProblem);
     }
 }
