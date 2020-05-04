@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 385693020}
   - component: {fileID: 385693019}
   m_Layer: 5
-  m_Name: TestButton
+  m_Name: How to Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &385693020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ea36b89277934b989c981c072f17d01, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f6845294ac944476ad19462df28b175, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -482,8 +482,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7f45efd76865a041a98755e7696db51, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 9f43a179c3686446db8c01279930b003, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -494,12 +494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This button is for testing purposes. If you do not want to go through
-    the personality quiz intro sequence and would just like to test the narrative
-    in the main party scene, click CONTINUE below. \n\nPlease note: this may effect
-    card game functionality. If you wish to play the card game at any point, we recommend
-    you use the 'START GAME' button and complete the personality quiz to fill your
-    deck. "
+  m_Text: Welcome to Hot Girl Summer Pool Party!
 --- !u!222 &678160410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -564,7 +559,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7f45efd76865a041a98755e7696db51, type: 3}
+    m_Font: {fileID: 12800000, guid: 9f43a179c3686446db8c01279930b003, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -969,7 +964,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7f45efd76865a041a98755e7696db51, type: 3}
+    m_Font: {fileID: 12800000, guid: 9f43a179c3686446db8c01279930b003, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -981,9 +976,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'NARRATIVE
+  m_Text: 'HOW TO
 
-    TESTING'
+    PLAY'
 --- !u!222 &1220435614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1048,7 +1043,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7f45efd76865a041a98755e7696db51, type: 3}
+    m_Font: {fileID: 12800000, guid: 9f43a179c3686446db8c01279930b003, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -1514,7 +1509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2040813565
 RectTransform:
   m_ObjectHideFlags: 0
