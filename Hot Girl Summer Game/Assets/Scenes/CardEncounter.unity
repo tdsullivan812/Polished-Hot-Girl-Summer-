@@ -3331,7 +3331,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To win, you need to get 16 total VP within 10 turns.
+  m_Text: To win, you must satisfy the condition in the top left corner within 10
+    turns.
 --- !u!222 &1254984703
 CanvasRenderer:
   m_ObjectHideFlags: 0
