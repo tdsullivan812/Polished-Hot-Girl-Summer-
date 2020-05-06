@@ -9,6 +9,9 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/NPCSprites", order = 2)]
 public class NPCSprites : ScriptableObject
 {
+
+    public static Sprite[] arrayOfSprites = new Sprite[6];
+
     public enum NPCIndex : int
     {
         Undefined = -1,
@@ -31,7 +34,8 @@ public class NPCSprites : ScriptableObject
         else return NPCIndex.Undefined;
 
     }
-    public static Sprite[] arrayOfSprites = new Sprite[6];
+
+
 
 #if UNITY_EDITOR
     [CanEditMultipleObjects]
@@ -48,7 +52,11 @@ public class NPCSprites : ScriptableObject
             NPCSprites.arrayOfSprites[3] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[3], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[4] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[4], typeof(Sprite), false);
             NPCSprites.arrayOfSprites[5] = (Sprite)EditorGUILayout.ObjectField((Object)arrayOfSprites[5], typeof(Sprite), false);
-            EditorUtility.SetDirty(target);
+            for (int i = 0; i < 6; i++)
+            {
+                EditorUtility.SetDirty(target);
+            }
+           
 
         }
 

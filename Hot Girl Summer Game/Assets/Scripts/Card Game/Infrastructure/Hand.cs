@@ -38,6 +38,7 @@ public class Hand
         cardsInHand.Remove(cardToDiscard);
 
         cardToDiscard.cardGameObject.transform.SetParent(null);
+        GameController.objectPools[cardToDiscard.displayedInfo.cardName].Push(cardToDiscard.cardGameObject);
         cardToDiscard.cardGameObject.GetComponent<CardGUIEvents>().SendToDiscard();
         cardToDiscard.cardGameObject.SetActive(false);
 
@@ -53,8 +54,22 @@ public class Hand
 
 
         Debug.Log(Encounter.cardGUI.gameObject.name);
-
-
+        string currentCardName = cardToAdd.displayedInfo.cardName;
+        GameObject cardObjectToPutInHand;
+        if (GameController.objectPools.ContainsKey(currentCardName) == false) //check if there is an existing pool for this card; if not, make one
+        {
+            cardToAdd.InitializeCardGameObject();
+            cardObjectToPutInHand = cardToAdd.cardGameObject;
+        }
+        else if (GameController.objectPools[currentCardName].Count == 0) //if there is a pool, check if there are any of this card in it; if not, instantiate a new object
+        {
+           cardObjectToPutInHand = Object.Instantiate(GameController.objectPools[cardToAdd.displayedInfo.cardName].cardGameObject);
+        }
+        else // if there is a card in the pool, just pop it
+        {
+            cardObjectToPutInHand = GameController.objectPools[currentCardName].Pop();
+        }
+        cardToAdd.cardGameObject = cardObjectToPutInHand;
         cardToAdd.cardGameObject.transform.SetParent(Encounter.cardGUI.transform);
         cardToAdd.cardGameObject.SetActive(true);
         Debug.Log("Activated object");

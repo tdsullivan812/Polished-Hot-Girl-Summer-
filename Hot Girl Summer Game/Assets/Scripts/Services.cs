@@ -9,6 +9,6 @@ public static class Services
     public static Encounter encounter;
     public static EventManager eventManager;
     //public static AllCardInformation allCardInformation;
-    //public static InputManager input;
+    public static InputManager input;
 
 }

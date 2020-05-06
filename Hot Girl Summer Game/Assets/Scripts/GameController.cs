@@ -47,7 +47,9 @@ public class GameController : MonoBehaviour
     //The GameObject with the Fungus Flowchart;
     public GameObject flowchartGameObject;
 
-    public Fungus.Flowchart flowchart; 
+    public Fungus.Flowchart flowchart;
+
+    public static Dictionary<string, ObjectPool> objectPools;
 
     // This is called even before the Start function. I just wanted to perform the DontDestroyOnLoad
     // as early as possible.
@@ -70,6 +72,7 @@ public class GameController : MonoBehaviour
 
             Services.gameController = this;
             Services.eventManager = new EventManager();
+            Services.input = new InputManager();
             InputManager.Initialize();
             //Services.allCardInformation = AllCardInformation(cardSpreadsheet);
 
@@ -77,6 +80,8 @@ public class GameController : MonoBehaviour
 
             //These lines initialize the public attributes in the GameController
             partyDeck = new DeckList();
+            objectPools = new Dictionary<string, ObjectPool>();
+
             nextNPC = new Kelly();
 
             //The gameController state machine is private, because this should be pretty much 

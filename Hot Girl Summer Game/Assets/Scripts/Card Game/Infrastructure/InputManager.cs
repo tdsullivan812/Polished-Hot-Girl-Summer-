@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InputManager : MonoBehaviour
+public class InputManager
 {
     private static int layerMask;
-    public static GraphicRaycaster raycaster;
+    public static GraphicRaycaster cardGameRaycaster;
+    public static GraphicRaycaster menuRaycaster;
     public static EventSystem cardGameEventSystem;
     public static List<RaycastResult> results;
-    public static List<GameObject> cardGameObjects;
+    public static List<GameObject> activeCardGameObjects;
     public static GameObject currentlySelected;
     public static RectTransform playableCardZone;
-    public static int topPriorityLayer;
+    public static FiniteStateMachine<InputManager> inputFSM;
 
 
 
@@ -23,14 +24,16 @@ public class InputManager : MonoBehaviour
         
         layerMask = 1 << 8;
         results = new List<RaycastResult>();
-        cardGameObjects = new List<GameObject>();
+        activeCardGameObjects = new List<GameObject>();
         currentlySelected = null;
+        inputFSM = new FiniteStateMachine<InputManager>(Services.input);
 
     }
 
     public static void FindGameObjects()
     {
-        raycaster = GameObject.Find("Canvas").GetComponent<GraphicRaycaster>();
+        cardGameRaycaster = GameObject.Find("Canvas").GetComponent<GraphicRaycaster>();
+        //menuRaycaster = GameObject.Find("MenuCanvas").GetComponent<GraphicRaycaster>();
         cardGameEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         playableCardZone = GameObject.Find("PlayableCardZone").GetComponent<RectTransform>();
     }
@@ -57,7 +60,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    private void CheckDragAndDrop()
+    public void CheckDragAndDrop()
     {
         if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -67,7 +70,7 @@ public class InputManager : MonoBehaviour
 
             if (currentlySelected == null)
             {
-                raycaster.Raycast(pointerEvent, results);
+                cardGameRaycaster.Raycast(pointerEvent, results);
                 Debug.Log("Raycast sent");
 
                 if (results.Count > 0)
@@ -88,7 +91,7 @@ public class InputManager : MonoBehaviour
             }
 
 
-            if (cardGameObjects.Contains(currentlySelected))
+            if (activeCardGameObjects.Contains(currentlySelected))
             {
                 Debug.Log("Begin drag");
                 currentlySelected.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
@@ -101,7 +104,7 @@ public class InputManager : MonoBehaviour
         {
             if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.PlayerTurn) && Encounter.playerActions > 0)
             {
-                PlayCard();
+                PlayCard(); 
             }
 
             currentlySelected = null;
@@ -111,3 +114,78 @@ public class InputManager : MonoBehaviour
 
     }
 }
+
+//Input Manager States begin here
+#region
+public class CardEncounterPlayerTurn : FiniteStateMachine<InputManager>.State //The state where players can play cards and view their deck/discard
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        Services.input.CheckDragAndDrop();
+    }
+}
+
+public class CardEncounterSelectCard : FiniteStateMachine<InputManager>.State //The state where players are prompted to make a selection
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+}
+
+public class CardEncounterMenu : FiniteStateMachine<InputManager>.State //The state where the player has opened a menu
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+}
+
+public class CardEncounterTutorial : FiniteStateMachine<InputManager>.State //The state where the tutorial screen is shown
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+}
+#endregion
