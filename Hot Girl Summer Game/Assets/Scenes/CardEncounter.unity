@@ -1219,8 +1219,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In this round, you play against Kelly, who will take away one of your Bubbly
-    or Hype cards after every turn.
+  m_Text: At the end of your turn, the other person in the encounter will take an
+    action as described in the top left corner.
 --- !u!222 &423680735
 CanvasRenderer:
   m_ObjectHideFlags: 0
