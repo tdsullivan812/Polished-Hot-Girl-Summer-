@@ -36,7 +36,7 @@ public class Jamie : NPC
             Card firstFromTop = Encounter.playerDeck.cardsInDeck[0];
             if (firstFromTop.displayedInfo.type != Card.Vibes.Bubbly)
             {
-                Encounter.playerDiscard.AddToDiscard(Encounter.playerDeck.RemoveFromDeck(firstFromTop));
+                Encounter.playerDiscard.Add(Encounter.playerDeck.Remove(firstFromTop));
             }
         }
 

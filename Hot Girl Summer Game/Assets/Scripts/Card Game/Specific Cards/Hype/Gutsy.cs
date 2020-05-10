@@ -16,15 +16,15 @@ public class Gutsy : Card
         displayedInfo.text = "Immediately add +2 Hype cards to your deck. At the start of your turn, remove those two hype cards from your deck.";
         displayedInfo.art = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()
     {
         hypeCards[0] = new Hype(); //add two hype cards
         hypeCards[1] = new Hype();
-        Encounter.playerDiscard.AddToDiscard(hypeCards[0]);
-        Encounter.playerDiscard.AddToDiscard(hypeCards[1]);
+        Encounter.playerDiscard.Add(hypeCards[0]);
+        Encounter.playerDiscard.Add(hypeCards[1]);
 
         Encounter.BeginningOfTurn.whatHappensAtBeginningOfTurn = RemoveTwoHype;
 

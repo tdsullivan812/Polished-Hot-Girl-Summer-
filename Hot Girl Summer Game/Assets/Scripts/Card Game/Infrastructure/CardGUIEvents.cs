@@ -160,6 +160,12 @@ public class CardGUIEvents : EventTrigger
 
 
         }
+
+        else
+        {
+            gameObject.SetActive(true);
+            yield return null;
+        }
         
         yield return null;
     }

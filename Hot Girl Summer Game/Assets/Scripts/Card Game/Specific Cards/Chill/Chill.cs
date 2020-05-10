@@ -14,7 +14,7 @@ public class Chill : Card
         displayedInfo.text = "Gain 1 Calm Vibe Point next turn.";
         displayedInfo.art = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()
@@ -27,7 +27,7 @@ public class Chill : Card
 
     public void AddOneCalm()
     {
-        Encounter.playerDiscard.AddToDiscard(new Calm());
+        Encounter.playerDiscard.Add(new Calm());
         Encounter.BeginningOfTurn.whatHappensAtBeginningOfTurn = null;
     }
 }

@@ -16,12 +16,12 @@ public class Dance : Card
         displayedInfo.text = "Immediately add one Bubbly Victory Card to your discard pile.";
         displayedInfo.normalArt = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
         
     }
     public override void Effect()
     {
         var newCard = new Bubbly();
-        Encounter.playerDiscard.AddToDiscard(newCard);
+        Encounter.playerDiscard.Add(newCard);
     }
 }

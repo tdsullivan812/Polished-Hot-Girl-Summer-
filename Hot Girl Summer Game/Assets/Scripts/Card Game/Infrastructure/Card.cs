@@ -48,15 +48,19 @@ public abstract class Card
     {
         Debug.Log("card name is" + this.ToString());
         displayedInfo = Services.gameController.cardInfo.cardInfoDictionary[this.ToString()];
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 3 && Services.encounter != null)
+        {
+            InitializeCardGameObject();
+        }
         //InitializeCardGameObject();
     }
 
     public void InitializeCardGameObject()
     {
-        if (GameController.objectPools.ContainsKey(displayedInfo.cardName) == false)
+        if (Encounter.objectPools.ContainsKey(displayedInfo.cardName) == false)
         {
             cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));
-            GameController.objectPools.Add(this.displayedInfo.cardName, new ObjectPool(cardGameObject));
+            Encounter.objectPools.Add(this.displayedInfo.cardName, new ObjectPool(cardGameObject));
 
             //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
             TextMeshProUGUI textMesh = cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1];
@@ -90,8 +94,31 @@ public abstract class Card
             }
             */
             cardGameObject.AddComponent<CardIdentifier>().whichCardIsThis = this;
-            InputManager.activeCardGameObjects.Add(cardGameObject);
+            Encounter.objectPools[this.displayedInfo.cardName].Push(cardGameObject);
+            //InputManager.activeCardGameObjects.Add(cardGameObject);
         }
+    }
+
+    public GameObject AssignGameObject()
+    {
+        string currentCardName = displayedInfo.cardName;
+        GameObject cardObjectToAssign;
+        if (Encounter.objectPools.ContainsKey(currentCardName) == false) //check if there is an existing pool for this card; if not, make one
+        {
+            InitializeCardGameObject();
+            cardObjectToAssign = cardGameObject;
+        }
+        else if (Encounter.objectPools[currentCardName].Count == 0) //if there is a pool, check if there are any of this card in it; if not, instantiate a new object
+        {
+            cardObjectToAssign = Object.Instantiate(Encounter.objectPools[displayedInfo.cardName].cardGameObject, Encounter.objectPools[displayedInfo.cardName].cardGameObject.transform.parent);
+            cardObjectToAssign.GetComponent<CardIdentifier>().whichCardIsThis = this;
+        }
+        else // if there is a card in the pool, just pop it
+        {
+            cardObjectToAssign = Encounter.objectPools[currentCardName].Pop();
+        }
+        cardGameObject = cardObjectToAssign;
+        return cardObjectToAssign;
     }
 
     public static Vibes Parse(string vibeString)

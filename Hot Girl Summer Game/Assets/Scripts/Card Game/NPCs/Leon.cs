@@ -40,7 +40,7 @@ public class Leon : NPC
     public override void Effect()
     {
         Card leonEffectCard = new Bubbly();
-        Encounter.playerDeck.AddToDeck(leonEffectCard, 0);
+        Encounter.playerDeck.Add(leonEffectCard, 0);
 
         Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();
     }

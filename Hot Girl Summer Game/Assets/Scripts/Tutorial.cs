@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
-    private static bool firstTime = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        if (!firstTime)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            firstTime = false;
-        }
+        
+    }
+
+    public void EndTutorial()
+    {
+        //gameObject.SetActive(false);
+        Encounter.cardGameFSM.TransitionTo<Encounter.BeginningOfTurn>();
+        InputManager.inputFSM.TransitionTo<CardEncounterPlayerTurn>();
     }
 
     // Update is called once per frame

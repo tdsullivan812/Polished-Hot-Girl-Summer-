@@ -15,7 +15,7 @@ public class GetPumped : Card
         displayedInfo.art = Resources.Load<Sprite>("");
         */
 
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()

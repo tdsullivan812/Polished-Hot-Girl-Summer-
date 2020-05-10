@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Discard
+public class Discard : ICardGameElement
 {
 
    
@@ -13,7 +13,7 @@ public class Discard
         cardsInDiscard = new List<Card>();
     }
 
-    public Card RemoveFromDiscard(Card cardToRemove)
+    public Card Remove(Card cardToRemove)
     {
         foreach (Card cardInDiscard in cardsInDiscard)
         {
@@ -27,22 +27,28 @@ public class Discard
     }
 
 
-    public Card AddToDiscard(Card cardToAdd)
+    public Card Add(Card cardToAdd, int target = -1)
     {
-        cardsInDiscard.Add(cardToAdd);
-
-        if (cardToAdd.cardGameObject.activeInHierarchy)
+        if (target == -1)
         {
-            cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("SendToDiscard");
+            cardsInDiscard.Add(cardToAdd);
         }
         else
         {
+            cardsInDiscard.Insert(target, cardToAdd);
+        }
 
-            cardToAdd.cardGameObject.SetActive(true);
-            cardToAdd.cardGameObject.transform.SetPositionAndRotation(Encounter.discardPileTransform.position, Quaternion.identity);
-            
+
+        if (cardToAdd.cardGameObject == null)
+        {
+            cardToAdd.AssignGameObject();
+            cardToAdd.cardGameObject.transform.SetParent(GameObject.Find("Canvas").transform);
+
             
         }
+        cardToAdd.cardGameObject.SetActive(true);
+        cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("SendToDiscard");
+        //cardToAdd.cardGameObject.transform.SetPositionAndRotation(Encounter.discardPileTransform.position, Quaternion.identity);
         cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
         return cardToAdd;
     }

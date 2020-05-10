@@ -16,14 +16,14 @@ public class PrivateTalk : Card
         displayedInfo.art = Resources.Load<Sprite>("");
         */
 
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
 
 
     }
     public override void Effect()
     {
         var newCard = new Chill();
-        Encounter.playerDiscard.AddToDiscard(newCard);
+        Encounter.playerDiscard.Add(newCard);
         //THOMAS PLS HELP ME ADD SOME CODE THAT ALLOWS YOU TO PLAY YOUR NEXT ACTION CARD TWICE.
 
         //Tells eventManager to execute PlayActionAgain when an action is played

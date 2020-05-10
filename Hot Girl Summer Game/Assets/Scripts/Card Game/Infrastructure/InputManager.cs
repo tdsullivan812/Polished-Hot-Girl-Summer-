@@ -24,7 +24,7 @@ public class InputManager
         
         layerMask = 1 << 8;
         results = new List<RaycastResult>();
-        activeCardGameObjects = new List<GameObject>();
+        //activeCardGameObjects = new List<GameObject>();
         currentlySelected = null;
         inputFSM = new FiniteStateMachine<InputManager>(Services.input);
 
@@ -36,6 +36,7 @@ public class InputManager
         //menuRaycaster = GameObject.Find("MenuCanvas").GetComponent<GraphicRaycaster>();
         cardGameEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         playableCardZone = GameObject.Find("PlayableCardZone").GetComponent<RectTransform>();
+
     }
     // Update is called once per frame
     void Update()
@@ -50,7 +51,7 @@ public class InputManager
     {
         if (Encounter.cardGameFSM.CurrentState.GetType() == typeof(Encounter.PlayerTurn))
         {
-
+            Debug.Log(currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis);
             if (playableCardZone.rect.Contains(playableCardZone.InverseTransformPoint(currentlySelected.transform.position)) && currentlySelected.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.isPlayable)
             {
                 Debug.Log("I'm gonna play a card");
@@ -75,27 +76,45 @@ public class InputManager
 
                 if (results.Count > 0)
                 {
-                    //Debug.Log(results[0].gameObject.name);
+                    Debug.Log(results[0].gameObject.name);
                     foreach (RaycastResult hit in results)
                     {
-                        if (hit.gameObject.layer == 8)
+                        switch (hit.gameObject.layer)
                         {
-                            currentlySelected = hit.gameObject;
-                            Debug.Log(currentlySelected.name);
+                            case 8:
+                                currentlySelected = hit.gameObject;
+                                Debug.Log(currentlySelected.name);
+                                break;
+                            case 11:
+                                hit.gameObject.GetComponent<MenuOfCards>().TriggerMenu();
+
+                                break;
+                            default:
+                                break;
+
+                        }
+                        if (currentlySelected != null)
+                        {
+                            //Debug.Log("Begin drag");
+
+
                             break;
                         }
+                        else continue; ;
                     }
 
 
                 }
+                results.Clear();
             }
 
-
-            if (activeCardGameObjects.Contains(currentlySelected))
+            if (currentlySelected != null)
             {
-                Debug.Log("Begin drag");
                 currentlySelected.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
             }
+            
+
+
 
         }
 
@@ -187,5 +206,25 @@ public class CardEncounterTutorial : FiniteStateMachine<InputManager>.State //Th
     {
         base.Update();
     }
+}
+
+public class PartyMode : FiniteStateMachine<InputManager>.State //The state where the player is at the party
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+
+
 }
 #endregion

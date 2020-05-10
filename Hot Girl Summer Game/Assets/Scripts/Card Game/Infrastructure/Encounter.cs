@@ -20,6 +20,10 @@ public class Encounter
     public static GameObject cardDropZone;
     public static GameObject NPCDescription;
     public static GameObject NPCPortrait;
+    public static GameObject tutorial;
+    public static GameObject deckZone;
+    public static GameObject discardZone;
+    public static Dictionary<string, ObjectPool> objectPools;
 
     //Constants for managing Hand GUI
     /*
@@ -37,6 +41,7 @@ public class Encounter
         playerDeck = new Deck();
         playerDiscard = new Discard();
         playerHand = new Hand();
+        objectPools = new Dictionary<string, ObjectPool>();
 
 
         Debug.Log("Created Hand, deck, discard");
@@ -61,16 +66,20 @@ public class Encounter
             cardGUI = GameObject.FindGameObjectWithTag("HandZone");
             endTurnButton = GameObject.Find("EndPlayerTurn");
             discardPileTransform = GameObject.Find("Discard Pile").transform;
-            _selectACardMenu = GameObject.Find("Select A Card Menu");
+            //_selectACardMenu = GameObject.Find("Select A Card Menu");
             menuGrid = GameObject.Find("Card Zone");
             cardDropZone = GameObject.Find("PlayableCardZone");
-            _selectACardMenu.SetActive(false);
+            //_selectACardMenu.SetActive(false);
             NPCDescription = GameObject.Find("Objective");
             NPCPortrait = GameObject.Find("CharacterPortrait");
+            tutorial = GameObject.Find("Panel");
+            deckZone = GameObject.Find("Draw Pile");
+            discardZone = GameObject.Find("Discard Pile");
+            InputManager.FindGameObjects();
 
         }
 
-        InputManager.FindGameObjects();
+
     }
 
     public void Play(Card cardToPlay)
@@ -164,6 +173,7 @@ public class Encounter
 
             Encounter.endTurnButton.SetActive(true);
 
+            InputManager.inputFSM.TransitionTo<CardEncounterPlayerTurn>();
             
         }
 
@@ -295,6 +305,50 @@ public class Encounter
             function();
         }
         #endregion
+    }
+
+    public class BeginEncounter : FiniteStateMachine<Encounter>.State
+    {
+        public override void OnEnter()
+        {
+
+        }
+        public override void OnExit()
+        {
+            base.OnExit();
+        }
+
+        public override void Update()
+        {
+            if (!Services.gameController.firstTime)
+            {
+                tutorial.SetActive(false);
+                Encounter.cardGameFSM.TransitionTo<BeginningOfTurn>();
+            }
+            else
+            {
+                Encounter.cardGameFSM.TransitionTo<TutorialMode>();
+                InputManager.inputFSM.TransitionTo<CardEncounterTutorial>();
+                Services.gameController.firstTime = false;
+            }
+        }
+    }
+    public class TutorialMode : FiniteStateMachine<Encounter>.State
+    {
+        public override void OnEnter()
+        {
+            base.OnEnter();
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+        }
+
+        public override void Update()
+        {
+            base.Update();
+        }
     }
 
     #endregion

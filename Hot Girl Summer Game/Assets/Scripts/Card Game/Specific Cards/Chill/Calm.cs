@@ -14,7 +14,7 @@ public class Calm : Card
         displayedInfo.text = "Unplayable. Worth 3 Calm Points.";
         displayedInfo.art = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()

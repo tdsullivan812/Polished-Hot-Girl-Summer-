@@ -14,7 +14,7 @@ public class Bubbly : Card
         displayedInfo.text = "Unplayable. Worth 3 Bubbly Points.";
         displayedInfo.normalArt = Resources.Load<Sprite>("Bubbly_Background");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()

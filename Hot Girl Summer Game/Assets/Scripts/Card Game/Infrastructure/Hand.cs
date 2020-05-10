@@ -19,7 +19,7 @@ public class Hand
         {
             Encounter.playerActions--;
             cardsInHand.Remove(cardToPlay);
-            Encounter.playerDiscard.AddToDiscard(cardToPlay);
+            Encounter.playerDiscard.Add(cardToPlay);
 
             //handTransforms.RemoveAt(0);
             //Services.encounter.UpdateHandSize();
@@ -38,11 +38,12 @@ public class Hand
         cardsInHand.Remove(cardToDiscard);
 
         cardToDiscard.cardGameObject.transform.SetParent(null);
-        GameController.objectPools[cardToDiscard.displayedInfo.cardName].Push(cardToDiscard.cardGameObject);
+        Encounter.objectPools[cardToDiscard.displayedInfo.cardName].Push(cardToDiscard.cardGameObject);
         cardToDiscard.cardGameObject.GetComponent<CardGUIEvents>().SendToDiscard();
-        cardToDiscard.cardGameObject.SetActive(false);
+        //cardToDiscard.cardGameObject.SetActive(false);
+        //InputManager.activeCardGameObjects.Remove(cardToDiscard.cardGameObject);
 
-        Encounter.playerDiscard.AddToDiscard(cardToDiscard);
+        Encounter.playerDiscard.Add(cardToDiscard);
 
 
         return cardToDiscard;
@@ -54,24 +55,29 @@ public class Hand
 
 
         Debug.Log(Encounter.cardGUI.gameObject.name);
+        cardToAdd.AssignGameObject();
+
+        /*
         string currentCardName = cardToAdd.displayedInfo.cardName;
         GameObject cardObjectToPutInHand;
-        if (GameController.objectPools.ContainsKey(currentCardName) == false) //check if there is an existing pool for this card; if not, make one
+        if (Encounter.objectPools.ContainsKey(currentCardName) == false) //check if there is an existing pool for this card; if not, make one
         {
             cardToAdd.InitializeCardGameObject();
             cardObjectToPutInHand = cardToAdd.cardGameObject;
         }
-        else if (GameController.objectPools[currentCardName].Count == 0) //if there is a pool, check if there are any of this card in it; if not, instantiate a new object
+        else if (Encounter.objectPools[currentCardName].Count == 0) //if there is a pool, check if there are any of this card in it; if not, instantiate a new object
         {
-           cardObjectToPutInHand = Object.Instantiate(GameController.objectPools[cardToAdd.displayedInfo.cardName].cardGameObject);
+           cardObjectToPutInHand = Object.Instantiate(Encounter.objectPools[cardToAdd.displayedInfo.cardName].cardGameObject);
         }
         else // if there is a card in the pool, just pop it
         {
-            cardObjectToPutInHand = GameController.objectPools[currentCardName].Pop();
+            cardObjectToPutInHand = Encounter.objectPools[currentCardName].Pop();
         }
-        cardToAdd.cardGameObject = cardObjectToPutInHand;
+        cardToAdd.cardGameObject = cardObjectToPutInHand; */
+
         cardToAdd.cardGameObject.transform.SetParent(Encounter.cardGUI.transform);
         cardToAdd.cardGameObject.SetActive(true);
+        //InputManager.activeCardGameObjects.Add(cardToAdd.cardGameObject);
         Debug.Log("Activated object");
         return cardToAdd;
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Deck
+public class Deck : ICardGameElement
 {
     
     public List<Card> cardsInDeck;
@@ -26,24 +26,24 @@ public class Deck
             foreach (Card currentlyInDiscard in Encounter.playerDiscard.cardsInDiscard)
             {
                 
-                Encounter.playerDeck.AddToDeck(currentlyInDiscard);
+                Encounter.playerDeck.Add(currentlyInDiscard);
             }
 
             foreach (Card justAddedToDeck in Encounter.playerDeck.cardsInDeck)
             {
-                Encounter.playerDiscard.RemoveFromDiscard(justAddedToDeck);
+                Encounter.playerDiscard.Remove(justAddedToDeck);
             }
             Shuffle(); 
         }
         var cardToDraw = cardsInDeck[0];
-        RemoveFromDeck(cardToDraw);
+        Remove(cardToDraw);
         //Encounter.playerHand.AddToHand(cardToDraw);
         Debug.Log("drew card");
         return Encounter.playerHand.AddToHand(cardToDraw);
     }
     
 
-    public Card AddToDeck(Card cardToAdd, int targetPosition = -1)
+    public Card Add(Card cardToAdd, int targetPosition = -1)
     {
         if (targetPosition == -1)
         {
@@ -54,7 +54,7 @@ public class Deck
         return cardToAdd;
     }
 
-    public Card RemoveFromDeck(Card cardToRemove)
+    public Card Remove(Card cardToRemove)
     {
         cardsInDeck.Remove(cardToRemove);
         return cardToRemove;

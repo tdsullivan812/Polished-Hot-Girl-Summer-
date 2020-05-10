@@ -14,7 +14,7 @@ public class Hype : Card
         displayedInfo.text = "Unplayable. Worth 3 Vibe Points.";
         displayedInfo.art = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()
