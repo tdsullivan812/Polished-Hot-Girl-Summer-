@@ -15,6 +15,7 @@ public class InputManager
     public static GameObject currentlySelected;
     public static RectTransform playableCardZone;
     public static FiniteStateMachine<InputManager> inputFSM;
+    public static Fungus.Clickable2D[] clickable2Ds;
 
 
 
@@ -132,6 +133,22 @@ public class InputManager
 
 
     }
+
+    public void DeactivateClickables()
+    {
+        for (int i = 0; i < clickable2Ds.Length; i++)
+        {
+            clickable2Ds[i].ClickEnabled = false;
+        }
+    }
+
+    public void ReactivateClickables()
+    {
+        for (int i = 0; i < clickable2Ds.Length; i++)
+        {
+            clickable2Ds[i].ClickEnabled = true;
+        }
+    }
 }
 
 //Input Manager States begin here
@@ -212,7 +229,8 @@ public class PartyMode : FiniteStateMachine<InputManager>.State //The state wher
 {
     public override void OnEnter()
     {
-        base.OnEnter();
+        InputManager.clickable2Ds = new Fungus.Clickable2D[10];
+        InputManager.clickable2Ds = (Fungus.Clickable2D[])GameObject.FindObjectsOfType(typeof(Fungus.Clickable2D));
     }
 
     public override void OnExit()
@@ -222,7 +240,14 @@ public class PartyMode : FiniteStateMachine<InputManager>.State //The state wher
 
     public override void Update()
     {
-        base.Update();
+        if (Services.gameController.flowchart.HasExecutingBlocks())
+        {
+            Context.DeactivateClickables();
+        }
+        else
+        {
+            Context.ReactivateClickables();
+        }
     }
 
 
