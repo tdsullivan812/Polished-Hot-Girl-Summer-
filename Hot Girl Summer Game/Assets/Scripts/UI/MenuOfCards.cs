@@ -37,6 +37,8 @@ public class MenuOfCards : MonoBehaviour
 
     public static int index; // an index of which card appears in the upper left corner of the menu
 
+    private TextMeshProUGUI _cardCounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +79,8 @@ public class MenuOfCards : MonoBehaviour
         }
 
         comparison = AlphabeticalCompare;
+        _cardCounter = gameObject.GetComponentInChildren<TextMeshProUGUI>();
+
     }
 
     public void TriggerMenu()
@@ -192,6 +196,24 @@ public class MenuOfCards : MonoBehaviour
             cardsToDisplay[adjustedIndex].cardGameObject.SetActive(true);
 
             gameObjectsInGrid[i] = cardsToDisplay[adjustedIndex].cardGameObject; //finally, records the new object as being in the grid
+        }
+    }
+
+    void Update()
+    {
+        if (_cardCounter != null)
+        {
+            switch (connectedElementInput)
+            {
+                case CardElement.deck:
+                    _cardCounter.text = Encounter.playerDeck.cardsInDeck.Count.ToString();
+                    break;
+                case CardElement.discard:
+                    _cardCounter.text = Encounter.playerDiscard.cardsInDiscard.Count.ToString();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
