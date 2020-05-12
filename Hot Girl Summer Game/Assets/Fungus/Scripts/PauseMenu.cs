@@ -33,4 +33,10 @@ public class PauseMenu : MonoBehaviour
         }
 
     }
+
+    public void resumeGame()
+    {
+        gamePaused = false;
+        pauseMenu.SetActive(false);
+    }
 }
