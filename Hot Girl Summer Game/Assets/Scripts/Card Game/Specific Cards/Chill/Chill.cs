@@ -20,14 +20,14 @@ public class Chill : Card
     public override void Effect()
     {
 
-        //THOMAS HELP idk what to do here to add calm vibe point next turn
+        //Set the BeginningOfTurn delegate to the AddOneCalm method
         Encounter.BeginningOfTurn.whatHappensAtBeginningOfTurn = AddOneCalm;
-        Debug.Log("played Chill");
     }
 
+    //The card's Effect sets this method to execute at the beginning of the next turn
     public void AddOneCalm()
     {
-        Encounter.playerDiscard.Add(new Calm());
-        Encounter.BeginningOfTurn.whatHappensAtBeginningOfTurn = null;
+        Encounter.playerDiscard.Add(new Calm()); //Adds one "Calm" to the player's discard
+        Encounter.BeginningOfTurn.whatHappensAtBeginningOfTurn = null; //returns the BeginningOfTurn delegate to null
     }
 }
