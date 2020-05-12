@@ -255,8 +255,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: End Player Turn
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 341866fd6b458ee4cb254b160cb08a32, type: 2}
-  m_sharedMaterial: {fileID: 1116996863928845522, guid: 341866fd6b458ee4cb254b160cb08a32,
+  m_fontAsset: {fileID: 11400000, guid: 48d69dfee33dcc54ea853410072b644e, type: 2}
+  m_sharedMaterial: {fileID: -5158694083962632569, guid: 48d69dfee33dcc54ea853410072b644e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 11
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1737,7 +1737,7 @@ RectTransform:
   m_GameObject: {fileID: 495191893}
   m_LocalRotation: {x: -0, y: -0, z: -0.27866018, w: 0.9603898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6317, y: 1.6317, z: 1.6317}
   m_Children:
   - {fileID: 1439604039}
   m_Father: {fileID: 1612939803}
@@ -1745,7 +1745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -32.361}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -657, y: -307}
+  m_AnchoredPosition: {x: -677, y: -398}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.50000006, y: 0.5000001}
 --- !u!114 &495191895
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb163de19ffa5fa41a057c22132bb8e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 785868918accc4f31a235b39a8e377d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3216,8 +3216,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 52}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 27, y: -46}
+  m_SizeDelta: {x: 45.5, y: 42.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952655560
 MonoBehaviour:
@@ -3239,16 +3239,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Discard
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 341866fd6b458ee4cb254b160cb08a32, type: 2}
-  m_sharedMaterial: {fileID: 1116996863928845522, guid: 341866fd6b458ee4cb254b160cb08a32,
+  m_fontAsset: {fileID: 11400000, guid: 48d69dfee33dcc54ea853410072b644e, type: 2}
+  m_sharedMaterial: {fileID: -5158694083962632569, guid: 48d69dfee33dcc54ea853410072b644e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3266,8 +3266,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3304,7 +3304,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.000015555766, w: 0}
   m_textInfo:
     textComponent: {fileID: 952655560}
     characterCount: 7
@@ -3312,7 +3312,7 @@ MonoBehaviour:
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -4650,8 +4650,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Drop Cards Here to Play or Select Them!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 341866fd6b458ee4cb254b160cb08a32, type: 2}
-  m_sharedMaterial: {fileID: 1116996863928845522, guid: 341866fd6b458ee4cb254b160cb08a32,
+  m_fontAsset: {fileID: 11400000, guid: 48d69dfee33dcc54ea853410072b644e, type: 2}
+  m_sharedMaterial: {fileID: -5158694083962632569, guid: 48d69dfee33dcc54ea853410072b644e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4723,7 +4723,7 @@ MonoBehaviour:
     spaceCount: 7
     wordCount: 8
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -5293,7 +5293,7 @@ RectTransform:
   m_GameObject: {fileID: 1653083714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3004231, y: 2.3004231, z: 2.3004231}
   m_Children:
   - {fileID: 952655559}
   m_Father: {fileID: 1612939803}
@@ -5301,7 +5301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 639, y: -285}
+  m_AnchoredPosition: {x: 611, y: -328}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653083716
@@ -5322,7 +5322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb163de19ffa5fa41a057c22132bb8e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 29f00442bd6c3024cab1c9766268b2fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5426,8 +5426,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Scoreboard
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 341866fd6b458ee4cb254b160cb08a32, type: 2}
-  m_sharedMaterial: {fileID: 1116996863928845522, guid: 341866fd6b458ee4cb254b160cb08a32,
+  m_fontAsset: {fileID: 11400000, guid: 48d69dfee33dcc54ea853410072b644e, type: 2}
+  m_sharedMaterial: {fileID: -5158694083962632569, guid: 48d69dfee33dcc54ea853410072b644e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5453,7 +5453,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 61
+  m_fontSize: 46
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5965,8 +5965,8 @@ MonoBehaviour:
   m_text: Get 16 or more Hype points to pump up Meg! Every turn, she will play your
     last Hype card a second time.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 341866fd6b458ee4cb254b160cb08a32, type: 2}
-  m_sharedMaterial: {fileID: 1116996863928845522, guid: 341866fd6b458ee4cb254b160cb08a32,
+  m_fontAsset: {fileID: 11400000, guid: 48d69dfee33dcc54ea853410072b644e, type: 2}
+  m_sharedMaterial: {fileID: -5158694083962632569, guid: 48d69dfee33dcc54ea853410072b644e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6038,7 +6038,7 @@ MonoBehaviour:
     spaceCount: 21
     wordCount: 22
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
