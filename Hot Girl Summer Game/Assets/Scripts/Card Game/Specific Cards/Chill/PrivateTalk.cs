@@ -16,15 +16,14 @@ public class PrivateTalk : Card
         displayedInfo.art = Resources.Load<Sprite>("");
         */
 
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
 
 
     }
     public override void Effect()
     {
         var newCard = new Chill();
-        Encounter.playerDiscard.AddToDiscard(newCard);
-        //THOMAS PLS HELP ME ADD SOME CODE THAT ALLOWS YOU TO PLAY YOUR NEXT ACTION CARD TWICE.
+        Encounter.playerDiscard.Add(newCard);
 
         //Tells eventManager to execute PlayActionAgain when an action is played
         Services.eventManager.Register<ActionCardPlayed>(PlayActionAgain);
@@ -32,10 +31,11 @@ public class PrivateTalk : Card
         Debug.Log("played Private Talk");
     }
 
+    //The Effect registers this method for the ActionCardPlayed event
     public void PlayActionAgain(HotGirlEvent aCardWasPlayed)
     {
         ActionCardPlayed actionCardEvent = (ActionCardPlayed)aCardWasPlayed;
-        Services.eventManager.Unregister<ActionCardPlayed>(PlayActionAgain);
-        Services.encounter.Play(actionCardEvent.cardPlayed);
+        Services.eventManager.Unregister<ActionCardPlayed>(PlayActionAgain); //Unregisters this method
+        Services.encounter.Play(actionCardEvent.cardPlayed); //Plays the card a second time
     }
 }

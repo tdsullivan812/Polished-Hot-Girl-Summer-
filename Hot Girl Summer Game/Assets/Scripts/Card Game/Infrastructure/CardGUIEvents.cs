@@ -116,7 +116,7 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(currentTextColor, targetTextColor, parameter);
             //gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(1, sizeWhenHovering, parameter), 1);
 
-            parameter += 0.01f;
+            parameter += 0.04f;
             yield return null;
         }
         yield return null;
@@ -138,7 +138,7 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(currentTextColor, targetTextColor, parameter);
             //gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(sizeWhenHovering, 1, parameter), 1);
 
-            parameter += 0.01f;
+            parameter += 0.04f;
             yield return null;
         }
         yield return null;
@@ -159,6 +159,12 @@ public class CardGUIEvents : EventTrigger
             yield return null;
 
 
+        }
+
+        else
+        {
+            gameObject.SetActive(true);
+            yield return null;
         }
         
         yield return null;

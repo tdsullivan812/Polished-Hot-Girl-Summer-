@@ -44,10 +44,15 @@ public class GameController : MonoBehaviour
     //This is the spreadsheet of all of the cards and their identifying info
     public TextAsset cardSpreadsheet;
 
+    //A bool tracking whether the player has had a card encounter yet
+    public bool firstTime = true;
+
     //The GameObject with the Fungus Flowchart;
     public GameObject flowchartGameObject;
 
-    public Fungus.Flowchart flowchart; 
+    public Fungus.Flowchart flowchart;
+
+    //public static Dictionary<string, ObjectPool> objectPools;
 
     // This is called even before the Start function. I just wanted to perform the DontDestroyOnLoad
     // as early as possible.
@@ -70,6 +75,7 @@ public class GameController : MonoBehaviour
 
             Services.gameController = this;
             Services.eventManager = new EventManager();
+            Services.input = new InputManager();
             InputManager.Initialize();
             //Services.allCardInformation = AllCardInformation(cardSpreadsheet);
 
@@ -77,6 +83,8 @@ public class GameController : MonoBehaviour
 
             //These lines initialize the public attributes in the GameController
             partyDeck = new DeckList();
+            //objectPools = new Dictionary<string, ObjectPool>();
+
             nextNPC = new Kelly();
 
             //The gameController state machine is private, because this should be pretty much 
@@ -172,6 +180,7 @@ public class GameController : MonoBehaviour
         
         //The Game Controller updates first
         _gameFSM.Update();
+        InputManager.inputFSM.Update();
 
         
     }
@@ -352,7 +361,9 @@ public class CardGame : FiniteStateMachine<GameController>.State
         }
         Encounter.NPCDescription.GetComponent<TextMeshProUGUI>().text = Encounter.npc.description;
         Encounter.NPCPortrait.GetComponent<Image>().sprite = Encounter.npc.npcSprite;
-        Encounter.cardGameFSM.TransitionTo<Encounter.BeginningOfTurn>();
+        Encounter.deckZone.GetComponent<MenuOfCards>().Initialize();
+        Encounter.discardZone.GetComponent<MenuOfCards>().Initialize();
+        Encounter.cardGameFSM.TransitionTo<Encounter.BeginEncounter>();
     }
 
     public override void OnExit()
@@ -373,6 +384,7 @@ public class CardGame : FiniteStateMachine<GameController>.State
         {
             Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
             //If you have enough VP or time limit expires, the encounter ends
+            InputManager.inputFSM.TransitionTo<PartyMode>();
             TransitionTo<LoadingPartyScene>();
             
         }

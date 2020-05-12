@@ -14,7 +14,7 @@ public class Joke : Card
         displayedInfo.text = "Draw 1 card and take 1 more action this turn.";
         displayedInfo.art = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()

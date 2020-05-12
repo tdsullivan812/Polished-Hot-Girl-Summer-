@@ -50,7 +50,7 @@ public class Cody : NPC
         }
         if (vpCards.Count > 0)
         {
-            Encounter.playerDiscard.RemoveFromDiscard(vpCards[UnityEngine.Random.Range(0, vpCards.Count)]);
+            Encounter.playerDiscard.Remove(vpCards[UnityEngine.Random.Range(0, vpCards.Count)]);
         }
        
 

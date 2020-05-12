@@ -488,13 +488,21 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to Hot Girl Summer Pool Party!
+  m_Text: "Welcome to your Hot Girl Summer!!! \n\nToday\u2019s the day of your big
+    party, and this is the first party you\u2019ve ever thrown, so try to make sure
+    it goes smoothly. Every time you encounter a guest with a problem, you have an
+    opportunity to influence the vibe of the party! People will have different reactions
+    to your party based on its vibe, so be careful when deciding what kind of party
+    you want to have. Sometimes, certain guests will be able to give you stuff that
+    might help you solve problems later. \n\nMost importantly, try to have a good
+    time! This summer is all about being yourself, spending time with your friends,
+    and throwing the best ding dang party of 1999, baby!\n"
 --- !u!222 &678160410
 CanvasRenderer:
   m_ObjectHideFlags: 0

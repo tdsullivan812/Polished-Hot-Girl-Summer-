@@ -57,12 +57,12 @@ public class Kelly : NPC
         if (cardsInTheMenu.Count > 0)
         {
             Card randomSelection = cardsInTheMenu[Mathf.FloorToInt(Random.Range(0, cardsInTheMenu.Count))];
-            if (Encounter.playerDeck.cardsInDeck.Contains(randomSelection)) Encounter.playerDeck.RemoveFromDeck(randomSelection);
-            else if (Encounter.playerDiscard.cardsInDiscard.Contains(randomSelection)) Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
+            if (Encounter.playerDeck.cardsInDeck.Contains(randomSelection)) Encounter.playerDeck.Remove(randomSelection);
+            else if (Encounter.playerDiscard.cardsInDiscard.Contains(randomSelection)) Encounter.playerDiscard.Remove(randomSelection);
             else
             {
                 Encounter.playerHand.Discard(randomSelection);
-                Encounter.playerDiscard.RemoveFromDiscard(randomSelection);
+                Encounter.playerDiscard.Remove(randomSelection);
                 Object.Destroy(randomSelection.cardGameObject);
 
             }
@@ -75,12 +75,12 @@ public class Kelly : NPC
     {
         if (CardGUIEvents.cardSelectedByPlayer != null && CardGUIEvents.cardSelectedByPlayer.cardGameObject.transform.parent == Encounter.menuGrid.transform)
         {
-            if (Encounter.playerDeck.cardsInDeck.Contains(CardGUIEvents.cardSelectedByPlayer)) Encounter.playerDeck.RemoveFromDeck(CardGUIEvents.cardSelectedByPlayer);
-            else if (Encounter.playerDiscard.cardsInDiscard.Contains(CardGUIEvents.cardSelectedByPlayer)) Encounter.playerDiscard.RemoveFromDiscard(CardGUIEvents.cardSelectedByPlayer);
+            if (Encounter.playerDeck.cardsInDeck.Contains(CardGUIEvents.cardSelectedByPlayer)) Encounter.playerDeck.Remove(CardGUIEvents.cardSelectedByPlayer);
+            else if (Encounter.playerDiscard.cardsInDiscard.Contains(CardGUIEvents.cardSelectedByPlayer)) Encounter.playerDiscard.Remove(CardGUIEvents.cardSelectedByPlayer);
             else
             {
                 Encounter.playerHand.Discard(CardGUIEvents.cardSelectedByPlayer);
-                Encounter.playerDiscard.RemoveFromDiscard(CardGUIEvents.cardSelectedByPlayer);
+                Encounter.playerDiscard.Remove(CardGUIEvents.cardSelectedByPlayer);
                 Object.Destroy(CardGUIEvents.cardSelectedByPlayer.cardGameObject);
 
             }

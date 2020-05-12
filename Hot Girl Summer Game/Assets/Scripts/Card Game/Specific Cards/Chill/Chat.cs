@@ -14,7 +14,7 @@ public class Chat : Card
         displayedInfo.text = "Draw 2 cards.";
         displayedInfo.art = Resources.Load<Sprite>("");
         */
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
     public override void Effect()
     {

@@ -32,7 +32,7 @@ public class Cori : NPC
             var index = UnityEngine.Random.Range(0, Encounter.playerDiscard.cardsInDiscard.Count);
             Card duplicatedCard = (Card)Encounter.playerDiscard.cardsInDiscard[index].GetType().GetConstructor(Type.EmptyTypes).Invoke(null);
             duplicatedCard.InitializeCardGameObject();
-            Encounter.playerDiscard.AddToDiscard(duplicatedCard);
+            Encounter.playerDiscard.Add(duplicatedCard);
         }
 
         Encounter.cardGameFSM.TransitionTo<Encounter.NPCTurnEnd>();

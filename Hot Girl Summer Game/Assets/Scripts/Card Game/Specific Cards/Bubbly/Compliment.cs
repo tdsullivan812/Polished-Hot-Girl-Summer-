@@ -7,7 +7,7 @@ public class Compliment : Card
 {
    public Compliment()
     {
-        InitializeCardGameObject();
+        //InitializeCardGameObject();
     }
 
     public override void Effect()
