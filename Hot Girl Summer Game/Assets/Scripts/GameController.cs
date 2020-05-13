@@ -107,6 +107,7 @@ public class GameController : MonoBehaviour
 
                 case 2:
                     _gameFSM.TransitionTo<Story>();
+                    //InputManager.inputFSM.TransitionTo<PartyMode>();
                     partyDeck.AddCard(new Bubbly());              //These lines add basic cards to the deck
                     partyDeck.AddCard(new Dance());
                     partyDeck.AddCard(new Gutsy());
@@ -364,6 +365,11 @@ public class CardGame : FiniteStateMachine<GameController>.State
         Encounter.deckZone.GetComponent<MenuOfCards>().Initialize();
         Encounter.discardZone.GetComponent<MenuOfCards>().Initialize();
         Encounter.cardGameFSM.TransitionTo<Encounter.BeginEncounter>();
+        if (Services.gameController.firstTime)
+        {
+            InputManager.inputFSM.TransitionTo<CardEncounterTutorial>();
+        }
+        else InputManager.inputFSM.TransitionTo<CardEncounterPlayerTurn>();
     }
 
     public override void OnExit()
@@ -384,7 +390,7 @@ public class CardGame : FiniteStateMachine<GameController>.State
         {
             Services.gameController.nextBlock = Services.gameController.EvaluatePartyState();
             //If you have enough VP or time limit expires, the encounter ends
-            InputManager.inputFSM.TransitionTo<PartyMode>();
+            //InputManager.inputFSM.TransitionTo<PartyMode>();
             TransitionTo<LoadingPartyScene>();
             
         }
@@ -435,6 +441,7 @@ public class Story : FiniteStateMachine<GameController>.State
             Services.encounter = null;
         }
 
+        InputManager.inputFSM.TransitionTo<PartyMode>();
 
     }
 
