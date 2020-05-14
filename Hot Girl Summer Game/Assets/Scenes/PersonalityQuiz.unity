@@ -499,6 +499,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 22388894, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22388894, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 154344392}
+    - target: {fileID: 22388894, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -670,7 +682,7 @@ Canvas:
   m_GameObject: {fileID: 772367480}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 154344392}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -680,7 +692,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &772367484
 RectTransform:
@@ -4125,6 +4137,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 22315124, guid: 9bb64c8df70904eecac3f71f81bf339b, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22315124, guid: 9bb64c8df70904eecac3f71f81bf339b, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 154344392}
+    - target: {fileID: 22315124, guid: 9bb64c8df70904eecac3f71f81bf339b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22415094, guid: 9bb64c8df70904eecac3f71f81bf339b, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -5064,6 +5088,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question2
       objectReference: {fileID: 0}
+    - target: {fileID: 312528210633223996, guid: d71102f2dbcd1824ca33165cc2faa68d,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 312528210633223996, guid: d71102f2dbcd1824ca33165cc2faa68d,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 154344392}
+    - target: {fileID: 312528210633223996, guid: d71102f2dbcd1824ca33165cc2faa68d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 312528210633223997, guid: d71102f2dbcd1824ca33165cc2faa68d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5267,6 +5306,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883465694445976480, guid: 6b0471eb89118fa4d9c3804ab1d23eff,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883465694445976480, guid: 6b0471eb89118fa4d9c3804ab1d23eff,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 154344392}
+    - target: {fileID: 2883465694445976480, guid: 6b0471eb89118fa4d9c3804ab1d23eff,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2883465694445976485, guid: 6b0471eb89118fa4d9c3804ab1d23eff,
         type: 3}
@@ -5522,6 +5576,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772367484}
     m_Modifications:
+    - target: {fileID: 3388954984507057639, guid: 340b0dc39660f48b2958d87879107085,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 293.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388954984507057639, guid: 340b0dc39660f48b2958d87879107085,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388954984507057639, guid: 340b0dc39660f48b2958d87879107085,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 322.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388954984507057639, guid: 340b0dc39660f48b2958d87879107085,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 161.83
+      objectReference: {fileID: 0}
     - target: {fileID: 3388954984923551178, guid: 340b0dc39660f48b2958d87879107085,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5876,6 +5950,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question3
       objectReference: {fileID: 0}
+    - target: {fileID: 6027249978030657821, guid: 1807ae908efdded4db451b2d5a90586b,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6027249978030657821, guid: 1807ae908efdded4db451b2d5a90586b,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 154344392}
+    - target: {fileID: 6027249978030657821, guid: 1807ae908efdded4db451b2d5a90586b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6027249978201783738, guid: 1807ae908efdded4db451b2d5a90586b,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -5994,6 +6083,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Question4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927551389693265766, guid: 7153912b29c91424aadff77aad6e557d,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927551389693265766, guid: 7153912b29c91424aadff77aad6e557d,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 154344392}
+    - target: {fileID: 6927551389693265766, guid: 7153912b29c91424aadff77aad6e557d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6927551389693265769, guid: 7153912b29c91424aadff77aad6e557d,
         type: 3}
