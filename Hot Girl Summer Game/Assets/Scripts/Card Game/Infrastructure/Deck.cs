@@ -51,6 +51,16 @@ public class Deck : ICardGameElement
             return cardToAdd;
         }
         cardsInDeck.Insert(targetPosition, cardToAdd);
+
+        if (cardToAdd.cardGameObject == null)
+        {
+            cardToAdd.AssignGameObject();
+            cardToAdd.cardGameObject.transform.SetParent(GameObject.Find("Canvas").transform);
+
+
+        }
+        cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("SendToDeck");
+        cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
         return cardToAdd;
     }
 

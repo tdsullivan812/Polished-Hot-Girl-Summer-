@@ -146,27 +146,45 @@ public class CardGUIEvents : EventTrigger
 
     public IEnumerator SendToDiscard()
     {
-        if (gameObject.activeInHierarchy)
-        {
-            Transform initialPosition = gameObject.transform;
-            var parameter = 0.0f;
-            while (parameter < 1)
-            {
-                gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.discardPileTransform.position, parameter), Quaternion.identity);
-                parameter += 0.001f;
-                yield return null;
-            }
-            yield return null;
-
-
-        }
-
-        else
+        if (!gameObject.activeInHierarchy)
         {
             gameObject.SetActive(true);
             yield return null;
+
+        }
+
+        Transform initialPosition = gameObject.transform;
+        var parameter = 0.0f;
+        while (parameter < 1)
+        {
+            gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.discardPileTransform.position, parameter), Quaternion.identity);
+            parameter += 0.001f;
+            yield return null;
         }
         
+        yield return null;
+
+        
+    }
+
+    public IEnumerator SendToDeck()
+    {
+        if (!gameObject.activeInHierarchy)
+        {
+            gameObject.SetActive(true);
+            yield return null;
+
+        }
+
+        Transform initialPosition = gameObject.transform;
+        var parameter = 0.0f;
+        while (parameter < 1)
+        {
+            gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.deckZone.transform.position, parameter), Quaternion.identity);
+            parameter += 0.001f;
+            yield return null;
+        }
+        gameObject.SetActive(false);
         yield return null;
     }
 

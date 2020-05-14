@@ -99,10 +99,12 @@ public class GameController : MonoBehaviour
             {
                 case 0:
                     _gameFSM.TransitionTo<StartMenu>();
+                    InputManager.inputFSM.TransitionTo<TitleScreen>();
                     break;
 
                 case 1:
                     _gameFSM.TransitionTo<PersonalityQuiz>();
+                    InputManager.inputFSM.TransitionTo<TitleScreen>();
                     break;
 
                 case 2:

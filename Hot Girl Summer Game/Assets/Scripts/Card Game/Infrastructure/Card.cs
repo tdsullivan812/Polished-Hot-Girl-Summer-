@@ -101,6 +101,7 @@ public abstract class Card
 
     public GameObject AssignGameObject()
     {
+        //if (cardGameObject != null) return cardGameObject;
         string currentCardName = displayedInfo.cardName;
         GameObject cardObjectToAssign;
         if (Encounter.objectPools.ContainsKey(currentCardName) == false) //check if there is an existing pool for this card; if not, make one
@@ -117,6 +118,7 @@ public abstract class Card
         {
             cardObjectToAssign = Encounter.objectPools[currentCardName].Pop();
         }
+        cardObjectToAssign.GetComponent<CardGUIEvents>().StopAllCoroutines();
         cardGameObject = cardObjectToAssign;
         return cardObjectToAssign;
     }

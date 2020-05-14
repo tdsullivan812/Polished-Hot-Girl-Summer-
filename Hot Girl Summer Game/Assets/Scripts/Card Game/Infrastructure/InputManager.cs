@@ -153,6 +153,26 @@ public class InputManager
 
 //Input Manager States begin here
 #region
+
+
+public class TitleScreen : FiniteStateMachine<InputManager>.State
+{
+    public override void OnEnter()
+    {
+        base.OnEnter();
+    }
+
+    public override void OnExit()
+    {
+        base.OnExit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
+}
+
 public class CardEncounterPlayerTurn : FiniteStateMachine<InputManager>.State //The state where players can play cards and view their deck/discard
 {
     public override void OnEnter()
