@@ -41,6 +41,7 @@ public abstract class Card
 
     public GameObject cardGameObject;
     public CardInfo displayedInfo;
+    private readonly Vector3 _zPosition = new Vector3(0, 0, 90);
     //public DisplayedCard cardOnScreen;
     public abstract void Effect();
 
@@ -80,7 +81,7 @@ public abstract class Card
 
         if (Encounter.objectPools.ContainsKey(displayedInfo.cardName) == false)
         {
-            cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));
+            cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"), _zPosition, Quaternion.identity);
             Encounter.objectPools.Add(this.displayedInfo.cardName, new ObjectPool(cardGameObject));
 
             //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;

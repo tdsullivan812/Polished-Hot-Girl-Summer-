@@ -16,6 +16,7 @@ public class InputManager
     public static RectTransform playableCardZone;
     public static FiniteStateMachine<InputManager> inputFSM;
     public static Fungus.Clickable2D[] clickable2Ds;
+    public static Camera camera;
 
 
 
@@ -28,6 +29,7 @@ public class InputManager
         //activeCardGameObjects = new List<GameObject>();
         currentlySelected = null;
         inputFSM = new FiniteStateMachine<InputManager>(Services.input);
+       
 
     }
 
@@ -37,6 +39,7 @@ public class InputManager
         //menuRaycaster = GameObject.Find("MenuCanvas").GetComponent<GraphicRaycaster>();
         cardGameEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         playableCardZone = GameObject.Find("PlayableCardZone").GetComponent<RectTransform>();
+        camera = GameObject.FindObjectOfType<Camera>();
 
     }
     // Update is called once per frame
@@ -84,6 +87,7 @@ public class InputManager
                         {
                             case 8:
                                 currentlySelected = hit.gameObject;
+
                                 Debug.Log(currentlySelected.name);
                                 break;
                             case 11:
@@ -111,7 +115,8 @@ public class InputManager
 
             if (currentlySelected != null)
             {
-                currentlySelected.transform.SetPositionAndRotation(pointerEvent.position, Quaternion.identity);
+
+                currentlySelected.transform.SetPositionAndRotation(currentlySelected.transform.InverseTransformVector(camera.ScreenToWorldPoint(pointerEvent.position)), Quaternion.identity);
             }
             
 

@@ -37,12 +37,17 @@ public class MouseInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.mousePosition.x < 0 || Input.mousePosition.x > Screen.width || Input.mousePosition.y < 0 || Input.mousePosition.y > Screen.height)
+        {
+            return;
+        }
+
         if (Input.mousePosition.x <= scrollThreshold && transform.position.x >= -35)
         {
             transform.position -= cameraXMovementIncrement; //scroll left
 
         }
-        else if (Input.mousePosition.x >= Screen.width - scrollThreshold)
+        else if (Input.mousePosition.x >= Screen.width - scrollThreshold && transform.position.x <= 17)
         {
             transform.position += cameraXMovementIncrement; //scroll right
         }
