@@ -57,6 +57,27 @@ public abstract class Card
 
     public void InitializeCardGameObject()
     {
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene() == UnityEngine.SceneManagement.SceneManager.GetSceneByBuildIndex(2))
+        {
+            cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));
+
+            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
+            TextMeshProUGUI textMesh = cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1];
+            textMesh.text = displayedInfo.text;
+            textMesh.color = ChooseColor(displayedInfo.type);
+            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].text = displayedInfo.text;
+            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].outlineColor = ChooseColor(displayedInfo.type);
+
+            var cardImages = cardGameObject.GetComponentsInChildren<UnityEngine.UI.Image>();
+            //UnityEngine.UI.Image cardBackgroundImage = cardGameObject.GetComponent<UnityEngine.UI.Image>();
+            //UnityEngine.UI.Image hoverImage = cardGameObject.GetComponentInChildren<UnityEngine.UI.Image>();
+            cardGameObject.name = displayedInfo.cardName;
+            cardImages[0].sprite = displayedInfo.normalArt;
+            cardImages[1].sprite = displayedInfo.hoverArt;
+            cardGameObject.AddComponent<CardIdentifier>().whichCardIsThis = this;
+            return;
+        }
+
         if (Encounter.objectPools.ContainsKey(displayedInfo.cardName) == false)
         {
             cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));

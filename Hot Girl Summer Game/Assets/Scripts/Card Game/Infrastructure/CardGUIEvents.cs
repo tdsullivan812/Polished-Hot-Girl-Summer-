@@ -14,7 +14,11 @@ public class CardGUIEvents : EventTrigger
     // Start is called before the first frame update
     void Start()
     {
-        playableCardZone = GameObject.Find("PlayableCardZone").GetComponent<RectTransform>();
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene() == UnityEngine.SceneManagement.SceneManager.GetSceneByBuildIndex(3))
+        {
+            playableCardZone = GameObject.Find("PlayableCardZone").GetComponent<RectTransform>();
+        }
+
     }
 
     // Update is called once per frame
