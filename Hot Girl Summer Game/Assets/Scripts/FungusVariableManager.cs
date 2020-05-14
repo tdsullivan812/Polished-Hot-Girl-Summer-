@@ -9,6 +9,8 @@ public static class FungusVariableManager
     private static Fungus.VariableReference _hype;
     private static Fungus.VariableReference _bubbly;
     private static Fungus.VariableReference _chill;
+
+    private static Fungus.VariableReference _encounterCounter;
     private static Fungus.VariableReference _metKelly;
     private static Fungus.VariableReference _kellySolved;
     private static Fungus.VariableReference _metMeg;
@@ -54,6 +56,8 @@ public static class FungusVariableManager
         public int LeonProblem;
         public int CodyProblem;
 
+        public int EncounterCounter;
+
     }
 
     private static GlobalPartyVariables currentPartyState;
@@ -80,6 +84,7 @@ public static class FungusVariableManager
         _coriProblem.variable = flowchart.GetVariable("CoriProblem");
         _leonProblem.variable = flowchart.GetVariable("LeonProblem");
         _codyProblem.variable = flowchart.GetVariable("CodyProblem");
+        _encounterCounter.variable = flowchart.GetVariable("EncounterCounter");
 
     }
 
@@ -112,6 +117,8 @@ public static class FungusVariableManager
         currentPartyState.CoriProblem = _coriProblem.Get<int>();
         currentPartyState.LeonProblem = _leonProblem.Get<int>();
         currentPartyState.CodyProblem = _codyProblem.Get<int>();
+
+        currentPartyState.EncounterCounter = _encounterCounter.Get<int>();
     }
 
     public static void StoreStructToFlowchart()
@@ -135,5 +142,7 @@ public static class FungusVariableManager
         _coriProblem.Set<int>(currentPartyState.CoriProblem);
         _leonProblem.Set<int>(currentPartyState.LeonProblem);
         _codyProblem.Set<int>(currentPartyState.CodyProblem);
+
+        _encounterCounter.Set<int>(currentPartyState.EncounterCounter);
     }
 }
