@@ -63,7 +63,8 @@ public class Kelly : NPC
             {
                 Encounter.playerHand.Discard(randomSelection);
                 Encounter.playerDiscard.Remove(randomSelection);
-                Object.Destroy(randomSelection.cardGameObject);
+
+                randomSelection.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("RemoveFromGame");
 
             }
         }

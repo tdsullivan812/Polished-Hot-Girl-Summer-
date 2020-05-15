@@ -37,9 +37,8 @@ public class Hand
     {
         cardsInHand.Remove(cardToDiscard);
 
-        cardToDiscard.cardGameObject.transform.SetParent(null);
+        cardToDiscard.cardGameObject.transform.SetParent(GameObject.Find("Canvas").transform);
         Encounter.objectPools[cardToDiscard.displayedInfo.cardName].Push(cardToDiscard.cardGameObject);
-        cardToDiscard.cardGameObject.GetComponent<CardGUIEvents>().SendToDiscard();
         //cardToDiscard.cardGameObject.SetActive(false);
         //InputManager.activeCardGameObjects.Remove(cardToDiscard.cardGameObject);
 

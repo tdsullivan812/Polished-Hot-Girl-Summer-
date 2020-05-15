@@ -15,13 +15,23 @@ public class Discard : ICardGameElement
 
     public Card Remove(Card cardToRemove)
     {
+        /*
         foreach (Card cardInDiscard in cardsInDiscard)
         {
             cardInDiscard.cardGameObject.SetActive(false);
             cardInDiscard.cardGameObject.GetComponent<CardGUIEvents>().enabled = true;
             cardInDiscard.cardGameObject.transform.SetParent(null);
             cardInDiscard.cardGameObject.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+        }*/
+        if (cardToRemove.cardGameObject == null)
+        {
+            cardToRemove.AssignGameObject();
+            cardToRemove.cardGameObject.transform.SetParent(GameObject.Find("Canvas").transform);
+
+
         }
+        cardToRemove.cardGameObject.transform.SetPositionAndRotation(Encounter.deckZone.transform.position, Quaternion.identity);
+        cardToRemove.cardGameObject.SetActive(true);
         cardsInDiscard.Remove(cardToRemove);
         return cardToRemove;
     }
@@ -49,7 +59,7 @@ public class Discard : ICardGameElement
         cardToAdd.cardGameObject.SetActive(true);
         cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("SendToDiscard");
         //cardToAdd.cardGameObject.transform.SetPositionAndRotation(Encounter.discardPileTransform.position, Quaternion.identity);
-        cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
+        //cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
         return cardToAdd;
     }
 

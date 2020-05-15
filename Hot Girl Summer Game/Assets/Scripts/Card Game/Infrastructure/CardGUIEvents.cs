@@ -164,10 +164,13 @@ public class CardGUIEvents : EventTrigger
         while (parameter < 1)
         {
             gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.discardPileTransform.position, parameter), Quaternion.identity);
-            parameter += 0.001f;
+            parameter += 0.01f;
             yield return null;
         }
-        
+
+        gameObject.SetActive(false);
+        Encounter.objectPools[gameObject.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.cardName].Push(gameObject);
+        gameObject.GetComponent<CardIdentifier>().whichCardIsThis.cardGameObject = null;
         yield return null;
 
         
@@ -184,18 +187,35 @@ public class CardGUIEvents : EventTrigger
 
         Transform initialPosition = gameObject.transform;
         var parameter = 0.0f;
-        while (parameter < 1)
+        while (parameter < .95)
         {
             gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, Encounter.deckZone.transform.position, parameter), Quaternion.identity);
-            parameter += 0.001f;
+            parameter += 0.01f;
             yield return null;
         }
         gameObject.SetActive(false);
+        Encounter.objectPools[gameObject.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.cardName].Push(gameObject);
+        gameObject.GetComponent<CardIdentifier>().whichCardIsThis.cardGameObject = null;
+        gameObject.transform.SetParent(null);
         yield return null;
     }
 
-    public void RemoveFromDiscard()
+    public IEnumerator RemoveFromGame()
     {
+        Vector2 targetPosition = new Vector2(1000, -300);
+        Transform initialPosition = gameObject.transform;
+        var parameter = 0.0f;
+        while (parameter < 1)
+        {
+            gameObject.transform.SetPositionAndRotation(Vector3.Lerp(initialPosition.position, targetPosition, parameter), Quaternion.identity);
+            parameter += 0.01f;
+            yield return null;
+        }
+        gameObject.SetActive(false);
+        Encounter.objectPools[gameObject.GetComponent<CardIdentifier>().whichCardIsThis.displayedInfo.cardName].Push(gameObject);
+        gameObject.GetComponent<CardIdentifier>().whichCardIsThis.cardGameObject = null;
+        gameObject.transform.SetParent(null);
+        yield return null;
 
     }
 }

@@ -60,12 +60,23 @@ public class Deck : ICardGameElement
 
         }
         cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().StartCoroutine("SendToDeck");
-        cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
+        //cardToAdd.cardGameObject.GetComponent<CardGUIEvents>().enabled = false;
         return cardToAdd;
     }
 
     public Card Remove(Card cardToRemove)
     {
+        if (cardToRemove.cardGameObject == null)
+        {
+            cardToRemove.AssignGameObject();
+            cardToRemove.cardGameObject.transform.SetParent(GameObject.Find("Canvas").transform);
+
+
+        }
+
+        
+        cardToRemove.cardGameObject.transform.SetPositionAndRotation(Encounter.deckZone.transform.position, Quaternion.identity);
+        cardToRemove.cardGameObject.SetActive(true);
         cardsInDeck.Remove(cardToRemove);
         return cardToRemove;
     }
