@@ -27,5 +27,12 @@ public class AudioManager : MonoBehaviour
             source.clip = partyTracks[1];
             source.Play();
         }
+
+        else
+        {
+            source.Pause();
+            source.clip = partyTracks[2];
+            source.Play();
+        }
     }
 }
