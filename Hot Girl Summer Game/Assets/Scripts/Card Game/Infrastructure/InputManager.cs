@@ -115,8 +115,11 @@ public class InputManager
 
             if (currentlySelected != null)
             {
-
-                currentlySelected.transform.SetPositionAndRotation(currentlySelected.transform.InverseTransformVector(camera.ScreenToWorldPoint(pointerEvent.position)), Quaternion.identity);
+                Vector3 adjustedMousePosition;
+                adjustedMousePosition.x = pointerEvent.position.x;
+                adjustedMousePosition.y = pointerEvent.position.y;
+                adjustedMousePosition.z = 90;
+                currentlySelected.transform.SetPositionAndRotation(currentlySelected.transform.InverseTransformVector(camera.ScreenToWorldPoint(adjustedMousePosition)), Quaternion.identity);
             }
             
 

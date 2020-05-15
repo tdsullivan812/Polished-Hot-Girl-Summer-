@@ -117,7 +117,7 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color = Color.Lerp(Color.white, transparent, parameter);
             gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color = Color.Lerp(transparent, Color.white, parameter);
             //gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(transparent, Color.white, parameter);
-            gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(currentTextColor, targetTextColor, parameter);
+            gameObject.GetComponentsInChildren<TMPro.TextMeshProUGUI>()[1].color = Color.Lerp(currentTextColor, targetTextColor, parameter);
             //gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(1, sizeWhenHovering, parameter), 1);
 
             parameter += 0.04f;
@@ -139,7 +139,7 @@ public class CardGUIEvents : EventTrigger
             gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[0].color = Color.Lerp(transparent, Color.white, parameter);
             gameObject.GetComponentsInChildren<UnityEngine.UI.Image>()[1].color = Color.Lerp(Color.white, transparent, parameter);
             //gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(Color.white, transparent, parameter);
-            gameObject.GetComponentInChildren<TMPro.TextMeshProUGUI>().color = Color.Lerp(currentTextColor, targetTextColor, parameter);
+            gameObject.GetComponentsInChildren<TMPro.TextMeshProUGUI>()[1].color = Color.Lerp(currentTextColor, targetTextColor, parameter);
             //gameObject.transform.localScale.Set(Mathf.Lerp(1, sizeWhenHovering, parameter), Mathf.Lerp(sizeWhenHovering, 1, parameter), 1);
 
             parameter += 0.04f;
