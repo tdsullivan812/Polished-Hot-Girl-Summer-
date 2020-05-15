@@ -116,6 +116,7 @@ public class GameController : MonoBehaviour
                     partyDeck.AddCard(new PrivateTalk());
                     partyDeck.AddCard(new Chat());
                     partyDeck.AddCard(new Encourage());
+                    partyDeck.CalculateVictoryPoints();
                     break;
 
                 case 3:
@@ -126,6 +127,7 @@ public class GameController : MonoBehaviour
                     partyDeck.AddCard(new PrivateTalk());
                     partyDeck.AddCard(new Chat());
                     partyDeck.AddCard(new Encourage());
+                    partyDeck.CalculateVictoryPoints();
                     break;
 
                 default:
