@@ -62,12 +62,12 @@ public abstract class Card
         {
             cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"));
 
-            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
+            cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName; //Put the name on the card
+            cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].color = ChooseColor(displayedInfo.type); //choose color of name
             TextMeshProUGUI textMesh = cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1];
-            textMesh.text = displayedInfo.text;
-            textMesh.color = ChooseColor(displayedInfo.type);
-            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].text = displayedInfo.text;
-            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].outlineColor = ChooseColor(displayedInfo.type);
+            textMesh.text = displayedInfo.text; //put the description on the card
+            textMesh.color = ChooseColor(displayedInfo.type); //choose text color
+
 
             var cardImages = cardGameObject.GetComponentsInChildren<UnityEngine.UI.Image>();
             //UnityEngine.UI.Image cardBackgroundImage = cardGameObject.GetComponent<UnityEngine.UI.Image>();
@@ -84,12 +84,12 @@ public abstract class Card
             cardGameObject = Object.Instantiate(Resources.Load<GameObject>("Cards/Basic Card"), _zPosition, Quaternion.identity);
             Encounter.objectPools.Add(this.displayedInfo.cardName, new ObjectPool(cardGameObject));
 
-            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
+            cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].text = displayedInfo.cardName;
+            cardGameObject.GetComponentsInChildren<TextMeshProUGUI>()[0].color = ChooseColor(displayedInfo.type);
             TextMeshProUGUI textMesh = cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1];
             textMesh.text = displayedInfo.text;
             textMesh.color = ChooseColor(displayedInfo.type);
-            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].text = displayedInfo.text;
-            //cardGameObject.GetComponentsInChildren<TextMeshProUGUI>(true)[1].outlineColor = ChooseColor(displayedInfo.type);
+
 
             var cardImages = cardGameObject.GetComponentsInChildren<UnityEngine.UI.Image>();
             //UnityEngine.UI.Image cardBackgroundImage = cardGameObject.GetComponent<UnityEngine.UI.Image>();
